@@ -1,0 +1,228 @@
+
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{longtable}{|p{1cm}|p{3cm}|p{3cm}|p{7cm}|p{3.0cm}|p{3cm}|p{2cm}|p{1cm}|}\hline
+ &var & \text{symbol} &documentation &type &units &tokens &eqs \\\hline\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+
+
+78
+             & \hypertarget{"v:78"}{ $ {d}_{A} $}
+             & \verb|d|
+             & direction of convective flow
+             & \begin{lay}transport \end{lay}
+             & $  $
+             & []
+             & \hyperlink{"e:61"}{ 61 }
+                 \\
+    80
+             & \hypertarget{"v:80"}{ $ {A_{y,z}}_{N} $}
+             & \verb|Ayz|
+             & cross sectional area in x-direction
+             & \begin{lay}transport \end{lay}
+             & $ m^{2} \, $
+             & []
+             & \hyperlink{"e:63"}{ 63 }
+                 \\
+    83
+             & \hypertarget{"v:83"}{ $ {\hat{V}}_{A} $}
+             & \verb|fV|
+             & convective volumetric flow
+             & \begin{lay}transport \end{lay}
+             & $ m^{3} \,s^{-1} \, $
+             & ['mass']
+             & \hyperlink{"e:66"}{ 66 }
+                 \\
+    84
+             & \hypertarget{"v:84"}{ $ {c}_{{A S}} $}
+             & \verb|c_AS|
+             & molar species concentration in convective flow
+             & \begin{lay}transport \end{lay}
+             & $ m^{-3} \,mol \, $
+             & ['mass']
+             & \hyperlink{"e:67"}{ 67 }
+                 \\
+    85
+             & \hypertarget{"v:85"}{ $ {\hat{n}^{c}}_{{A S}} $}
+             & \verb|fnc_AS|
+             & convective mass flow by stream
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & ['mass']
+             & \hyperlink{"e:68"}{ 68 }
+                 \\
+    86
+             & \hypertarget{"v:86"}{ $ {\hat{n}^{c}}_{{N S}} $}
+             & \verb|fnc|
+             & net convective mass flow
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & ['mass']
+             & \hyperlink{"e:69"}{ 69 }
+                 \\
+    115
+             & \hypertarget{"v:115"}{ $ {fm_m}_{A} $}
+             & \verb|fm_m|
+             & mass flow in arc
+             & \begin{lay}transport \end{lay}
+             & $ kg \,s^{-1} \, $
+             & ['mass']
+             & \hyperlink{"e:94"}{ 94 }
+                 \\
+    116
+             & \hypertarget{"v:116"}{ $ {fnd_m}_{{N S}, {A S}} $}
+             & \verb|fnd_m|
+             & diffusional mass transfer per arc
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:95"}{ 95 }
+                 \\
+    10
+             & \hypertarget{"v:10"}{ $ {F}_{{N S}, {A S}} $}
+             & \verb|F_NS_AS|
+             & blick incidence matrix of directed species graph
+             & \begin{lay}network \end{lay}
+             & $  $
+             & []
+             & \hyperlink{"e:6"}{ 6 }
+                 \\
+    9
+             & \hypertarget{"v:9"}{ $ {P}_{{N S}, {A S}} $}
+             & \verb|P_NS_AS|
+             & node species to arc species projection
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    11
+             & \hypertarget{"v:11"}{ $ {P}_{K, {N K}} $}
+             & \verb|P_K_NK|
+             & projection of conversion to node x conversion
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    12
+             & \hypertarget{"v:12"}{ $ {P}_{S, {N S}} $}
+             & \verb|P_S_NS|
+             & projection species to conversion x
+species
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    13
+             & \hypertarget{"v:13"}{ $ {P}_{N, {N K}} $}
+             & \verb|P_N_NK|
+             & projection node to node x conversion
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    14
+             & \hypertarget{"v:14"}{ $ {P}_{{N K}, {K S}} $}
+             & \verb|P_NK_KS|
+             & projection node x conversion to conversion x
+species
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    95
+             & \hypertarget{"v:95"}{ $ {P}_{{N S}, {K S}} $}
+             & \verb|P_NS_KS|
+             & projection node x species to conversion x
+species
+             & \begin{lay}projection \end{lay}
+             & $  $
+             & []
+             & \\
+    92
+             & \hypertarget{"v:92"}{ $ {1}_{{N K}} $}
+             & \verb|one_NK|
+             & one with energy
+             & \begin{lay}effort \end{lay}
+             & $  $
+             & ['energy']
+             & \hyperlink{"e:75"}{ 75 }
+                 \\
+    79
+             & \hypertarget{"v:79"}{ $ {c}_{{N S}} $}
+             & \verb|c|
+             & molar concentration
+             & \begin{lay}seconaryState \end{lay}
+             & $ m^{-3} \,mol \, $
+             & ['mass']
+             & \hyperlink{"e:62"}{ 62 }
+                 \\
+    81
+             & \hypertarget{"v:81"}{ $ {m}_{N} $}
+             & \verb|m|
+             & mass in kg
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \, $
+             & ['mass']
+             & \hyperlink{"e:64"}{ 64 }
+                 \\
+    82
+             & \hypertarget{"v:82"}{ $ {\rho}_{N} $}
+             & \verb|density|
+             & density
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,m^{-3} \, $
+             & ['mass']
+             & \hyperlink{"e:65"}{ 65 }
+                 \\
+    91
+             & \hypertarget{"v:91"}{ $ {T}_{{N K}} $}
+             & \verb|T_NK|
+             & temperature in reactive systems
+             & \begin{lay}conversion \end{lay}
+             & $ K \, $
+             & ['energy']
+             & \hyperlink{"e:74"}{ 74 }
+                 \\
+    96
+             & \hypertarget{"v:96"}{ $ {c}_{{K S}} $}
+             & \verb|c_KS|
+             & concentration in the reactive systems
+             & \begin{lay}conversion \end{lay}
+             & $ m^{-3} \,mol \, $
+             & ['mass']
+             & \hyperlink{"e:78"}{ 78 }
+                 \\
+    112
+             & \hypertarget{"v:112"}{ $ {\xi}_{{N K}} $}
+             & \verb|xi|
+             & extent of reaction
+             & \begin{lay}conversion \end{lay}
+             & $ m^{-3} \,mol \,s^{-1} \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:91"}{ 91 }
+                 \\
+    113
+             & \hypertarget{"v:113"}{ $ {N}_{{N S}, {N K}} $}
+             & \verb|N_NS_NK|
+             & extended stoichiometry
+             & \begin{lay}conversion \end{lay}
+             & $  $
+             & ['energy']
+             & \hyperlink{"e:92"}{ 92 }
+                 \\
+    114
+             & \hypertarget{"v:114"}{ $ {\tilde{n}}_{{N S}} $}
+             & \verb|pn|
+             & production term
+             & \begin{lay}conversion \end{lay}
+             & $ mol \,s^{-1} \, $
+             & ['mass']
+             & \hyperlink{"e:93"}{ 93 }
+                 \\
+    \end{longtable}

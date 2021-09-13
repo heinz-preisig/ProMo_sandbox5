@@ -1,0 +1,387 @@
+{
+  "1": {
+    "lhs": "one",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "2": {
+    "lhs": "zero",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "3": {
+    "lhs": "onehalf",
+    "network": "root",
+    "rhs": " Instantiate ( value , value )"
+  },
+  "6": {
+    "lhs": "F_NS_AS",
+    "network": "physical",
+    "rhs": " F : P_NS_AS"
+  },
+  "7": {
+    "lhs": "p",
+    "network": "physical",
+    "rhs": " ParDiff ( U , V )"
+  },
+  "8": {
+    "lhs": "T",
+    "network": "physical",
+    "rhs": " ParDiff ( U , S )"
+  },
+  "9": {
+    "lhs": "chem_potential",
+    "network": "physical",
+    "rhs": " ParDiff ( U , n )"
+  },
+  "11": {
+    "lhs": "B",
+    "network": "physical",
+    "rhs": " Instantiate ( S , value )"
+  },
+  "13": {
+    "lhs": "H",
+    "network": "physical",
+    "rhs": " U + p . V"
+  },
+  "14": {
+    "lhs": "A",
+    "network": "physical",
+    "rhs": " U - T . S"
+  },
+  "15": {
+    "lhs": "G",
+    "network": "physical",
+    "rhs": " U + p . V - T . S"
+  },
+  "20": {
+    "lhs": "v_x",
+    "network": "physical",
+    "rhs": " ParDiff ( r_x , t )"
+  },
+  "21": {
+    "lhs": "v_y",
+    "network": "physical",
+    "rhs": " ParDiff ( r_y , t )"
+  },
+  "22": {
+    "lhs": "v_z",
+    "network": "physical",
+    "rhs": " ParDiff ( r_z , t )"
+  },
+  "23": {
+    "lhs": "v",
+    "network": "physical",
+    "rhs": " Stack ( v_x , v_y , v_z )"
+  },
+  "24": {
+    "lhs": "Cp",
+    "network": "material",
+    "rhs": " ParDiff ( H , T )"
+  },
+  "25": {
+    "lhs": "Cv",
+    "network": "material",
+    "rhs": " ParDiff ( U , T )"
+  },
+  "26": {
+    "lhs": "cp",
+    "network": "material",
+    "rhs": " Cp . inv ( Mm ) | N in N & S | n"
+  },
+  "27": {
+    "lhs": "cv",
+    "network": "material",
+    "rhs": " Cv . inv ( Mm ) | N in N & S | n"
+  },
+  "28": {
+    "lhs": "kq_x",
+    "network": "material",
+    "rhs": " inv ( V ) . ParDiff ( U , T ) . v_x"
+  },
+  "29": {
+    "lhs": "kq_y",
+    "network": "material",
+    "rhs": " inv ( V ) . ParDiff ( U , T ) . v_y"
+  },
+  "30": {
+    "lhs": "kq_z",
+    "network": "material",
+    "rhs": " inv ( V ) . ParDiff ( U , T ) . v_z"
+  },
+  "31": {
+    "lhs": "kq",
+    "network": "material",
+    "rhs": " Stack ( kq_x , kq_y , kq_z )"
+  },
+  "32": {
+    "lhs": "kc_x",
+    "network": "material",
+    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
+  },
+  "33": {
+    "lhs": "kc_y",
+    "network": "material",
+    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
+  },
+  "34": {
+    "lhs": "kc_z",
+    "network": "material",
+    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
+  },
+  "35": {
+    "lhs": "kc",
+    "network": "material",
+    "rhs": " Stack ( kc_x , kc_y , kc_z )"
+  },
+  "36": {
+    "lhs": "kd_x",
+    "network": "material",
+    "rhs": " inv ( chem_potential ) . ( v_x : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+  },
+  "37": {
+    "lhs": "kd_y",
+    "network": "material",
+    "rhs": " inv ( chem_potential ) . ( v_y : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+  },
+  "38": {
+    "lhs": "kd_z",
+    "network": "material",
+    "rhs": " inv ( chem_potential ) . ( v_z : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+  },
+  "39": {
+    "lhs": "kd",
+    "network": "material",
+    "rhs": " Stack ( kd_x , kd_y , kd_z )"
+  },
+  "41": {
+    "lhs": "to",
+    "network": "root",
+    "rhs": " Instantiate ( t , t )"
+  },
+  "42": {
+    "lhs": "te",
+    "network": "root",
+    "rhs": " Instantiate ( t , t )"
+  },
+  "43": {
+    "lhs": "h",
+    "network": "material",
+    "rhs": " H : inv ( n )"
+  },
+  "44": {
+    "lhs": "Mm",
+    "network": "material >>> macroscopic",
+    "rhs": " Mm"
+  },
+  "45": {
+    "lhs": "kq_x",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_x"
+  },
+  "46": {
+    "lhs": "kq_y",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_y"
+  },
+  "47": {
+    "lhs": "kq_z",
+    "network": "material >>> macroscopic",
+    "rhs": " kq_z"
+  },
+  "48": {
+    "lhs": "kq",
+    "network": "material >>> macroscopic",
+    "rhs": " kq"
+  },
+  "49": {
+    "lhs": "kc_x",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_x"
+  },
+  "50": {
+    "lhs": "kc_y",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_y"
+  },
+  "51": {
+    "lhs": "kc_z",
+    "network": "material >>> macroscopic",
+    "rhs": " kc_z"
+  },
+  "52": {
+    "lhs": "kc",
+    "network": "material >>> macroscopic",
+    "rhs": " kc"
+  },
+  "53": {
+    "lhs": "kd_x",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_x"
+  },
+  "56": {
+    "lhs": "kd_y",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_y"
+  },
+  "57": {
+    "lhs": "kd_z",
+    "network": "material >>> macroscopic",
+    "rhs": " kd_z"
+  },
+  "58": {
+    "lhs": "kd",
+    "network": "material >>> macroscopic",
+    "rhs": " kd"
+  },
+  "59": {
+    "lhs": "cp",
+    "network": "material >>> macroscopic",
+    "rhs": " cp"
+  },
+  "60": {
+    "lhs": "cv",
+    "network": "material >>> macroscopic",
+    "rhs": " cv"
+  },
+  "61": {
+    "lhs": "d",
+    "network": "macroscopic",
+    "rhs": " sign ( F | N | p )"
+  },
+  "62": {
+    "lhs": "c",
+    "network": "macroscopic",
+    "rhs": " inv ( V ) : n"
+  },
+  "63": {
+    "lhs": "Ayz",
+    "network": "macroscopic",
+    "rhs": " r_y . r_z"
+  },
+  "64": {
+    "lhs": "m",
+    "network": "macroscopic",
+    "rhs": " Mm | S in N & S | n"
+  },
+  "65": {
+    "lhs": "density",
+    "network": "macroscopic",
+    "rhs": " inv ( V ) . m"
+  },
+  "66": {
+    "lhs": "fV",
+    "network": "macroscopic",
+    "rhs": " inv ( density ) . kc_x . Ayz . F | N | p"
+  },
+  "67": {
+    "lhs": "c_AS",
+    "network": "macroscopic",
+    "rhs": " ( onehalf . ( F_NS_AS - d : abs ( F_NS_AS ) ) ) | N & S | c"
+  },
+  "68": {
+    "lhs": "fnc_AS",
+    "network": "macroscopic",
+    "rhs": " fV : c_AS"
+  },
+  "69": {
+    "lhs": "fnc",
+    "network": "macroscopic",
+    "rhs": " F_NS_AS | A & S | fnc_AS"
+  },
+  "74": {
+    "lhs": "T_NK",
+    "network": "macroscopic",
+    "rhs": " P_N_NK | N | T"
+  },
+  "75": {
+    "lhs": "one_NK",
+    "network": "macroscopic",
+    "rhs": " inv ( T_NK ) . T_NK"
+  },
+  "77": {
+    "lhs": "T_NK",
+    "network": "macroscopic >>> reactions",
+    "rhs": " T_NK"
+  },
+  "78": {
+    "lhs": "c_KS",
+    "network": "macroscopic",
+    "rhs": " c | N & S | P_NS_KS"
+  },
+  "79": {
+    "lhs": "c_KS",
+    "network": "macroscopic >>> reactions",
+    "rhs": " c_KS"
+  },
+  "82": {
+    "lhs": "R",
+    "network": "physical",
+    "rhs": " Av . B"
+  },
+  "83": {
+    "lhs": "P_N_NK",
+    "network": "macroscopic >>> reactions",
+    "rhs": " P_N_NK"
+  },
+  "84": {
+    "lhs": "Ea",
+    "network": "reactions",
+    "rhs": " Instantiate ( P_N_NK | N | R . T_NK , value )"
+  },
+  "85": {
+    "lhs": "K_NK",
+    "network": "reactions",
+    "rhs": " Ko : exp ( neg ( Ea ) . inv ( R | N | P_N_NK . T_NK ) )"
+  },
+  "86": {
+    "lhs": "K_NK",
+    "network": "reactions >>> macroscopic",
+    "rhs": " K_NK"
+  },
+  "87": {
+    "lhs": "co_KS",
+    "network": "reactions",
+    "rhs": " Instantiate ( c_KS , value )"
+  },
+  "88": {
+    "lhs": "phi_KS",
+    "network": "reactions",
+    "rhs": " Product ( c_KS . inv ( co_KS ) , N )"
+  },
+  "89": {
+    "lhs": "phi_KS",
+    "network": "reactions >>> macroscopic",
+    "rhs": " phi_KS"
+  },
+  "90": {
+    "lhs": "N",
+    "network": "reactions >>> macroscopic",
+    "rhs": " N"
+  },
+  "91": {
+    "lhs": "xi",
+    "network": "macroscopic",
+    "rhs": " K_NK . P_NK_KS | K & S | phi_KS"
+  },
+  "92": {
+    "lhs": "N_NS_NK",
+    "network": "macroscopic",
+    "rhs": " P_S_NS | S | ( ( P_K_NK . T_NK . inv ( T_NK ) ) | K | N )"
+  },
+  "93": {
+    "lhs": "pn",
+    "network": "macroscopic",
+    "rhs": " V : ( N_NS_NK | N & K | xi )"
+  },
+  "94": {
+    "lhs": "fm_m",
+    "network": "macroscopic",
+    "rhs": " Mm | S in A & S | fnc_AS"
+  },
+  "95": {
+    "lhs": "fnd_m",
+    "network": "macroscopic",
+    "rhs": " Ayz : neg ( kd_x ) . ( F_NS_AS | N & S | chem_potential )"
+  }
+}

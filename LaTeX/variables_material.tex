@@ -1,0 +1,176 @@
+
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{longtable}{|p{1cm}|p{3cm}|p{3cm}|p{7cm}|p{3.0cm}|p{3cm}|p{2cm}|p{1cm}|}\hline
+ &var & \text{symbol} &documentation &type &units &tokens &eqs \\\hline\hline
+\endhead
+\hline \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+
+
+40
+             & \hypertarget{"v:40"}{ $ {\lambda}_{S} $}
+             & \verb|Mm|
+             & species molecular masses
+             & \begin{lay}constant \end{lay}
+             & $ kg \,mol^{-1} \, $
+             & []
+             & \\
+    41
+             & \hypertarget{"v:41"}{ $ {C_{p}}_{N} $}
+             & \verb|Cp|
+             & total heat capacity at constant pressure
+             & \begin{lay}constant \end{lay}
+             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
+             & ['energy']
+             & \hyperlink{"e:24"}{ 24 }
+                 \\
+    42
+             & \hypertarget{"v:42"}{ $ {C_{v}}_{N} $}
+             & \verb|Cv|
+             & total heat capacity at constant volume
+             & \begin{lay}constant \end{lay}
+             & $ kg \,m^{2} \,K^{-1} \,s^{-2} \, $
+             & ['energy']
+             & \hyperlink{"e:25"}{ 25 }
+                 \\
+    43
+             & \hypertarget{"v:43"}{ $ {c_{p}}_{S} $}
+             & \verb|cp|
+             & specific heat capacity at constant pressure
+             & \begin{lay}constant \end{lay}
+             & $ m^{2} \,mol^{2} \,K^{-1} \,s^{-2} \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:26"}{ 26 }
+                 \\
+    44
+             & \hypertarget{"v:44"}{ $ {c_{v}}_{S} $}
+             & \verb|cv|
+             & specific heat capacity at constant volume
+             & \begin{lay}constant \end{lay}
+             & $ m^{2} \,mol^{2} \,K^{-1} \,s^{-2} \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:27"}{ 27 }
+                 \\
+    45
+             & \hypertarget{"v:45"}{ $ {k^{q}_{x}}_{N} $}
+             & \verb|kq_x|
+             & thermal conductivity in x-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,K^{-1} \,s^{-3} \, $
+             & ['energy']
+             & \hyperlink{"e:28"}{ 28 }
+                 \\
+    46
+             & \hypertarget{"v:46"}{ $ {k^{q}_{y}}_{N} $}
+             & \verb|kq_y|
+             & thermal conductivity in y-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,K^{-1} \,s^{-3} \, $
+             & ['energy']
+             & \hyperlink{"e:29"}{ 29 }
+                 \\
+    47
+             & \hypertarget{"v:47"}{ $ {k^{q}_{z}}_{N} $}
+             & \verb|kq_z|
+             & thermal conductivity in z-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,K^{-1} \,s^{-3} \, $
+             & ['energy']
+             & \hyperlink{"e:30"}{ 30 }
+                 \\
+    48
+             & \hypertarget{"v:48"}{ $ {k^{q}}_{N} $}
+             & \verb|kq|
+             & Carthesian thermal conductivity vector
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,K^{-1} \,s^{-3} \, $
+             & ['energy']
+             & \hyperlink{"e:31"}{ 31 }
+                 \\
+    49
+             & \hypertarget{"v:49"}{ $ {k^{c}_{x}}_{N} $}
+             & \verb|kc_x|
+             & convective mass convectivity in x-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ m^{-1} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:32"}{ 32 }
+                 \\
+    50
+             & \hypertarget{"v:50"}{ $ {k^{c}_{y}}_{N} $}
+             & \verb|kc_y|
+             & convective mass convectivity in y-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ m^{-1} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:33"}{ 33 }
+                 \\
+    51
+             & \hypertarget{"v:51"}{ $ {k^{c}_{z}}_{N} $}
+             & \verb|kc_z|
+             & convective mass convectivity in z-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ m^{-1} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:34"}{ 34 }
+                 \\
+    52
+             & \hypertarget{"v:52"}{ $ {k^{c}}_{N} $}
+             & \verb|kc|
+             & Cartesian convective mass convectivity vector
+             & \begin{lay}seconaryState \end{lay}
+             & $ m^{-1} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:35"}{ 35 }
+                 \\
+    53
+             & \hypertarget{"v:53"}{ $ {k^{d}_{x}}_{{N S}} $}
+             & \verb|kd_x|
+             & diffusional mass conductivity in x-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:36"}{ 36 }
+                 \\
+    54
+             & \hypertarget{"v:54"}{ $ {k^{d}_{y}}_{{N S}} $}
+             & \verb|kd_y|
+             & diffusional mass conductivity in y-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:37"}{ 37 }
+                 \\
+    55
+             & \hypertarget{"v:55"}{ $ {k^{d}_{z}}_{{N S}} $}
+             & \verb|kd_z|
+             & diffusional mass conductivity in z-direction
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:38"}{ 38 }
+                 \\
+    56
+             & \hypertarget{"v:56"}{ $ {k^{d}}_{{N S}} $}
+             & \verb|kd|
+             & Cartesian diffusional mass conductivity vector
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg^{-1} \,m^{-4} \,mol^{2} \,s \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:39"}{ 39 }
+                 \\
+    60
+             & \hypertarget{"v:60"}{ $ {h}_{{N S}} $}
+             & \verb|h|
+             & partial molar enthalpies
+             & \begin{lay}seconaryState \end{lay}
+             & $ kg \,m^{2} \,mol^{-1} \,s^{-2} \, $
+             & ['energy', 'mass']
+             & \hyperlink{"e:43"}{ 43 }
+                 \\
+    \end{longtable}
