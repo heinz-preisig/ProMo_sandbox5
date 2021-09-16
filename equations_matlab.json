@@ -451,14 +451,98 @@
   },
   "94": {
     "variable_ID": 115,
-    "lhs": "fm_m",
+    "lhs": "fm_A",
     "network": "macroscopic",
     "rhs": "blockReduce(Mm, S, A_x_S, fnc_AS)"
   },
-  "95": {
-    "variable_ID": 116,
-    "lhs": "fnd_m",
+  "98": {
+    "variable_ID": 119,
+    "lhs": "h",
+    "network": "material >>> macroscopic",
+    "rhs": "h"
+  },
+  "104": {
+    "variable_ID": 125,
+    "lhs": "fHc_A",
     "network": "macroscopic",
-    "rhs": "khatriRao(Ayz, [N], - kd_x, [N_x_S]) .* (( F_NS_AS )'  * chem_potential)"
+    "rhs": "blockReduce((( F_NS_AS )'  * h), S, A_x_S, fnc_AS)"
+  },
+  "106": {
+    "variable_ID": 127,
+    "lhs": "fHc",
+    "network": "macroscopic",
+    "rhs": "F * fHc_A"
+  },
+  "107": {
+    "variable_ID": 128,
+    "lhs": "fnd_AS",
+    "network": "macroscopic",
+    "rhs": "( khatriRao(Ayz, [N], - kd_x, [N_x_S]) .* F_NS_AS )'  * chem_potential"
+  },
+  "108": {
+    "variable_ID": 129,
+    "lhs": "fnd",
+    "network": "macroscopic",
+    "rhs": "F_NS_AS * fnd_AS"
+  },
+  "109": {
+    "variable_ID": 130,
+    "lhs": "fHd_A",
+    "network": "macroscopic",
+    "rhs": "blockReduce((( F_NS_AS )'  * h), S, A_x_S, fnd_AS)"
+  },
+  "110": {
+    "variable_ID": 131,
+    "lhs": "fHd",
+    "network": "macroscopic",
+    "rhs": "F * fHd_A"
+  },
+  "111": {
+    "variable_ID": 132,
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": "fnc + fnd + pn"
+  },
+  "114": {
+    "variable_ID": 135,
+    "lhs": "fw_A",
+    "network": "macroscopic",
+    "rhs": "Instantiate(fHc_A, value)"
+  },
+  "115": {
+    "variable_ID": 136,
+    "lhs": "fw",
+    "network": "macroscopic",
+    "rhs": "F * fw_A"
+  },
+  "116": {
+    "variable_ID": 133,
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": "fHc + fHd + fw"
+  },
+  "118": {
+    "variable_ID": 137,
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": "Instantiate(n, value)"
+  },
+  "119": {
+    "variable_ID": 18,
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": "Integral(dndt,t,to,te) + no"
+  },
+  "120": {
+    "variable_ID": 138,
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": "Instantiate(H, value)"
+  },
+  "121": {
+    "variable_ID": 29,
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": "Integral(dHdt,t,to,te)"
   }
 }

@@ -266,7 +266,7 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}link\end{lay} &
     \begin{lay}macroscopic >>> reactions\end{lay} \\
 \hyperlink{"v:102"}{ 82 }\hypertarget{"e:82"}{  } &
-    \begin{eq}{R}_{N} := {Av}_{N} \, . \, {B}_{N}\end{eq} &
+    \begin{eq}{R}_{N} := {A^{v}}_{N} \, . \, {B}_{N}\end{eq} &
     \begin{lay}Gas constant\end{lay} &
     \begin{lay}physical\end{lay} \\
 \hyperlink{"v:103"}{ 83 }\hypertarget{"e:83"}{  } &
@@ -314,12 +314,68 @@ no & equation &documentation &layer \\\hline\hline
     \begin{lay}production term\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hyperlink{"v:115"}{ 94 }\hypertarget{"e:94"}{  } &
-    \begin{eq}{fm_m}_{A} := {\lambda}_{S} \stackrel{ S \, \in \, {A S} }{\,\star\,} {\hat{n}^{c}}_{{A S}}\end{eq} &
+    \begin{eq}{\hat{m}}_{A} := {\lambda}_{S} \stackrel{ S \, \in \, {A S} }{\,\star\,} {\hat{n}^{c}}_{{A S}}\end{eq} &
     \begin{lay}mass flow in arc\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
-\hyperlink{"v:116"}{ 95 }\hypertarget{"e:95"}{  } &
-    \begin{eq}{fnd_m}_{{N S}, {A S}} := {A_{y,z}}_{N} \, {\odot} \, \left( -{k^{d}_{x}}_{{N S}} \right) \, . \, \left({F}_{{N S}, {A S}} \stackrel{{N S}}{\,\star\,} {\mu}_{{N S}}\right)\end{eq} &
-    \begin{lay}diffusional mass transfer per arc\end{lay} &
+\hyperlink{"v:119"}{ 98 }\hypertarget{"e:98"}{  } &
+    \begin{eq}{h}_{{N S}} := {h}_{{N S}}\end{eq} &
+    \begin{lay}link\end{lay} &
+    \begin{lay}material >>> macroscopic\end{lay} \\
+\hyperlink{"v:125"}{ 104 }\hypertarget{"e:104"}{  } &
+    \begin{eq}{\hat{H}^{c}}_{A} := \left({F}_{{N S}, {A S}} \stackrel{{N S}}{\,\star\,} {h}_{{N S}}\right) \stackrel{ S \, \in \, {A S} }{\,\star\,} {\hat{n}^{c}}_{{A S}}\end{eq} &
+    \begin{lay}enthalpy flow due to convection\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:127"}{ 106 }\hypertarget{"e:106"}{  } &
+    \begin{eq}{\hat{H}^{c}}_{N} := {F}_{N, A} \stackrel{A}{\,\star\,} {\hat{H}^{c}}_{A}\end{eq} &
+    \begin{lay}net enthalpy flow due to convection\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:128"}{ 107 }\hypertarget{"e:107"}{  } &
+    \begin{eq}{\hat{n}^{d}}_{{A S}} := {A_{y,z}}_{N} \, {\odot} \, \left( -{k^{d}_{x}}_{{N S}} \right) \, . \, {F}_{{N S}, {A S}} \stackrel{{N S}}{\,\star\,} {\mu}_{{N S}}\end{eq} &
+    \begin{lay}diffusional mass transfer in arc\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:129"}{ 108 }\hypertarget{"e:108"}{  } &
+    \begin{eq}{\hat{n}^{d}}_{{N S}} := {F}_{{N S}, {A S}} \stackrel{{A S}}{\,\star\,} {\hat{n}^{d}}_{{A S}}\end{eq} &
+    \begin{lay}net diffusional mass transfer\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:130"}{ 109 }\hypertarget{"e:109"}{  } &
+    \begin{eq}{\hat{H}^{d}}_{A} := \left({F}_{{N S}, {A S}} \stackrel{{N S}}{\,\star\,} {h}_{{N S}}\right) \stackrel{ S \, \in \, {A S} }{\,\star\,} {\hat{n}^{d}}_{{A S}}\end{eq} &
+    \begin{lay}enthalpy flow due to mass diffusion\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:131"}{ 110 }\hypertarget{"e:110"}{  } &
+    \begin{eq}{\hat{H}^{d}}_{N} := {F}_{N, A} \stackrel{A}{\,\star\,} {\hat{H}^{d}}_{A}\end{eq} &
+    \begin{lay}net enthalpy flow due to diffusion\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:132"}{ 111 }\hypertarget{"e:111"}{  } &
+    \begin{eq}{\dot{n}}_{{N S}} := {\hat{n}^{c}}_{{N S}}  + {\hat{n}^{d}}_{{N S}}  + {\tilde{n}}_{{N S}}\end{eq} &
+    \begin{lay}species mass accumulation\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:135"}{ 114 }\hypertarget{"e:114"}{  } &
+    \begin{eq}{\hat{w}}_{A} := Set({\hat{H}^{c}}_{A}, {\#}_{})\end{eq} &
+    \begin{lay}example of work flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:136"}{ 115 }\hypertarget{"e:115"}{  } &
+    \begin{eq}{\hat{w}}_{N} := {F}_{N, A} \stackrel{A}{\,\star\,} {\hat{w}}_{A}\end{eq} &
+    \begin{lay}net work flow\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:133"}{ 116 }\hypertarget{"e:116"}{  } &
+    \begin{eq}{\dot{H}}_{N} := {\hat{H}^{c}}_{N}  + {\hat{H}^{d}}_{N}  + {\hat{w}}_{N}\end{eq} &
+    \begin{lay}differential enthalpy balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:137"}{ 118 }\hypertarget{"e:118"}{  } &
+    \begin{eq}{n^{o}}_{{N S}} := Set({n}_{{N S}}, {\#}_{})\end{eq} &
+    \begin{lay}initial condition for species mass\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:18"}{ 119 }\hypertarget{"e:119"}{  } &
+    \begin{eq}{n}_{{N S}} := \int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \, {\dot{n}}_{{N S}} \enskip d\,{t}_{}  + {n^{o}}_{{N S}}\end{eq} &
+    \begin{lay}foundation state -- species mass \end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:138"}{ 120 }\hypertarget{"e:120"}{  } &
+    \begin{eq}{H^{o}}_{N} := Set({H}_{N}, {\#}_{})\end{eq} &
+    \begin{lay}initial condition for enthalpy\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:29"}{ 121 }\hypertarget{"e:121"}{  } &
+    \begin{eq}{H}_{N} := \int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \, {\dot{H}}_{N} \enskip d\,{t}_{}\end{eq} &
+    \begin{lay}enthalpy\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}

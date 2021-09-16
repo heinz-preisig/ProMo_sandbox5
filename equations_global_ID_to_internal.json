@@ -375,13 +375,83 @@
     "rhs": " V : ( N_NS_NK | N & K | xi )"
   },
   "94": {
-    "lhs": "fm_m",
+    "lhs": "fm_A",
     "network": "macroscopic",
     "rhs": " Mm | S in A & S | fnc_AS"
   },
-  "95": {
-    "lhs": "fnd_m",
+  "98": {
+    "lhs": "h",
+    "network": "material >>> macroscopic",
+    "rhs": " h"
+  },
+  "104": {
+    "lhs": "fHc_A",
     "network": "macroscopic",
-    "rhs": " Ayz : neg ( kd_x ) . ( F_NS_AS | N & S | chem_potential )"
+    "rhs": " ( F_NS_AS | N & S | h ) | S in A & S | fnc_AS"
+  },
+  "106": {
+    "lhs": "fHc",
+    "network": "macroscopic",
+    "rhs": " F | A | fHc_A"
+  },
+  "107": {
+    "lhs": "fnd_AS",
+    "network": "macroscopic",
+    "rhs": " Ayz : neg ( kd_x ) . F_NS_AS | N & S | chem_potential"
+  },
+  "108": {
+    "lhs": "fnd",
+    "network": "macroscopic",
+    "rhs": " F_NS_AS | A & S | fnd_AS"
+  },
+  "109": {
+    "lhs": "fHd_A",
+    "network": "macroscopic",
+    "rhs": " ( F_NS_AS | N & S | h ) | S in A & S | fnd_AS"
+  },
+  "110": {
+    "lhs": "fHd",
+    "network": "macroscopic",
+    "rhs": " F | A | fHd_A"
+  },
+  "111": {
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": " fnc + fnd + pn"
+  },
+  "114": {
+    "lhs": "fw_A",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( fHc_A , value )"
+  },
+  "115": {
+    "lhs": "fw",
+    "network": "macroscopic",
+    "rhs": " F | A | fw_A"
+  },
+  "116": {
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": " fHc + fHd + fw"
+  },
+  "118": {
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( n , value )"
+  },
+  "119": {
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": " Integral ( dndt :: t in [ to , te ] ) + no"
+  },
+  "120": {
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( H , value )"
+  },
+  "121": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " Integral ( dHdt :: t in [ to , te ] )"
   }
 }

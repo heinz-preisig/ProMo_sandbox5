@@ -455,10 +455,94 @@
     "network": "macroscopic",
     "rhs": " V_61 O_5 I_3 O_14 I_6 O_5 V_85"
   },
-  "95": {
-    "variable_ID": 116,
-    "lhs": " V_116",
+  "98": {
+    "variable_ID": 119,
+    "lhs": " V_119",
+    "network": "material >>> macroscopic",
+    "rhs": " V_60"
+  },
+  "104": {
+    "variable_ID": 125,
+    "lhs": " V_125",
     "network": "macroscopic",
-    "rhs": " V_80 O_3 F_11 D_0 V_70 D_1 O_4 D_0 V_10  O_5  I_5 O_5  V_24 D_1"
+    "rhs": " D_0 V_10  O_5  I_5 O_5  V_119 D_1 O_5 I_3 O_14 I_6 O_5 V_85"
+  },
+  "106": {
+    "variable_ID": 127,
+    "lhs": " V_127",
+    "network": "macroscopic",
+    "rhs": " V_1  O_5  I_2 O_5  V_125"
+  },
+  "107": {
+    "variable_ID": 128,
+    "lhs": " V_128",
+    "network": "macroscopic",
+    "rhs": " V_80 O_3 F_11 D_0 V_70 D_1 O_4 V_10  O_5  I_5 O_5  V_24"
+  },
+  "108": {
+    "variable_ID": 129,
+    "lhs": " V_129",
+    "network": "macroscopic",
+    "rhs": " V_10  O_5  I_6 O_5  V_128"
+  },
+  "109": {
+    "variable_ID": 130,
+    "lhs": " V_130",
+    "network": "macroscopic",
+    "rhs": " D_0 V_10  O_5  I_5 O_5  V_119 D_1 O_5 I_3 O_14 I_6 O_5 V_128"
+  },
+  "110": {
+    "variable_ID": 131,
+    "lhs": " V_131",
+    "network": "macroscopic",
+    "rhs": " V_1  O_5  I_2 O_5  V_130"
+  },
+  "111": {
+    "variable_ID": 132,
+    "lhs": " V_132",
+    "network": "macroscopic",
+    "rhs": " V_86 O_0 V_129 O_0 V_114"
+  },
+  "114": {
+    "variable_ID": 135,
+    "lhs": " V_135",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_125 D_7 V_3 D_1"
+  },
+  "115": {
+    "variable_ID": 136,
+    "lhs": " V_136",
+    "network": "macroscopic",
+    "rhs": " V_1  O_5  I_2 O_5  V_135"
+  },
+  "116": {
+    "variable_ID": 133,
+    "lhs": " V_133",
+    "network": "macroscopic",
+    "rhs": " V_127 O_0 V_131 O_0 V_136"
+  },
+  "118": {
+    "variable_ID": 137,
+    "lhs": " V_137",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_18 D_7 V_3 D_1"
+  },
+  "119": {
+    "variable_ID": 18,
+    "lhs": " V_18",
+    "network": "macroscopic",
+    "rhs": " O_9 D_0 V_132 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1 O_0 V_137"
+  },
+  "120": {
+    "variable_ID": 138,
+    "lhs": " V_138",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_29 D_7 V_3 D_1"
+  },
+  "121": {
+    "variable_ID": 29,
+    "lhs": " V_29",
+    "network": "macroscopic",
+    "rhs": " O_9 D_0 V_133 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1"
   }
 }

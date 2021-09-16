@@ -183,13 +183,13 @@
     },
     "18": {
       "aliases": "{'global_ID': ' V_18', 'python': 'n', 'cpp': 'n', 'matlab': 'n', 'latex': 'n', 'internal_code': 'n'}",
-      "doc": "foundation state -- species mass",
-      "equations": "{}",
+      "doc": "foundation state -- species mass ",
+      "equations": "{119: {'rhs': ' O_9 D_0 V_132 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1 O_0 V_137', 'type': 'generic', 'doc': 'foundation state -- species mass ', 'network': 'macroscopic', 'incidence_list': ['132', '137', '2', '58', '59']}}",
       "index_structures": "[5]",
       "label": "n",
       "network": "physical",
       "port_variable": "True",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "state",
       "units": "[0, 0, 1, 0, 0, 0, 0, 0]"
     },
@@ -201,7 +201,7 @@
       "label": "U",
       "network": "physical",
       "port_variable": "True",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "state",
       "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
     },
@@ -237,7 +237,7 @@
       "label": "p",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "effort",
       "units": "[-2, -1, 0, 1, 0, 0, 0, 0]"
     },
@@ -249,7 +249,7 @@
       "label": "T",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "effort",
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
@@ -261,7 +261,7 @@
       "label": "chem_potential",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "effort",
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
@@ -280,12 +280,12 @@
     "29": {
       "aliases": "{'global_ID': ' V_29', 'python': 'H', 'cpp': 'H', 'matlab': 'H', 'latex': 'H', 'internal_code': 'H'}",
       "doc": "enthalpy",
-      "equations": "{13: {'rhs': ' V_19 O_0 V_22 O_4 V_21', 'type': 'generic', 'doc': 'enthalpy', 'network': 'physical', 'incidence_list': ['19', '21', '22']}}",
+      "equations": "{13: {'rhs': ' V_19 O_0 V_22 O_4 V_21', 'type': 'generic', 'doc': 'enthalpy', 'network': 'physical', 'incidence_list': ['19', '21', '22']}, 121: {'rhs': ' O_9 D_0 V_133 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1', 'type': 'generic', 'doc': 'enthalpy', 'network': 'macroscopic', 'incidence_list': ['133', '2', '58', '59']}}",
       "index_structures": "[1]",
       "label": "H",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "state",
       "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
     },
@@ -297,7 +297,7 @@
       "label": "A",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "state",
       "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
     },
@@ -309,7 +309,7 @@
       "label": "G",
       "network": "physical",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "state",
       "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
     },
@@ -381,7 +381,7 @@
       "label": "Cp",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, 0, 1, -1, 0, 0, 0]"
     },
@@ -393,7 +393,7 @@
       "label": "Cv",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, 0, 1, -1, 0, 0, 0]"
     },
@@ -405,7 +405,7 @@
       "label": "cp",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, 2, 0, -1, 0, 0, 0]"
     },
@@ -417,7 +417,7 @@
       "label": "cv",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, 2, 0, -1, 0, 0, 0]"
     },
@@ -429,7 +429,7 @@
       "label": "kq_x",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -441,7 +441,7 @@
       "label": "kq_y",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -453,7 +453,7 @@
       "label": "kq_z",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -465,7 +465,7 @@
       "label": "kq",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -477,7 +477,7 @@
       "label": "kc_x",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -489,7 +489,7 @@
       "label": "kc_y",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -501,7 +501,7 @@
       "label": "kc_z",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -513,7 +513,7 @@
       "label": "kc",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -525,7 +525,7 @@
       "label": "kd_x",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -537,7 +537,7 @@
       "label": "kd_y",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -549,7 +549,7 @@
       "label": "kd_z",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -561,7 +561,7 @@
       "label": "kd",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -597,7 +597,7 @@
       "label": "h",
       "network": "material",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
@@ -621,7 +621,7 @@
       "label": "kq_x",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -633,7 +633,7 @@
       "label": "kq_y",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -645,7 +645,7 @@
       "label": "kq_z",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -657,7 +657,7 @@
       "label": "kq",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-3, 0, 0, 1, -1, 0, 0, 0]"
     },
@@ -669,7 +669,7 @@
       "label": "kc_x",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -681,7 +681,7 @@
       "label": "kc_y",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -693,7 +693,7 @@
       "label": "kc_z",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -705,7 +705,7 @@
       "label": "kc",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -1, 0, 0, 0, 0, 0, 0]"
     },
@@ -717,7 +717,7 @@
       "label": "kd_x",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -729,7 +729,7 @@
       "label": "kd_y",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -741,7 +741,7 @@
       "label": "kd_z",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -753,7 +753,7 @@
       "label": "kd",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[1, -4, 2, -1, 0, 0, 0, 0]"
     },
@@ -765,7 +765,7 @@
       "label": "cp",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-2, 2, 2, 0, -1, 0, 0, 0]"
     },
@@ -777,7 +777,7 @@
       "label": "cv",
       "network": "material >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-2, 2, 2, 0, -1, 0, 0, 0]"
     },
@@ -801,7 +801,7 @@
       "label": "c",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -825,7 +825,7 @@
       "label": "m",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[0, 0, 0, 1, 0, 0, 0, 0]"
     },
@@ -837,7 +837,7 @@
       "label": "density",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[0, -3, 0, 1, 0, 0, 0, 0]"
     },
@@ -849,7 +849,7 @@
       "label": "fV",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transport",
       "units": "[-1, 3, 0, 0, 0, 0, 0, 0]"
     },
@@ -861,7 +861,7 @@
       "label": "c_AS",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transport",
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -873,7 +873,7 @@
       "label": "fnc_AS",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
@@ -885,7 +885,7 @@
       "label": "fnc",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
@@ -897,7 +897,7 @@
       "label": "T_NK",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "conversion",
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
@@ -909,7 +909,7 @@
       "label": "one_NK",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "effort",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
@@ -921,7 +921,7 @@
       "label": "T_NK",
       "network": "macroscopic >>> reactions",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
@@ -945,7 +945,7 @@
       "label": "c_KS",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "conversion",
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -957,7 +957,7 @@
       "label": "c_KS",
       "network": "macroscopic >>> reactions",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -974,7 +974,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "101": {
-      "aliases": "{'global_ID': ' V_101', 'python': 'Av', 'cpp': 'Av', 'matlab': 'Av', 'latex': 'Av', 'internal_code': 'Av'}",
+      "aliases": "{'global_ID': ' V_101', 'python': 'Av', 'cpp': 'Av', 'matlab': 'Av', 'latex': 'A^{v}', 'internal_code': 'Av'}",
       "doc": "Avogadro number",
       "equations": "{}",
       "index_structures": "[1]",
@@ -1017,7 +1017,7 @@
       "label": "Ea",
       "network": "reactions",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
@@ -1041,7 +1041,7 @@
       "label": "K_NK",
       "network": "reactions",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[-1, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -1053,7 +1053,7 @@
       "label": "K_NK",
       "network": "reactions >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[-1, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -1065,7 +1065,7 @@
       "label": "co_KS",
       "network": "reactions",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "constant",
       "units": "[0, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -1077,7 +1077,7 @@
       "label": "phi_KS",
       "network": "reactions",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "seconaryState",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
@@ -1089,7 +1089,7 @@
       "label": "phi_KS",
       "network": "reactions >>> macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transform",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
@@ -1113,7 +1113,7 @@
       "label": "xi",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
       "type": "conversion",
       "units": "[-1, -3, 1, 0, 0, 0, 0, 0]"
     },
@@ -1125,7 +1125,7 @@
       "label": "N_NS_NK",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['energy']",
+      "tokens": "[]",
       "type": "conversion",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
@@ -1137,33 +1137,177 @@
       "label": "pn",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "conversion",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "115": {
-      "aliases": "{'global_ID': ' V_115', 'python': 'fm_m', 'cpp': 'fm_m', 'matlab': 'fm_m', 'latex': 'fm_m', 'internal_code': 'fm_m'}",
+      "aliases": "{'global_ID': ' V_115', 'python': 'fm_A', 'cpp': 'fm_A', 'matlab': 'fm_A', 'latex': '\\\\hat{m}', 'internal_code': 'fm_A'}",
       "doc": "mass flow in arc",
       "equations": "{94: {'rhs': ' V_61 O_5 I_3 O_14 I_6 O_5 V_85', 'type': 'generic', 'doc': 'mass flow in arc', 'network': 'macroscopic', 'incidence_list': ['61', '85']}}",
       "index_structures": "[2]",
-      "label": "fm_m",
+      "label": "fm_A",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['mass']",
+      "tokens": "[]",
       "type": "transport",
       "units": "[-1, 0, 0, 1, 0, 0, 0, 0]"
     },
-    "116": {
-      "aliases": "{'global_ID': ' V_116', 'python': 'fnd_m', 'cpp': 'fnd_m', 'matlab': 'fnd_m', 'latex': 'fnd_m', 'internal_code': 'fnd_m'}",
-      "doc": "diffusional mass transfer per arc",
-      "equations": "{95: {'rhs': ' V_80 O_3 F_11 D_0 V_70 D_1 O_4 D_0 V_10  O_5  I_5 O_5  V_24 D_1', 'type': 'generic', 'doc': 'diffusional mass transfer per arc', 'network': 'macroscopic', 'incidence_list': ['10', '24', '70', '80']}}",
-      "index_structures": "[5, 6]",
-      "label": "fnd_m",
+    "119": {
+      "aliases": "{'global_ID': ' V_119', 'python': 'h', 'cpp': 'h', 'matlab': 'h', 'latex': 'h', 'internal_code': 'h'}",
+      "doc": "link",
+      "equations": "{98: {'rhs': ' V_60', 'type': 'generic', 'doc': 'link', 'network': 'material >>> macroscopic', 'incidence_list': ['60']}}",
+      "index_structures": "[5]",
+      "label": "h",
+      "network": "material >>> macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transform",
+      "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
+    },
+    "125": {
+      "aliases": "{'global_ID': ' V_125', 'python': 'fHc_A', 'cpp': 'fHc_A', 'matlab': 'fHc_A', 'latex': '\\\\hat{H}^{c}', 'internal_code': 'fHc_A'}",
+      "doc": "enthalpy flow due to convection",
+      "equations": "{104: {'rhs': ' D_0 V_10  O_5  I_5 O_5  V_119 D_1 O_5 I_3 O_14 I_6 O_5 V_85', 'type': 'generic', 'doc': 'enthalpy flow due to convection', 'network': 'macroscopic', 'incidence_list': ['10', '119', '85']}}",
+      "index_structures": "[2]",
+      "label": "fHc_A",
       "network": "macroscopic",
       "port_variable": "False",
-      "tokens": "['energy', 'mass']",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "127": {
+      "aliases": "{'global_ID': ' V_127', 'python': 'fHc', 'cpp': 'fHc', 'matlab': 'fHc', 'latex': '\\\\hat{H}^{c}', 'internal_code': 'fHc'}",
+      "doc": "net enthalpy flow due to convection",
+      "equations": "{106: {'rhs': ' V_1  O_5  I_2 O_5  V_125', 'type': 'generic', 'doc': 'net enthalpy flow due to convection', 'network': 'macroscopic', 'incidence_list': ['1', '125']}}",
+      "index_structures": "[1]",
+      "label": "fHc",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "128": {
+      "aliases": "{'global_ID': ' V_128', 'python': 'fnd_AS', 'cpp': 'fnd_AS', 'matlab': 'fnd_AS', 'latex': '\\\\hat{n}^{d}', 'internal_code': 'fnd_AS'}",
+      "doc": "diffusional mass transfer in arc",
+      "equations": "{107: {'rhs': ' V_80 O_3 F_11 D_0 V_70 D_1 O_4 V_10  O_5  I_5 O_5  V_24', 'type': 'generic', 'doc': 'diffusional mass transfer in arc', 'network': 'macroscopic', 'incidence_list': ['10', '24', '70', '80']}}",
+      "index_structures": "[6]",
+      "label": "fnd_AS",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
       "type": "transport",
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "129": {
+      "aliases": "{'global_ID': ' V_129', 'python': 'fnd', 'cpp': 'fnd', 'matlab': 'fnd', 'latex': '\\\\hat{n}^{d}', 'internal_code': 'fnd'}",
+      "doc": "net diffusional mass transfer",
+      "equations": "{108: {'rhs': ' V_10  O_5  I_6 O_5  V_128', 'type': 'generic', 'doc': 'net diffusional mass transfer', 'network': 'macroscopic', 'incidence_list': ['10', '128']}}",
+      "index_structures": "[5]",
+      "label": "fnd",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "130": {
+      "aliases": "{'global_ID': ' V_130', 'python': 'fHd_A', 'cpp': 'fHd_A', 'matlab': 'fHd_A', 'latex': '\\\\hat{H}^{d}', 'internal_code': 'fHd_A'}",
+      "doc": "enthalpy flow due to mass diffusion",
+      "equations": "{109: {'rhs': ' D_0 V_10  O_5  I_5 O_5  V_119 D_1 O_5 I_3 O_14 I_6 O_5 V_128', 'type': 'generic', 'doc': 'enthalpy flow due to mass diffusion', 'network': 'macroscopic', 'incidence_list': ['10', '119', '128']}}",
+      "index_structures": "[2]",
+      "label": "fHd_A",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "131": {
+      "aliases": "{'global_ID': ' V_131', 'python': 'fHd', 'cpp': 'fHd', 'matlab': 'fHd', 'latex': '\\\\hat{H}^{d}', 'internal_code': 'fHd'}",
+      "doc": "net enthalpy flow due to diffusion",
+      "equations": "{110: {'rhs': ' V_1  O_5  I_2 O_5  V_130', 'type': 'generic', 'doc': 'net enthalpy flow due to diffusion', 'network': 'macroscopic', 'incidence_list': ['1', '130']}}",
+      "index_structures": "[1]",
+      "label": "fHd",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "132": {
+      "aliases": "{'global_ID': ' V_132', 'python': 'dndt', 'cpp': 'dndt', 'matlab': 'dndt', 'latex': '\\\\dot{n}', 'internal_code': 'dndt'}",
+      "doc": "species mass accumulation",
+      "equations": "{111: {'rhs': ' V_86 O_0 V_129 O_0 V_114', 'type': 'generic', 'doc': 'species mass accumulation', 'network': 'macroscopic', 'incidence_list': ['114', '129', '86']}}",
+      "index_structures": "[5]",
+      "label": "dndt",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "diffState",
+      "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "133": {
+      "aliases": "{'global_ID': ' V_133', 'python': 'dHdt', 'cpp': 'dHdt', 'matlab': 'dHdt', 'latex': '\\\\dot{H}', 'internal_code': 'dHdt'}",
+      "doc": "differential enthalpy balance",
+      "equations": "{116: {'rhs': ' V_127 O_0 V_131 O_0 V_136', 'type': 'generic', 'doc': 'differential enthalpy balance', 'network': 'macroscopic', 'incidence_list': ['127', '131', '136']}}",
+      "index_structures": "[1]",
+      "label": "dHdt",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "diffState",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "135": {
+      "aliases": "{'global_ID': ' V_135', 'python': 'fw_A', 'cpp': 'fw_A', 'matlab': 'fw_A', 'latex': '\\\\hat{w}', 'internal_code': 'fw_A'}",
+      "doc": "example of work flow",
+      "equations": "{114: {'rhs': ' O_11 D_0 V_125 D_7 V_3 D_1', 'type': 'generic', 'doc': 'example of work flow', 'network': 'macroscopic', 'incidence_list': ['125', '3']}}",
+      "index_structures": "[2]",
+      "label": "fw_A",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "136": {
+      "aliases": "{'global_ID': ' V_136', 'python': 'fw', 'cpp': 'fw', 'matlab': 'fw', 'latex': '\\\\hat{w}', 'internal_code': 'fw'}",
+      "doc": "net work flow",
+      "equations": "{115: {'rhs': ' V_1  O_5  I_2 O_5  V_135', 'type': 'generic', 'doc': 'net work flow', 'network': 'macroscopic', 'incidence_list': ['1', '135']}}",
+      "index_structures": "[1]",
+      "label": "fw",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "transport",
+      "units": "[-3, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "137": {
+      "aliases": "{'global_ID': ' V_137', 'python': 'no', 'cpp': 'no', 'matlab': 'no', 'latex': 'n^{o}', 'internal_code': 'no'}",
+      "doc": "initial condition for species mass",
+      "equations": "{118: {'rhs': ' O_11 D_0 V_18 D_7 V_3 D_1', 'type': 'generic', 'doc': 'initial condition for species mass', 'network': 'macroscopic', 'incidence_list': ['18', '3']}}",
+      "index_structures": "[5]",
+      "label": "no",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "state",
+      "units": "[0, 0, 1, 0, 0, 0, 0, 0]"
+    },
+    "138": {
+      "aliases": "{'global_ID': ' V_138', 'python': 'Ho', 'cpp': 'Ho', 'matlab': 'Ho', 'latex': 'H^{o}', 'internal_code': 'Ho'}",
+      "doc": "initial condition for enthalpy",
+      "equations": "{120: {'rhs': ' O_11 D_0 V_29 D_7 V_3 D_1', 'type': 'generic', 'doc': 'initial condition for enthalpy', 'network': 'macroscopic', 'incidence_list': ['29', '3']}}",
+      "index_structures": "[1]",
+      "label": "Ho",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "state",
+      "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -1392,7 +1536,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 116,
-    "equation": 95
+    "variable": 138,
+    "equation": 121
   }
 }

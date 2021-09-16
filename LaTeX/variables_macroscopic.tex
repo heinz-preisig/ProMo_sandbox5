@@ -36,7 +36,7 @@
              & convective volumetric flow
              & \begin{lay}transport \end{lay}
              & $ m^{3} \,s^{-1} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:66"}{ 66 }
                  \\
     84
@@ -45,7 +45,7 @@
              & molar species concentration in convective flow
              & \begin{lay}transport \end{lay}
              & $ m^{-3} \,mol \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:67"}{ 67 }
                  \\
     85
@@ -54,7 +54,7 @@
              & convective mass flow by stream
              & \begin{lay}transport \end{lay}
              & $ mol \,s^{-1} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:68"}{ 68 }
                  \\
     86
@@ -63,26 +63,89 @@
              & net convective mass flow
              & \begin{lay}transport \end{lay}
              & $ mol \,s^{-1} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:69"}{ 69 }
                  \\
     115
-             & \hypertarget{"v:115"}{ $ {fm_m}_{A} $}
-             & \verb|fm_m|
+             & \hypertarget{"v:115"}{ $ {\hat{m}}_{A} $}
+             & \verb|fm_A|
              & mass flow in arc
              & \begin{lay}transport \end{lay}
              & $ kg \,s^{-1} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:94"}{ 94 }
                  \\
-    116
-             & \hypertarget{"v:116"}{ $ {fnd_m}_{{N S}, {A S}} $}
-             & \verb|fnd_m|
-             & diffusional mass transfer per arc
+    125
+             & \hypertarget{"v:125"}{ $ {\hat{H}^{c}}_{A} $}
+             & \verb|fHc_A|
+             & enthalpy flow due to convection
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:104"}{ 104 }
+                 \\
+    127
+             & \hypertarget{"v:127"}{ $ {\hat{H}^{c}}_{N} $}
+             & \verb|fHc|
+             & net enthalpy flow due to convection
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:106"}{ 106 }
+                 \\
+    128
+             & \hypertarget{"v:128"}{ $ {\hat{n}^{d}}_{{A S}} $}
+             & \verb|fnd_AS|
+             & diffusional mass transfer in arc
              & \begin{lay}transport \end{lay}
              & $ mol \,s^{-1} \, $
-             & ['energy', 'mass']
-             & \hyperlink{"e:95"}{ 95 }
+             & []
+             & \hyperlink{"e:107"}{ 107 }
+                 \\
+    129
+             & \hypertarget{"v:129"}{ $ {\hat{n}^{d}}_{{N S}} $}
+             & \verb|fnd|
+             & net diffusional mass transfer
+             & \begin{lay}transport \end{lay}
+             & $ mol \,s^{-1} \, $
+             & []
+             & \hyperlink{"e:108"}{ 108 }
+                 \\
+    130
+             & \hypertarget{"v:130"}{ $ {\hat{H}^{d}}_{A} $}
+             & \verb|fHd_A|
+             & enthalpy flow due to mass diffusion
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:109"}{ 109 }
+                 \\
+    131
+             & \hypertarget{"v:131"}{ $ {\hat{H}^{d}}_{N} $}
+             & \verb|fHd|
+             & net enthalpy flow due to diffusion
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:110"}{ 110 }
+                 \\
+    135
+             & \hypertarget{"v:135"}{ $ {\hat{w}}_{A} $}
+             & \verb|fw_A|
+             & example of work flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:114"}{ 114 }
+                 \\
+    136
+             & \hypertarget{"v:136"}{ $ {\hat{w}}_{N} $}
+             & \verb|fw|
+             & net work flow
+             & \begin{lay}transport \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:115"}{ 115 }
                  \\
     10
              & \hypertarget{"v:10"}{ $ {F}_{{N S}, {A S}} $}
@@ -144,13 +207,31 @@ species
              & $  $
              & []
              & \\
+    137
+             & \hypertarget{"v:137"}{ $ {n^{o}}_{{N S}} $}
+             & \verb|no|
+             & initial condition for species mass
+             & \begin{lay}state \end{lay}
+             & $ mol \, $
+             & []
+             & \hyperlink{"e:118"}{ 118 }
+                 \\
+    138
+             & \hypertarget{"v:138"}{ $ {H^{o}}_{N} $}
+             & \verb|Ho|
+             & initial condition for enthalpy
+             & \begin{lay}state \end{lay}
+             & $ kg \,m^{2} \,s^{-2} \, $
+             & []
+             & \hyperlink{"e:120"}{ 120 }
+                 \\
     92
              & \hypertarget{"v:92"}{ $ {1}_{{N K}} $}
              & \verb|one_NK|
              & one with energy
              & \begin{lay}effort \end{lay}
              & $  $
-             & ['energy']
+             & []
              & \hyperlink{"e:75"}{ 75 }
                  \\
     79
@@ -159,7 +240,7 @@ species
              & molar concentration
              & \begin{lay}seconaryState \end{lay}
              & $ m^{-3} \,mol \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:62"}{ 62 }
                  \\
     81
@@ -168,7 +249,7 @@ species
              & mass in kg
              & \begin{lay}seconaryState \end{lay}
              & $ kg \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:64"}{ 64 }
                  \\
     82
@@ -177,7 +258,7 @@ species
              & density
              & \begin{lay}seconaryState \end{lay}
              & $ kg \,m^{-3} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:65"}{ 65 }
                  \\
     91
@@ -186,7 +267,7 @@ species
              & temperature in reactive systems
              & \begin{lay}conversion \end{lay}
              & $ K \, $
-             & ['energy']
+             & []
              & \hyperlink{"e:74"}{ 74 }
                  \\
     96
@@ -195,7 +276,7 @@ species
              & concentration in the reactive systems
              & \begin{lay}conversion \end{lay}
              & $ m^{-3} \,mol \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:78"}{ 78 }
                  \\
     112
@@ -204,7 +285,7 @@ species
              & extent of reaction
              & \begin{lay}conversion \end{lay}
              & $ m^{-3} \,mol \,s^{-1} \, $
-             & ['energy', 'mass']
+             & []
              & \hyperlink{"e:91"}{ 91 }
                  \\
     113
@@ -213,7 +294,7 @@ species
              & extended stoichiometry
              & \begin{lay}conversion \end{lay}
              & $  $
-             & ['energy']
+             & []
              & \hyperlink{"e:92"}{ 92 }
                  \\
     114
@@ -222,7 +303,25 @@ species
              & production term
              & \begin{lay}conversion \end{lay}
              & $ mol \,s^{-1} \, $
-             & ['mass']
+             & []
              & \hyperlink{"e:93"}{ 93 }
+                 \\
+    132
+             & \hypertarget{"v:132"}{ $ {\dot{n}}_{{N S}} $}
+             & \verb|dndt|
+             & species mass accumulation
+             & \begin{lay}diffState \end{lay}
+             & $ mol \,s^{-1} \, $
+             & []
+             & \hyperlink{"e:111"}{ 111 }
+                 \\
+    133
+             & \hypertarget{"v:133"}{ $ {\dot{H}}_{N} $}
+             & \verb|dHdt|
+             & differential enthalpy balance
+             & \begin{lay}diffState \end{lay}
+             & $ kg \,m^{2} \,s^{-3} \, $
+             & []
+             & \hyperlink{"e:116"}{ 116 }
                  \\
     \end{longtable}
