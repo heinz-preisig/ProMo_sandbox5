@@ -449,9 +449,9 @@
     "network": "macroscopic",
     "rhs": " Instantiate ( H , value )"
   },
-  "121": {
+  "122": {
     "lhs": "H",
     "network": "macroscopic",
-    "rhs": " Integral ( dHdt :: t in [ to , te ] )"
+    "rhs": " Integral ( dHdt :: t in [ to , te ] ) + Ho"
   }
 }

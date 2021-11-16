@@ -2627,10 +2627,11 @@ incidence_list.append( V_133 )
 incidence_list.append( V_2 )
 incidence_list.append( V_58 )
 incidence_list.append( V_59 )
-F_ID = "F_121"
-F_121 = onto.function( F_ID )
-F_121.is_function_of = incidence_list
-V_29.has_function.append( F_121 )
+incidence_list.append( V_138 )
+F_ID = "F_122"
+F_122 = onto.function( F_ID )
+F_122.is_function_of = incidence_list
+V_29.has_function.append( F_122 )
 #30
 
 V_30.has_function = []

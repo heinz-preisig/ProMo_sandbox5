@@ -539,10 +539,10 @@
     "network": "macroscopic",
     "rhs": "Set({H}_{N}, {\\#}_{})"
   },
-  "121": {
+  "122": {
     "variable_ID": 29,
     "lhs": "{H}_{N}",
     "network": "macroscopic",
-    "rhs": "\\int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \\, {\\dot{H}}_{N} \\enskip d\\,{t}_{}"
+    "rhs": "\\int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \\, {\\dot{H}}_{N} \\enskip d\\,{t}_{}  + {H^{o}}_{N}"
   }
 }

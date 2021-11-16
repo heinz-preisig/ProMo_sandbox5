@@ -539,10 +539,10 @@
     "network": "macroscopic",
     "rhs": "np.ones(np.shape(H)), value"
   },
-  "121": {
+  "122": {
     "variable_ID": 29,
     "lhs": "H",
     "network": "macroscopic",
-    "rhs": "Integral(dHdt,t,to,te)"
+    "rhs": "np.add(Integral(dHdt,t,to,te), Ho)"
   }
 }

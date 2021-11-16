@@ -280,7 +280,7 @@
     "29": {
       "aliases": "{'global_ID': ' V_29', 'python': 'H', 'cpp': 'H', 'matlab': 'H', 'latex': 'H', 'internal_code': 'H'}",
       "doc": "enthalpy",
-      "equations": "{13: {'rhs': ' V_19 O_0 V_22 O_4 V_21', 'type': 'generic', 'doc': 'enthalpy', 'network': 'physical', 'incidence_list': ['19', '21', '22']}, 121: {'rhs': ' O_9 D_0 V_133 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1', 'type': 'generic', 'doc': 'enthalpy', 'network': 'macroscopic', 'incidence_list': ['133', '2', '58', '59']}}",
+      "equations": "{13: {'rhs': ' V_19 O_0 V_22 O_4 V_21', 'type': 'generic', 'doc': 'enthalpy', 'network': 'physical', 'incidence_list': ['19', '21', '22']}, 122: {'rhs': ' O_9 D_0 V_133 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1 O_0 V_138', 'type': 'generic', 'doc': 'enthalpy', 'network': 'macroscopic', 'incidence_list': ['133', '138', '2', '58', '59']}}",
       "index_structures": "[1]",
       "label": "H",
       "network": "physical",
@@ -1537,6 +1537,6 @@
   },
   "Ontology_global_IDs": {
     "variable": 138,
-    "equation": 121
+    "equation": 122
   }
 }
