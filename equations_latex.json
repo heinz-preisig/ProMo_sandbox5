@@ -544,5 +544,47 @@
     "lhs": "{H}_{N}",
     "network": "macroscopic",
     "rhs": "\\int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \\, {\\dot{H}}_{N} \\enskip d\\,{t}_{}  + {H^{o}}_{N}"
+  },
+  "123": {
+    "variable_ID": 142,
+    "lhs": "{xo}_{N}",
+    "network": "control",
+    "rhs": "Set({x}_{N}, {\\#}_{})"
+  },
+  "125": {
+    "variable_ID": 148,
+    "lhs": "{s_{T}}_{A}",
+    "network": "macroscopic >>> control",
+    "rhs": "{F}_{N, A} \\stackrel{N}{\\,\\star\\,} \\left({T}_{N} \\, . \\, \\left( {T^{n}}_{N} \\right)^{-1}\\right)"
+  },
+  "126": {
+    "variable_ID": 149,
+    "lhs": "{s_{p}}_{A}",
+    "network": "macroscopic >>> control",
+    "rhs": "{F}_{N, A} \\stackrel{N}{\\,\\star\\,} \\left({p}_{N} \\, . \\, \\left( {p^{n}}_{N} \\right)^{-1}\\right)"
+  },
+  "127": {
+    "variable_ID": 152,
+    "lhs": "{s_{c}}_{A}",
+    "network": "macroscopic >>> control",
+    "rhs": "{F}_{A, {N S}} \\stackrel{{N S}}{\\,\\star\\,} \\left({c}_{{N S}} \\, . \\, \\left( {c^{n}}_{{N S}} \\right)^{-1}\\right)"
+  },
+  "128": {
+    "variable_ID": 153,
+    "lhs": "{u}_{A}",
+    "network": "control",
+    "rhs": "Stack\\left( {s_{T}}_{A},{s_{p}}_{A},{s_{c}}_{A} \\right)"
+  },
+  "130": {
+    "variable_ID": 155,
+    "lhs": "{\\dot{x}}_{D}",
+    "network": "control",
+    "rhs": "{A}_{N, D} \\stackrel{N}{\\,\\star\\,} {x}_{N}  + {B}_{A, D} \\stackrel{A}{\\,\\star\\,} {u}_{A}"
+  },
+  "131": {
+    "variable_ID": 141,
+    "lhs": "{x}_{N}",
+    "network": "control",
+    "rhs": "\\int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \\, {I}_{N, D} \\stackrel{D}{\\,\\star\\,} {\\dot{x}}_{D} \\enskip d\\,{t}_{}"
   }
 }

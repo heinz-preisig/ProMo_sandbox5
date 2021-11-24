@@ -453,5 +453,40 @@
     "lhs": "H",
     "network": "macroscopic",
     "rhs": " Integral ( dHdt :: t in [ to , te ] ) + Ho"
+  },
+  "123": {
+    "lhs": "xo",
+    "network": "control",
+    "rhs": " Instantiate ( x , value )"
+  },
+  "125": {
+    "lhs": "s_T",
+    "network": "macroscopic >>> control",
+    "rhs": " F_N_A | N | ( T . inv ( T_n ) )"
+  },
+  "126": {
+    "lhs": "s_p",
+    "network": "macroscopic >>> control",
+    "rhs": " F_N_A | N | ( p . inv ( p_n ) )"
+  },
+  "127": {
+    "lhs": "s_c",
+    "network": "macroscopic >>> control",
+    "rhs": " F_A_NS | N & S | ( c . inv ( c_n ) )"
+  },
+  "128": {
+    "lhs": "u",
+    "network": "control",
+    "rhs": " Stack ( s_T , s_p , s_c )"
+  },
+  "130": {
+    "lhs": "dxdt",
+    "network": "control",
+    "rhs": " A | N | x + B | A | u"
+  },
+  "131": {
+    "lhs": "x",
+    "network": "control",
+    "rhs": " Integral ( I_N_D | D | dxdt :: t in [ to , te ] )"
   }
 }

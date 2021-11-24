@@ -544,5 +544,47 @@
     "lhs": "H",
     "network": "macroscopic",
     "rhs": "Integral(dHdt,t,to,te) + Ho"
+  },
+  "123": {
+    "variable_ID": 142,
+    "lhs": "xo",
+    "network": "control",
+    "rhs": "Instantiate(x, value)"
+  },
+  "125": {
+    "variable_ID": 148,
+    "lhs": "s_T",
+    "network": "macroscopic >>> control",
+    "rhs": "( F_N_A )'  * (T .* inv(T_n))"
+  },
+  "126": {
+    "variable_ID": 149,
+    "lhs": "s_p",
+    "network": "macroscopic >>> control",
+    "rhs": "( F_N_A )'  * (p .* inv(p_n))"
+  },
+  "127": {
+    "variable_ID": 152,
+    "lhs": "s_c",
+    "network": "macroscopic >>> control",
+    "rhs": "F_A_NS * (c .* inv(c_n))"
+  },
+  "128": {
+    "variable_ID": 153,
+    "lhs": "u",
+    "network": "control",
+    "rhs": "Stack(s_T,s_p,s_c)"
+  },
+  "130": {
+    "variable_ID": 155,
+    "lhs": "dxdt",
+    "network": "control",
+    "rhs": "( A )'  * x + ( B )'  * u"
+  },
+  "131": {
+    "variable_ID": 141,
+    "lhs": "x",
+    "network": "control",
+    "rhs": "Integral(I_N_D * dxdt,t,to,te)"
   }
 }

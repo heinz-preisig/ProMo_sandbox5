@@ -14,7 +14,8 @@
         "node": [
           "frame",
           "state",
-          "constant"
+          "constant",
+          "diffState"
         ]
       },
       "children": [],
@@ -592,7 +593,7 @@
   },
   "rules": {
     "network_enable_adding_indices": {
-      "control": true,
+      "control": false,
       "fluid": false,
       "gas": false,
       "liquid": false,

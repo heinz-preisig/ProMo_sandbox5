@@ -544,5 +544,47 @@
     "lhs": "H",
     "network": "macroscopic",
     "rhs": "np.add(Integral(dHdt,t,to,te), Ho)"
+  },
+  "123": {
+    "variable_ID": 142,
+    "lhs": "xo",
+    "network": "control",
+    "rhs": "np.ones(np.shape(x)), value"
+  },
+  "125": {
+    "variable_ID": 148,
+    "lhs": "s_T",
+    "network": "macroscopic >>> control",
+    "rhs": "np.dot(np.transpose(F_N_A), (np.multiply(T, np.reciprocal(T_n))))"
+  },
+  "126": {
+    "variable_ID": 149,
+    "lhs": "s_p",
+    "network": "macroscopic >>> control",
+    "rhs": "np.dot(np.transpose(F_N_A), (np.multiply(p, np.reciprocal(p_n))))"
+  },
+  "127": {
+    "variable_ID": 152,
+    "lhs": "s_c",
+    "network": "macroscopic >>> control",
+    "rhs": "np.dot(F_A_NS, (np.multiply(c, np.reciprocal(c_n))))"
+  },
+  "128": {
+    "variable_ID": 153,
+    "lhs": "u",
+    "network": "control",
+    "rhs": "Stack(s_T,s_p,s_c)"
+  },
+  "130": {
+    "variable_ID": 155,
+    "lhs": "dxdt",
+    "network": "control",
+    "rhs": "np.add(np.dot(np.transpose(A), x), np.dot(np.transpose(B), u))"
+  },
+  "131": {
+    "variable_ID": 141,
+    "lhs": "x",
+    "network": "control",
+    "rhs": "Integral(np.dot(I_N_D, dxdt),t,to,te)"
   }
 }

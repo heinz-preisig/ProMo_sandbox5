@@ -377,5 +377,33 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{H}_{N} := \int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \, {\dot{H}}_{N} \enskip d\,{t}_{}  + {H^{o}}_{N}\end{eq} &
     \begin{lay}enthalpy\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:142"}{ 123 }\hypertarget{"e:123"}{  } &
+    \begin{eq}{xo}_{N} := Set({x}_{N}, {\#}_{})\end{eq} &
+    \begin{lay}initial state\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:148"}{ 125 }\hypertarget{"e:125"}{  } &
+    \begin{eq}{s_{T}}_{A} := {F}_{N, A} \stackrel{N}{\,\star\,} \left({T}_{N} \, . \, \left( {T^{n}}_{N} \right)^{-1}\right)\end{eq} &
+    \begin{lay}normed temperature signal\end{lay} &
+    \begin{lay}macroscopic >>> control\end{lay} \\
+\hyperlink{"v:149"}{ 126 }\hypertarget{"e:126"}{  } &
+    \begin{eq}{s_{p}}_{A} := {F}_{N, A} \stackrel{N}{\,\star\,} \left({p}_{N} \, . \, \left( {p^{n}}_{N} \right)^{-1}\right)\end{eq} &
+    \begin{lay}normed pressure signal\end{lay} &
+    \begin{lay}macroscopic >>> control\end{lay} \\
+\hyperlink{"v:152"}{ 127 }\hypertarget{"e:127"}{  } &
+    \begin{eq}{s_{c}}_{A} := {F}_{A, {N S}} \stackrel{{N S}}{\,\star\,} \left({c}_{{N S}} \, . \, \left( {c^{n}}_{{N S}} \right)^{-1}\right)\end{eq} &
+    \begin{lay}noremed concentration signal vector\end{lay} &
+    \begin{lay}macroscopic >>> control\end{lay} \\
+\hyperlink{"v:153"}{ 128 }\hypertarget{"e:128"}{  } &
+    \begin{eq}{u}_{A} := Stack\left( {s_{T}}_{A},{s_{p}}_{A},{s_{c}}_{A} \right)\end{eq} &
+    \begin{lay}controller input\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:155"}{ 130 }\hypertarget{"e:130"}{  } &
+    \begin{eq}{\dot{x}}_{D} := {A}_{N, D} \stackrel{N}{\,\star\,} {x}_{N}  + {B}_{A, D} \stackrel{A}{\,\star\,} {u}_{A}\end{eq} &
+    \begin{lay}controller dynamics\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:141"}{ 131 }\hypertarget{"e:131"}{  } &
+    \begin{eq}{x}_{N} := \int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \, {I}_{N, D} \stackrel{D}{\,\star\,} {\dot{x}}_{D} \enskip d\,{t}_{}\end{eq} &
+    \begin{lay}state\end{lay} &
+    \begin{lay}control\end{lay} \\
 \hline
 \end{longtable}
