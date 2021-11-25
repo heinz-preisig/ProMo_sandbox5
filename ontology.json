@@ -15,7 +15,8 @@
           "frame",
           "state",
           "constant",
-          "diffState"
+          "diffState",
+          "algebraic"
         ]
       },
       "children": [],
