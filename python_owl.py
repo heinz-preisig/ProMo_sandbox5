@@ -2804,6 +2804,50 @@ V_156.temperature = [ units[4] ]
 V_156.current = [ units[5] ]
 V_156.light = [ units[6] ]
 
+# 157
+label = variables[157]["label"]
+network = variables[157]["network"]
+variable_type = variables[157]["type"]
+label = variables[157]["label"]
+doc = variables[157]["doc"]
+onto_ID = "V_157"
+V_157 = onto.ProMoVar( onto_ID )
+V_157.label = label
+V_157.network = network
+V_157.variable_type = variable_type
+V_157.comment = doc
+
+units = variables[157]["units"].asList()
+V_157.time = [ units[0] ]
+V_157.length = [ units[1] ]
+V_157.amount = [ units[2] ]
+V_157.mass = [ units[3] ]
+V_157.temperature = [ units[4] ]
+V_157.current = [ units[5] ]
+V_157.light = [ units[6] ]
+
+# 158
+label = variables[158]["label"]
+network = variables[158]["network"]
+variable_type = variables[158]["type"]
+label = variables[158]["label"]
+doc = variables[158]["doc"]
+onto_ID = "V_158"
+V_158 = onto.ProMoVar( onto_ID )
+V_158.label = label
+V_158.network = network
+V_158.variable_type = variable_type
+V_158.comment = doc
+
+units = variables[158]["units"].asList()
+V_158.time = [ units[0] ]
+V_158.length = [ units[1] ]
+V_158.amount = [ units[2] ]
+V_158.mass = [ units[3] ]
+V_158.temperature = [ units[4] ]
+V_158.current = [ units[5] ]
+V_158.light = [ units[6] ]
+
 # functions assignments
 
 #1
@@ -3918,5 +3962,11 @@ V_155.has_function.append( F_130 )
 #156
 
 V_156.has_function = []
+#157
+
+V_157.has_function = []
+#158
+
+V_158.has_function = []
 
 onto.save("variables.owl")

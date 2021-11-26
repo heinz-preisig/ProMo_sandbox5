@@ -363,7 +363,7 @@
           },
           "right": {
             "state": "re-connect_arc",
-            "output": "re-direct arc"
+            "output": "-"
           },
           "cursor": "TC_L_blank-R_recon"
         },
@@ -385,7 +385,7 @@
           },
           "right": {
             "state": "re-connect_arc",
-            "output": "re-direct arc"
+            "output": "-"
           },
           "cursor": "TC_L_blank-R_recon"
         },

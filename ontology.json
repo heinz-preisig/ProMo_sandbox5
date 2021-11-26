@@ -16,7 +16,9 @@
           "state",
           "constant",
           "diffState",
-          "algebraic"
+          "algebraic",
+          "input",
+          "output"
         ]
       },
       "children": [],

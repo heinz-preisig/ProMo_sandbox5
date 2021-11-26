@@ -1462,7 +1462,7 @@
       "network": "control",
       "port_variable": "False",
       "tokens": "[]",
-      "type": "input",
+      "type": "state",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "155": {
@@ -1488,30 +1488,6 @@
       "tokens": "[]",
       "type": "constant",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
-    },
-    "157": {
-      "aliases": "{'global_ID': ' V_157', 'python': 'u_s', 'cpp': 'u_s', 'matlab': 'u_s', 'latex': 'u_s', 'internal_code': 'u_s'}",
-      "doc": "setpoint in terms of the measurement",
-      "equations": "{}",
-      "index_structures": "[2]",
-      "label": "u_s",
-      "network": "control",
-      "port_variable": "True",
-      "tokens": "[]",
-      "type": "constant",
-      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
-    },
-    "158": {
-      "aliases": "{'global_ID': ' V_158', 'python': 'T_I', 'cpp': 'T_I', 'matlab': 'T_I', 'latex': 'T_I', 'internal_code': 'T_I'}",
-      "doc": "integrator time constant",
-      "equations": "{}",
-      "index_structures": "[1]",
-      "label": "T_I",
-      "network": "control",
-      "port_variable": "True",
-      "tokens": "[]",
-      "type": "constant",
-      "units": "[1, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -1740,7 +1716,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 158,
+    "variable": 156,
     "equation": 131
   }
 }

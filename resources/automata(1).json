@@ -362,10 +362,10 @@
             "output": "-"
           },
           "right": {
-            "state": "re-connect_arc",
-            "output": "re-direct arc"
+            "state": "-",
+            "output": "-"
           },
-          "cursor": "TC_L_blank-R_recon"
+          "cursor": "-"
         },
         "('arc_edge', 'root', 'enabled')": {
           "left": {
@@ -384,10 +384,10 @@
             "output": "-"
           },
           "right": {
-            "state": "re-connect_arc",
-            "output": "re-direct arc"
+            "state": "-",
+            "output": "-"
           },
-          "cursor": "TC_L_blank-R_recon"
+          "cursor": "-"
         },
         "('connector', 'name', '-')": {
           "left": {
@@ -2084,6 +2084,17 @@
           },
           "cursor": "-"
         },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "inject"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "BR_inject_token"
+        },
         "('node_viewed', 'root', '-')": {
           "left": {
             "state": "-",
@@ -2105,17 +2116,6 @@
             "output": "-"
           },
           "cursor": "TR_enter"
-        },
-        "('node_simple', 'root', 'enabled')": {
-          "left": {
-            "state": "-",
-            "output": "inject"
-          },
-          "right": {
-            "state": "-",
-            "output": "-"
-          },
-          "cursor": "BR_inject_token"
         },
         "('arc_edge', 'head', '-')": {
           "left": {
