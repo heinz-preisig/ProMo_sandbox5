@@ -1512,6 +1512,18 @@
       "tokens": "[]",
       "type": "constant",
       "units": "[1, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "159": {
+      "aliases": "{'global_ID': ' V_159', 'python': 'X', 'cpp': 'X', 'matlab': 'X', 'latex': 'X', 'internal_code': 'X'}",
+      "doc": "state for nodes with mass and energy",
+      "equations": "{132: {'rhs': ' F_19 D_0 V_18 D_7 V_29 D_1', 'type': 'generic', 'doc': 'state for nodes with mass and energy', 'network': 'macroscopic', 'incidence_list': ['18', '29']}}",
+      "index_structures": "[]",
+      "label": "X",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "state",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -1740,7 +1752,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 158,
-    "equation": 131
+    "variable": 159,
+    "equation": 132
   }
 }

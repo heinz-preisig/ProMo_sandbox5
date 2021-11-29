@@ -586,5 +586,11 @@
     "lhs": "{x}_{N}",
     "network": "control",
     "rhs": "\\int_{ {t^{o}}_{} }^{ {t^{e}}_{} } \\, {I}_{N, D} \\stackrel{D}{\\,\\star\\,} {\\dot{x}}_{D} \\enskip d\\,{t}_{}"
+  },
+  "132": {
+    "variable_ID": 159,
+    "lhs": "{X}_{}",
+    "network": "macroscopic",
+    "rhs": "MixedStack\\left( {n}_{{N S}},{H}_{N} \\right)"
   }
 }

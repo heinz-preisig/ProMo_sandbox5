@@ -586,5 +586,11 @@
     "lhs": " V_141",
     "network": "control",
     "rhs": " O_9 D_0 V_156  O_5  I_9 O_5  V_155 D_8 V_2 O_14 D_2 V_58 D_7 V_59 D_3 D_1"
+  },
+  "132": {
+    "variable_ID": 159,
+    "lhs": " V_159",
+    "network": "macroscopic",
+    "rhs": " F_19 D_0 V_18 D_7 V_29 D_1"
   }
 }

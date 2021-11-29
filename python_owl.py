@@ -2848,6 +2848,28 @@ V_158.temperature = [ units[4] ]
 V_158.current = [ units[5] ]
 V_158.light = [ units[6] ]
 
+# 159
+label = variables[159]["label"]
+network = variables[159]["network"]
+variable_type = variables[159]["type"]
+label = variables[159]["label"]
+doc = variables[159]["doc"]
+onto_ID = "V_159"
+V_159 = onto.ProMoVar( onto_ID )
+V_159.label = label
+V_159.network = network
+V_159.variable_type = variable_type
+V_159.comment = doc
+
+units = variables[159]["units"].asList()
+V_159.time = [ units[0] ]
+V_159.length = [ units[1] ]
+V_159.amount = [ units[2] ]
+V_159.mass = [ units[3] ]
+V_159.temperature = [ units[4] ]
+V_159.current = [ units[5] ]
+V_159.light = [ units[6] ]
+
 # functions assignments
 
 #1
@@ -3968,5 +3990,15 @@ V_157.has_function = []
 #158
 
 V_158.has_function = []
+#159
+
+V_159.has_function = []
+incidence_list = []
+incidence_list.append( V_18 )
+incidence_list.append( V_29 )
+F_ID = "F_132"
+F_132 = onto.function( F_ID )
+F_132.is_function_of = incidence_list
+V_159.has_function.append( F_132 )
 
 onto.save("variables.owl")

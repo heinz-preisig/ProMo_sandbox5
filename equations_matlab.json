@@ -586,5 +586,11 @@
     "lhs": "x",
     "network": "control",
     "rhs": "Integral(I_N_D * dxdt,t,to,te)"
+  },
+  "132": {
+    "variable_ID": 159,
+    "lhs": "X",
+    "network": "macroscopic",
+    "rhs": "MixedStack(n,H)"
   }
 }

@@ -96,3 +96,4 @@
 128 :: u =  Stack ( s_T , s_p , s_c )
 130 :: dxdt =  A | N | x + B | A | u
 131 :: x =  Integral ( I_N_D | D | dxdt :: t in [ to , te ] )
+132 :: X =  MixedStack ( n , H )

@@ -488,5 +488,10 @@
     "lhs": "x",
     "network": "control",
     "rhs": " Integral ( I_N_D | D | dxdt :: t in [ to , te ] )"
+  },
+  "132": {
+    "lhs": "X",
+    "network": "macroscopic",
+    "rhs": " MixedStack ( n , H )"
   }
 }
