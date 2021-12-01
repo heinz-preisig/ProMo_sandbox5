@@ -97,3 +97,7 @@
 130 :: dxdt =  A | N | x + B | A | u
 131 :: x =  Integral ( I_N_D | D | dxdt :: t in [ to , te ] )
 132 :: X =  MixedStack ( n , H )
+133 :: cp =  Instantiate ( cp , value )
+134 :: cv =  Instantiate ( cv , value )
+135 :: chem_potential_left =  left ( chem_potential )
+136 :: chem_potential_right =  right ( chem_potential )

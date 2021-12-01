@@ -592,5 +592,29 @@
     "lhs": "{X}_{}",
     "network": "macroscopic",
     "rhs": "MixedStack\\left( {n}_{{N S}},{H}_{N} \\right)"
+  },
+  "133": {
+    "variable_ID": 43,
+    "lhs": "{c_{p}}_{S}",
+    "network": "material",
+    "rhs": "Set({c_{p}}_{S}, {\\#}_{})"
+  },
+  "134": {
+    "variable_ID": 44,
+    "lhs": "{c_{v}}_{S}",
+    "network": "material",
+    "rhs": "Set({c_{v}}_{S}, {\\#}_{})"
+  },
+  "135": {
+    "variable_ID": 160,
+    "lhs": "{\\mu^{\\alpha}}_{{N S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\mu}_{{N S}}^{-\\epsilon}"
+  },
+  "136": {
+    "variable_ID": 161,
+    "lhs": "{\\mu^{\\beta}}_{{N S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\mu}_{{N S}}^{+\\epsilon}"
   }
 }

@@ -592,5 +592,29 @@
     "lhs": " V_159",
     "network": "macroscopic",
     "rhs": " F_19 D_0 V_18 D_7 V_29 D_1"
+  },
+  "133": {
+    "variable_ID": 43,
+    "lhs": " V_43",
+    "network": "material",
+    "rhs": " O_11 D_0 V_43 D_7 V_3 D_1"
+  },
+  "134": {
+    "variable_ID": 44,
+    "lhs": " V_44",
+    "network": "material",
+    "rhs": " O_11 D_0 V_44 D_7 V_3 D_1"
+  },
+  "135": {
+    "variable_ID": 160,
+    "lhs": " V_160",
+    "network": "gas >>> liquid",
+    "rhs": " F_13 D_0 V_24 D_1"
+  },
+  "136": {
+    "variable_ID": 161,
+    "lhs": " V_161",
+    "network": "gas >>> liquid",
+    "rhs": " F_14 D_0 V_24 D_1"
   }
 }

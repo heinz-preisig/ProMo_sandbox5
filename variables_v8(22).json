@@ -1526,7 +1526,7 @@
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     },
     "160": {
-      "aliases": "{'global_ID': ' V_160', 'python': 'chem_potential_left', 'cpp': 'chem_potential_left', 'matlab': 'chem_potential_left', 'latex': '\\\\mu^{\\\\alpha}', 'internal_code': 'chem_potential_left'}",
+      "aliases": "{'global_ID': ' V_160', 'python': 'chem_potential_left', 'cpp': 'chem_potential_left', 'matlab': 'chem_potential_left', 'latex': 'chem_potential_left', 'internal_code': 'chem_potential_left'}",
       "doc": "left chemical potential",
       "equations": "{135: {'rhs': ' F_13 D_0 V_24 D_1', 'type': 'generic', 'doc': 'left chemical potential', 'network': 'gas >>> liquid', 'incidence_list': ['24']}}",
       "index_structures": "[5]",
@@ -1538,7 +1538,7 @@
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
     "161": {
-      "aliases": "{'global_ID': ' V_161', 'python': 'chem_potential_right', 'cpp': 'chem_potential_right', 'matlab': 'chem_potential_right', 'latex': '\\\\mu^{\\\\beta}', 'internal_code': 'chem_potential_right'}",
+      "aliases": "{'global_ID': ' V_161', 'python': 'chem_potential_right', 'cpp': 'chem_potential_right', 'matlab': 'chem_potential_right', 'latex': 'chem_potential_right', 'internal_code': 'chem_potential_right'}",
       "doc": "right chemical potential",
       "equations": "{136: {'rhs': ' F_14 D_0 V_24 D_1', 'type': 'generic', 'doc': 'right chemical potential', 'network': 'gas >>> liquid', 'incidence_list': ['24']}}",
       "index_structures": "[5]",

@@ -493,5 +493,25 @@
     "lhs": "X",
     "network": "macroscopic",
     "rhs": " MixedStack ( n , H )"
+  },
+  "133": {
+    "lhs": "cp",
+    "network": "material",
+    "rhs": " Instantiate ( cp , value )"
+  },
+  "134": {
+    "lhs": "cv",
+    "network": "material",
+    "rhs": " Instantiate ( cv , value )"
+  },
+  "135": {
+    "lhs": "chem_potential_left",
+    "network": "gas >>> liquid",
+    "rhs": " left ( chem_potential )"
+  },
+  "136": {
+    "lhs": "chem_potential_right",
+    "network": "gas >>> liquid",
+    "rhs": " right ( chem_potential )"
   }
 }
