@@ -37,7 +37,7 @@
   },
   "9": {
     "variable_ID": 24,
-    "lhs": "chem_potential",
+    "lhs": "chem_pot",
     "network": "physical",
     "rhs": "ParDiff(U, n)"
   },
@@ -141,19 +141,19 @@
     "variable_ID": 49,
     "lhs": "kc_x",
     "network": "material",
-    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_potential))), np.reciprocal(V)), ParDiff(U, p)), v_x)"
+    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_pot))), np.reciprocal(V)), ParDiff(U, p)), v_x)"
   },
   "33": {
     "variable_ID": 50,
     "lhs": "kc_y",
     "network": "material",
-    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_potential))), np.reciprocal(V)), ParDiff(U, p)), v_y)"
+    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_pot))), np.reciprocal(V)), ParDiff(U, p)), v_y)"
   },
   "34": {
     "variable_ID": 51,
     "lhs": "kc_z",
     "network": "material",
-    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_potential))), np.reciprocal(V)), ParDiff(U, p)), v_z)"
+    "rhs": "ganger(ganger(ganger((blockReduce(Mm, S, N_x_S, np.reciprocal(chem_pot))), np.reciprocal(V)), ParDiff(U, p)), v_z)"
   },
   "35": {
     "variable_ID": 52,
@@ -165,19 +165,19 @@
     "variable_ID": 53,
     "lhs": "kd_x",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chem_potential), (khatriRao(v_x, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_potential), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chem_pot), (khatriRao(v_x, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_pot), [N_x_S])), [N_x_S])))"
   },
   "37": {
     "variable_ID": 54,
     "lhs": "kd_y",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chem_potential), (khatriRao(v_y, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_potential), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chem_pot), (khatriRao(v_y, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_pot), [N_x_S])), [N_x_S])))"
   },
   "38": {
     "variable_ID": 55,
     "lhs": "kd_z",
     "network": "material",
-    "rhs": "ganger(np.reciprocal(chem_potential), (khatriRao(v_z, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_potential), [N_x_S])), [N_x_S])))"
+    "rhs": "ganger(np.reciprocal(chem_pot), (khatriRao(v_z, [N], (khatriRao(np.reciprocal(V), [N], ParDiff(U, chem_pot), [N_x_S])), [N_x_S])))"
   },
   "39": {
     "variable_ID": 56,
@@ -477,7 +477,7 @@
     "variable_ID": 128,
     "lhs": "fnd_AS",
     "network": "macroscopic",
-    "rhs": "np.dot(np.transpose(ganger(khatriRao(Ayz, [N], np.negative(kd_x), [N_x_S]), F_NS_AS)), chem_potential)"
+    "rhs": "np.dot(np.transpose(ganger(khatriRao(Ayz, [N], np.negative(kd_x), [N_x_S]), F_NS_AS)), chem_pot)"
   },
   "108": {
     "variable_ID": 129,
@@ -607,14 +607,152 @@
   },
   "135": {
     "variable_ID": 160,
-    "lhs": "chem_potential_left",
+    "lhs": "chem_pot_left",
     "network": "gas >>> liquid",
-    "rhs": "left(chem_potential)"
+    "rhs": "left(chem_pot)"
   },
   "136": {
     "variable_ID": 161,
-    "lhs": "chem_potential_right",
+    "lhs": "chem_pot_right",
     "network": "gas >>> liquid",
-    "rhs": "right(chem_potential)"
+    "rhs": "right(chem_pot)"
+  },
+  "137": {
+    "variable_ID": 160,
+    "lhs": "chem_pot_left",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(chem_pot_left, chem_pot_right), chem_pot_left)"
+  },
+  "138": {
+    "variable_ID": 161,
+    "lhs": "chem_pot_right",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(chem_pot_right, chem_pot_left), chem_pot_right)"
+  },
+  "139": {
+    "variable_ID": 162,
+    "lhs": "fnd_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": "left(fnd_AS)"
+  },
+  "140": {
+    "variable_ID": 163,
+    "lhs": "fnd_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": "right(fnd_AS)"
+  },
+  "141": {
+    "variable_ID": 162,
+    "lhs": "fnd_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(fnd_AS_left, fnd_AS_right), fnd_AS_left)"
+  },
+  "142": {
+    "variable_ID": 163,
+    "lhs": "fnd_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(fnd_AS_left, fnd_AS_right), fnd_AS_right)"
+  },
+  "143": {
+    "variable_ID": 164,
+    "lhs": "T_left",
+    "network": "gas >>> liquid",
+    "rhs": "left(T)"
+  },
+  "144": {
+    "variable_ID": 165,
+    "lhs": "T_right",
+    "network": "gas >>> liquid",
+    "rhs": "right(T)"
+  },
+  "145": {
+    "variable_ID": 164,
+    "lhs": "T_left",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(T_left, T_right), T_left)"
+  },
+  "146": {
+    "variable_ID": 165,
+    "lhs": "T_right",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(T_left, T_right), T_right)"
+  },
+  "147": {
+    "variable_ID": 166,
+    "lhs": "p_left",
+    "network": "gas >>> liquid",
+    "rhs": "left(p)"
+  },
+  "148": {
+    "variable_ID": 167,
+    "lhs": "p_right",
+    "network": "gas >>> liquid",
+    "rhs": "right(p)"
+  },
+  "150": {
+    "variable_ID": 167,
+    "lhs": "p_right",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(p_left, p_right), p_right)"
+  },
+  "151": {
+    "variable_ID": 166,
+    "lhs": "p_left",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(p_left, p_right), p_left)"
+  },
+  "152": {
+    "variable_ID": 168,
+    "lhs": "fnc_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": "left(fnc_AS)"
+  },
+  "153": {
+    "variable_ID": 169,
+    "lhs": "fnc_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": "right(fnc_AS)"
+  },
+  "154": {
+    "variable_ID": 168,
+    "lhs": "fnc_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(fnc_AS_left, fnc_AS_right), fnc_AS_left)"
+  },
+  "155": {
+    "variable_ID": 169,
+    "lhs": "fnc_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": "Root(np.subtract(fnc_AS_left, fnc_AS_right), fnc_AS_right)"
+  },
+  "160": {
+    "variable_ID": 174,
+    "lhs": "fq_A",
+    "network": "macroscopic",
+    "rhs": "np.dot(np.transpose(ganger(ganger(A, kq), F)), T)"
+  },
+  "161": {
+    "variable_ID": 175,
+    "lhs": "fq",
+    "network": "macroscopic",
+    "rhs": "np.dot(F, fq_A)"
+  },
+  "162": {
+    "variable_ID": 176,
+    "lhs": "fq_A_x",
+    "network": "macroscopic",
+    "rhs": "np.dot(np.transpose(ganger(ganger(Ayz, kq_x), F)), T)"
+  },
+  "163": {
+    "variable_ID": 177,
+    "lhs": "fq_x",
+    "network": "macroscopic",
+    "rhs": "np.dot(F, fq_A_x)"
+  },
+  "164": {
+    "variable_ID": 133,
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": "np.add(np.add(np.add(fHc, fHd), fq_x), fw)"
   }
 }

@@ -30,7 +30,7 @@
     "rhs": " ParDiff ( U , S )"
   },
   "9": {
-    "lhs": "chem_potential",
+    "lhs": "chem_pot",
     "network": "physical",
     "rhs": " ParDiff ( U , n )"
   },
@@ -117,17 +117,17 @@
   "32": {
     "lhs": "kc_x",
     "network": "material",
-    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
+    "rhs": " ( Mm | S in N & S | inv ( chem_pot ) ) . inv ( V ) . ParDiff ( U , p ) . v_x"
   },
   "33": {
     "lhs": "kc_y",
     "network": "material",
-    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
+    "rhs": " ( Mm | S in N & S | inv ( chem_pot ) ) . inv ( V ) . ParDiff ( U , p ) . v_y"
   },
   "34": {
     "lhs": "kc_z",
     "network": "material",
-    "rhs": " ( Mm | S in N & S | inv ( chem_potential ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
+    "rhs": " ( Mm | S in N & S | inv ( chem_pot ) ) . inv ( V ) . ParDiff ( U , p ) . v_z"
   },
   "35": {
     "lhs": "kc",
@@ -137,17 +137,17 @@
   "36": {
     "lhs": "kd_x",
     "network": "material",
-    "rhs": " inv ( chem_potential ) . ( v_x : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+    "rhs": " inv ( chem_pot ) . ( v_x : ( inv ( V ) : ParDiff ( U , chem_pot ) ) )"
   },
   "37": {
     "lhs": "kd_y",
     "network": "material",
-    "rhs": " inv ( chem_potential ) . ( v_y : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+    "rhs": " inv ( chem_pot ) . ( v_y : ( inv ( V ) : ParDiff ( U , chem_pot ) ) )"
   },
   "38": {
     "lhs": "kd_z",
     "network": "material",
-    "rhs": " inv ( chem_potential ) . ( v_z : ( inv ( V ) : ParDiff ( U , chem_potential ) ) )"
+    "rhs": " inv ( chem_pot ) . ( v_z : ( inv ( V ) : ParDiff ( U , chem_pot ) ) )"
   },
   "39": {
     "lhs": "kd",
@@ -397,7 +397,7 @@
   "107": {
     "lhs": "fnd_AS",
     "network": "macroscopic",
-    "rhs": " Ayz : neg ( kd_x ) . F_NS_AS | N & S | chem_potential"
+    "rhs": " Ayz : neg ( kd_x ) . F_NS_AS | N & S | chem_pot"
   },
   "108": {
     "lhs": "fnd",
@@ -505,13 +505,128 @@
     "rhs": " Instantiate ( cv , value )"
   },
   "135": {
-    "lhs": "chem_potential_left",
+    "lhs": "chem_pot_left",
     "network": "gas >>> liquid",
-    "rhs": " left ( chem_potential )"
+    "rhs": " left ( chem_pot )"
   },
   "136": {
-    "lhs": "chem_potential_right",
+    "lhs": "chem_pot_right",
     "network": "gas >>> liquid",
-    "rhs": " right ( chem_potential )"
+    "rhs": " right ( chem_pot )"
+  },
+  "137": {
+    "lhs": "chem_pot_left",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( chem_pot_left - chem_pot_right , chem_pot_left )"
+  },
+  "138": {
+    "lhs": "chem_pot_right",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( chem_pot_right - chem_pot_left , chem_pot_right )"
+  },
+  "139": {
+    "lhs": "fnd_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": " left ( fnd_AS )"
+  },
+  "140": {
+    "lhs": "fnd_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": " right ( fnd_AS )"
+  },
+  "141": {
+    "lhs": "fnd_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( fnd_AS_left - fnd_AS_right , fnd_AS_left )"
+  },
+  "142": {
+    "lhs": "fnd_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( fnd_AS_left - fnd_AS_right , fnd_AS_right )"
+  },
+  "143": {
+    "lhs": "T_left",
+    "network": "gas >>> liquid",
+    "rhs": " left ( T )"
+  },
+  "144": {
+    "lhs": "T_right",
+    "network": "gas >>> liquid",
+    "rhs": " right ( T )"
+  },
+  "145": {
+    "lhs": "T_left",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( T_left - T_right , T_left )"
+  },
+  "146": {
+    "lhs": "T_right",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( T_left - T_right , T_right )"
+  },
+  "147": {
+    "lhs": "p_left",
+    "network": "gas >>> liquid",
+    "rhs": " left ( p )"
+  },
+  "148": {
+    "lhs": "p_right",
+    "network": "gas >>> liquid",
+    "rhs": " right ( p )"
+  },
+  "150": {
+    "lhs": "p_right",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( p_left - p_right , p_right )"
+  },
+  "151": {
+    "lhs": "p_left",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( p_left - p_right , p_left )"
+  },
+  "152": {
+    "lhs": "fnc_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": " left ( fnc_AS )"
+  },
+  "153": {
+    "lhs": "fnc_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": " right ( fnc_AS )"
+  },
+  "154": {
+    "lhs": "fnc_AS_left",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( fnc_AS_left - fnc_AS_right , fnc_AS_left )"
+  },
+  "155": {
+    "lhs": "fnc_AS_right",
+    "network": "gas >>> liquid",
+    "rhs": " Root ( fnc_AS_left - fnc_AS_right , fnc_AS_right )"
+  },
+  "160": {
+    "lhs": "fq_A",
+    "network": "macroscopic",
+    "rhs": " A . kq . F | N | T"
+  },
+  "161": {
+    "lhs": "fq",
+    "network": "macroscopic",
+    "rhs": " F | A | fq_A"
+  },
+  "162": {
+    "lhs": "fq_A_x",
+    "network": "macroscopic",
+    "rhs": " Ayz . kq_x . F | N | T"
+  },
+  "163": {
+    "lhs": "fq_x",
+    "network": "macroscopic",
+    "rhs": " F | A | fq_A_x"
+  },
+  "164": {
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": " fHc + fHd + fq_x + fw"
   }
 }

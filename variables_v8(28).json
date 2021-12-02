@@ -1550,7 +1550,7 @@
       "units": "[-2, 2, -1, 1, 0, 0, 0, 0]"
     },
     "162": {
-      "aliases": "{'global_ID': ' V_162', 'python': 'fnd_AS_left', 'cpp': 'fnd_AS_left', 'matlab': '\\\\hat', 'latex': '\\\\hat{q}^{-\\\\epsilon}', 'internal_code': 'fnd_AS_left'}",
+      "aliases": "{'global_ID': ' V_162', 'python': 'fnd_AS_left', 'cpp': 'fnd_AS_left', 'matlab': '\\\\hat', 'latex': '\\\\hat{q}^{-\\\\eps}', 'internal_code': 'fnd_AS_left'}",
       "doc": "left diffusional mass flow",
       "equations": "{139: {'rhs': ' F_13 D_0 V_128 D_1', 'type': 'generic', 'doc': 'left diffusional mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['128']}, 141: {'rhs': ' F_18 D_0 V_162 O_1 V_163 D_7 V_162 D_1', 'type': 'generic', 'doc': 'left diffusional mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['162', '162', '163']}}",
       "index_structures": "[6]",
@@ -1562,7 +1562,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "163": {
-      "aliases": "{'global_ID': ' V_163', 'python': 'fnd_AS_right', 'cpp': 'fnd_AS_right', 'matlab': 'fnd_AS_right', 'latex': '\\\\hat{q}^{+\\\\epsilon}', 'internal_code': 'fnd_AS_right'}",
+      "aliases": "{'global_ID': ' V_163', 'python': 'fnd_AS_right', 'cpp': 'fnd_AS_right', 'matlab': 'fnd_AS_right', 'latex': '\\\\hat{q}^{+\\\\eps}', 'internal_code': 'fnd_AS_right'}",
       "doc": "right diffusional mass flow",
       "equations": "{140: {'rhs': ' F_14 D_0 V_128 D_1', 'type': 'generic', 'doc': 'right diffusional mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['128']}, 142: {'rhs': ' F_18 D_0 V_162 O_1 V_163 D_7 V_163 D_1', 'type': 'generic', 'doc': 'right diffusional mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['162', '163', '163']}}",
       "index_structures": "[6]",
@@ -1574,7 +1574,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "164": {
-      "aliases": "{'global_ID': ' V_164', 'python': 'T_left', 'cpp': 'T_left', 'matlab': 'T_left', 'latex': 'T^{-\\\\epsilon}', 'internal_code': 'T_left'}",
+      "aliases": "{'global_ID': ' V_164', 'python': 'T_left', 'cpp': 'T_left', 'matlab': 'T_left', 'latex': 'T^{-\\\\eps}', 'internal_code': 'T_left'}",
       "doc": "temparture left",
       "equations": "{143: {'rhs': ' F_13 D_0 V_23 D_1', 'type': 'generic', 'doc': 'temparture left', 'network': 'gas >>> liquid', 'incidence_list': ['23']}, 145: {'rhs': ' F_18 D_0 V_164 O_1 V_165 D_7 V_164 D_1', 'type': 'generic', 'doc': 'temparture left', 'network': 'gas >>> liquid', 'incidence_list': ['164', '164', '165']}}",
       "index_structures": "[1]",
@@ -1586,7 +1586,7 @@
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
     "165": {
-      "aliases": "{'global_ID': ' V_165', 'python': 'T_right', 'cpp': 'T_right', 'matlab': 'T_right', 'latex': 'T^{+\\\\epsilon}', 'internal_code': 'T_right'}",
+      "aliases": "{'global_ID': ' V_165', 'python': 'T_right', 'cpp': 'T_right', 'matlab': 'T_right', 'latex': 'T^{+\\\\eps}', 'internal_code': 'T_right'}",
       "doc": "right temperature",
       "equations": "{144: {'rhs': ' F_14 D_0 V_23 D_1', 'type': 'generic', 'doc': 'right temperature', 'network': 'gas >>> liquid', 'incidence_list': ['23']}, 146: {'rhs': ' F_18 D_0 V_164 O_1 V_165 D_7 V_165 D_1', 'type': 'generic', 'doc': 'right temperature', 'network': 'gas >>> liquid', 'incidence_list': ['164', '165', '165']}}",
       "index_structures": "[1]",
@@ -1598,7 +1598,7 @@
       "units": "[0, 0, 0, 0, 1, 0, 0, 0]"
     },
     "166": {
-      "aliases": "{'global_ID': ' V_166', 'python': 'p_left', 'cpp': 'p_left', 'matlab': 'p_left', 'latex': 'p^{-\\\\epsilon}', 'internal_code': 'p_left'}",
+      "aliases": "{'global_ID': ' V_166', 'python': 'p_left', 'cpp': 'p_left', 'matlab': 'p_left', 'latex': 'p^{-\\\\eps}', 'internal_code': 'p_left'}",
       "doc": "left pressure",
       "equations": "{147: {'rhs': ' F_13 D_0 V_22 D_1', 'type': 'generic', 'doc': 'left pressure', 'network': 'gas >>> liquid', 'incidence_list': ['22']}, 151: {'rhs': ' F_18 D_0 V_166 O_1 V_167 D_7 V_166 D_1', 'type': 'generic', 'doc': 'left pressure', 'network': 'gas >>> liquid', 'incidence_list': ['166', '166', '167']}}",
       "index_structures": "[1]",
@@ -1610,7 +1610,7 @@
       "units": "[-2, -1, 0, 1, 0, 0, 0, 0]"
     },
     "167": {
-      "aliases": "{'global_ID': ' V_167', 'python': 'p_right', 'cpp': 'p_right', 'matlab': 'p_right', 'latex': 'p^{+\\\\epsilon}', 'internal_code': 'p_right'}",
+      "aliases": "{'global_ID': ' V_167', 'python': 'p_right', 'cpp': 'p_right', 'matlab': 'p_right', 'latex': 'p^{+\\\\eps}', 'internal_code': 'p_right'}",
       "doc": "right pressure",
       "equations": "{148: {'rhs': ' F_14 D_0 V_22 D_1', 'type': 'generic', 'doc': 'right pressure', 'network': 'gas >>> liquid', 'incidence_list': ['22']}, 150: {'rhs': ' F_18 D_0 V_166 O_1 V_167 D_7 V_167 D_1', 'type': 'generic', 'doc': 'right pressure', 'network': 'gas >>> liquid', 'incidence_list': ['166', '167', '167']}}",
       "index_structures": "[1]",
@@ -1622,7 +1622,7 @@
       "units": "[-2, -1, 0, 1, 0, 0, 0, 0]"
     },
     "168": {
-      "aliases": "{'global_ID': ' V_168', 'python': 'fnc_AS_left', 'cpp': 'fnc_AS_left', 'matlab': 'fnc_AS_left', 'latex': '{\\\\hat{n}^{c}}^{-\\\\epsilon}', 'internal_code': 'fnc_AS_left'}",
+      "aliases": "{'global_ID': ' V_168', 'python': 'fnc_AS_left', 'cpp': 'fnc_AS_left', 'matlab': 'fnc_AS_left', 'latex': '{\\\\hat{n}^{c}}^{-\\\\eps}', 'internal_code': 'fnc_AS_left'}",
       "doc": "left convective mass flow",
       "equations": "{152: {'rhs': ' F_13 D_0 V_85 D_1', 'type': 'generic', 'doc': 'left convective mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['85']}, 154: {'rhs': ' F_18 D_0 V_168 O_1 V_169 D_7 V_168 D_1', 'type': 'generic', 'doc': 'left convective mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['168', '168', '169']}}",
       "index_structures": "[6]",
@@ -1634,7 +1634,7 @@
       "units": "[-1, 0, 1, 0, 0, 0, 0, 0]"
     },
     "169": {
-      "aliases": "{'global_ID': ' V_169', 'python': 'fnc_AS_right', 'cpp': 'fnc_AS_right', 'matlab': 'fnc_AS_right', 'latex': '{\\\\hat{n}^{c}}^{+\\\\epsilon}', 'internal_code': 'fnc_AS_right'}",
+      "aliases": "{'global_ID': ' V_169', 'python': 'fnc_AS_right', 'cpp': 'fnc_AS_right', 'matlab': 'fnc_AS_right', 'latex': '{\\\\hat{n}^{c}}^{+\\\\eps}', 'internal_code': 'fnc_AS_right'}",
       "doc": "right convective mass flow",
       "equations": "{153: {'rhs': ' F_14 D_0 V_85 D_1', 'type': 'generic', 'doc': 'right convective mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['85']}, 155: {'rhs': ' F_18 D_0 V_168 O_1 V_169 D_7 V_169 D_1', 'type': 'generic', 'doc': 'right convective mass flow', 'network': 'gas >>> liquid', 'incidence_list': ['168', '169', '169']}}",
       "index_structures": "[6]",

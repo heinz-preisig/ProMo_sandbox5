@@ -616,5 +616,143 @@
     "lhs": "{\\mu^{\\beta}}_{{N S}}",
     "network": "gas >>> liquid",
     "rhs": "{\\mu}_{{N S}}^{+\\epsilon}"
+  },
+  "137": {
+    "variable_ID": 160,
+    "lhs": "{\\mu^{\\alpha}}_{{N S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {\\mu^{\\alpha}}_{{N S}}  - {\\mu^{\\beta}}_{{N S}}, {\\mu^{\\alpha}}_{{N S}} \\right)"
+  },
+  "138": {
+    "variable_ID": 161,
+    "lhs": "{\\mu^{\\beta}}_{{N S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {\\mu^{\\beta}}_{{N S}}  - {\\mu^{\\alpha}}_{{N S}}, {\\mu^{\\beta}}_{{N S}} \\right)"
+  },
+  "139": {
+    "variable_ID": 162,
+    "lhs": "{\\hat{q}^{-\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\hat{n}^{d}}_{{A S}}^{-\\epsilon}"
+  },
+  "140": {
+    "variable_ID": 163,
+    "lhs": "{\\hat{q}^{+\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\hat{n}^{d}}_{{A S}}^{+\\epsilon}"
+  },
+  "141": {
+    "variable_ID": 162,
+    "lhs": "{\\hat{q}^{-\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {\\hat{q}^{-\\epsilon}}_{{A S}}  - {\\hat{q}^{+\\epsilon}}_{{A S}}, {\\hat{q}^{-\\epsilon}}_{{A S}} \\right)"
+  },
+  "142": {
+    "variable_ID": 163,
+    "lhs": "{\\hat{q}^{+\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {\\hat{q}^{-\\epsilon}}_{{A S}}  - {\\hat{q}^{+\\epsilon}}_{{A S}}, {\\hat{q}^{+\\epsilon}}_{{A S}} \\right)"
+  },
+  "143": {
+    "variable_ID": 164,
+    "lhs": "{T^{-\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "{T}_{N}^{-\\epsilon}"
+  },
+  "144": {
+    "variable_ID": 165,
+    "lhs": "{T^{+\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "{T}_{N}^{+\\epsilon}"
+  },
+  "145": {
+    "variable_ID": 164,
+    "lhs": "{T^{-\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {T^{-\\epsilon}}_{N}  - {T^{+\\epsilon}}_{N}, {T^{-\\epsilon}}_{N} \\right)"
+  },
+  "146": {
+    "variable_ID": 165,
+    "lhs": "{T^{+\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {T^{-\\epsilon}}_{N}  - {T^{+\\epsilon}}_{N}, {T^{+\\epsilon}}_{N} \\right)"
+  },
+  "147": {
+    "variable_ID": 166,
+    "lhs": "{p^{-\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "{p}_{N}^{-\\epsilon}"
+  },
+  "148": {
+    "variable_ID": 167,
+    "lhs": "{p^{+\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "{p}_{N}^{+\\epsilon}"
+  },
+  "150": {
+    "variable_ID": 167,
+    "lhs": "{p^{+\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {p^{-\\epsilon}}_{N}  - {p^{+\\epsilon}}_{N}, {p^{+\\epsilon}}_{N} \\right)"
+  },
+  "151": {
+    "variable_ID": 166,
+    "lhs": "{p^{-\\epsilon}}_{N}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {p^{-\\epsilon}}_{N}  - {p^{+\\epsilon}}_{N}, {p^{-\\epsilon}}_{N} \\right)"
+  },
+  "152": {
+    "variable_ID": 168,
+    "lhs": "{{\\hat{n}^{c}}^{-\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\hat{n}^{c}}_{{A S}}^{-\\epsilon}"
+  },
+  "153": {
+    "variable_ID": 169,
+    "lhs": "{{\\hat{n}^{c}}^{+\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "{\\hat{n}^{c}}_{{A S}}^{+\\epsilon}"
+  },
+  "154": {
+    "variable_ID": 168,
+    "lhs": "{{\\hat{n}^{c}}^{-\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {{\\hat{n}^{c}}^{-\\epsilon}}_{{A S}}  - {{\\hat{n}^{c}}^{+\\epsilon}}_{{A S}}, {{\\hat{n}^{c}}^{-\\epsilon}}_{{A S}} \\right)"
+  },
+  "155": {
+    "variable_ID": 169,
+    "lhs": "{{\\hat{n}^{c}}^{+\\epsilon}}_{{A S}}",
+    "network": "gas >>> liquid",
+    "rhs": "Root\\left( {{\\hat{n}^{c}}^{-\\epsilon}}_{{A S}}  - {{\\hat{n}^{c}}^{+\\epsilon}}_{{A S}}, {{\\hat{n}^{c}}^{+\\epsilon}}_{{A S}} \\right)"
+  },
+  "160": {
+    "variable_ID": 174,
+    "lhs": "{fq_A}_{A}",
+    "network": "macroscopic",
+    "rhs": "{A}_{N} \\, . \\, {k^{q}}_{N} \\, . \\, {F}_{N, A} \\stackrel{N}{\\,\\star\\,} {T}_{N}"
+  },
+  "161": {
+    "variable_ID": 175,
+    "lhs": "{fq}_{N}",
+    "network": "macroscopic",
+    "rhs": "{F}_{N, A} \\stackrel{A}{\\,\\star\\,} {fq_A}_{A}"
+  },
+  "162": {
+    "variable_ID": 176,
+    "lhs": "{fq_A_x}_{A}",
+    "network": "macroscopic",
+    "rhs": "{A_{y,z}}_{N} \\, . \\, {k^{q}_{x}}_{N} \\, . \\, {F}_{N, A} \\stackrel{N}{\\,\\star\\,} {T}_{N}"
+  },
+  "163": {
+    "variable_ID": 177,
+    "lhs": "{fq_x}_{N}",
+    "network": "macroscopic",
+    "rhs": "{F}_{N, A} \\stackrel{A}{\\,\\star\\,} {fq_A_x}_{A}"
+  },
+  "164": {
+    "variable_ID": 133,
+    "lhs": "{\\dot{H}}_{N}",
+    "network": "macroscopic",
+    "rhs": "{\\hat{H}^{c}}_{N}  + {\\hat{H}^{d}}_{N}  + {fq_x}_{N}  + {\\hat{w}}_{N}"
   }
 }

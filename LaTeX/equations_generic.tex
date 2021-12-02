@@ -357,10 +357,6 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{\hat{w}}_{N} := {F}_{N, A} \stackrel{A}{\,\star\,} {\hat{w}}_{A}\end{eq} &
     \begin{lay}net work flow\end{lay} &
     \begin{lay}macroscopic\end{lay} \\
-\hyperlink{"v:133"}{ 116 }\hypertarget{"e:116"}{  } &
-    \begin{eq}{\dot{H}}_{N} := {\hat{H}^{c}}_{N}  + {\hat{H}^{d}}_{N}  + {\hat{w}}_{N}\end{eq} &
-    \begin{lay}differential enthalpy balance\end{lay} &
-    \begin{lay}macroscopic\end{lay} \\
 \hyperlink{"v:137"}{ 118 }\hypertarget{"e:118"}{  } &
     \begin{eq}{n^{o}}_{{N S}} := Set({n}_{{N S}}, {\#}_{})\end{eq} &
     \begin{lay}initial condition for species mass\end{lay} &
@@ -426,5 +422,89 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{\mu^{\beta}}_{{N S}} := {\mu}_{{N S}}^{+\epsilon}\end{eq} &
     \begin{lay}right chemical potential\end{lay} &
     \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:160"}{ 137 }\hypertarget{"e:137"}{  } &
+    \begin{eq}{\mu^{\alpha}}_{{N S}} := Root\left( {\mu^{\alpha}}_{{N S}}  - {\mu^{\beta}}_{{N S}}, {\mu^{\alpha}}_{{N S}} \right)\end{eq} &
+    \begin{lay}left chemical potential\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:161"}{ 138 }\hypertarget{"e:138"}{  } &
+    \begin{eq}{\mu^{\beta}}_{{N S}} := Root\left( {\mu^{\beta}}_{{N S}}  - {\mu^{\alpha}}_{{N S}}, {\mu^{\beta}}_{{N S}} \right)\end{eq} &
+    \begin{lay}right chemical potential\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:162"}{ 139 }\hypertarget{"e:139"}{  } &
+    \begin{eq}{\hat{q}^{-\epsilon}}_{{A S}} := {\hat{n}^{d}}_{{A S}}^{-\epsilon}\end{eq} &
+    \begin{lay}left diffusional mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:163"}{ 140 }\hypertarget{"e:140"}{  } &
+    \begin{eq}{\hat{q}^{+\epsilon}}_{{A S}} := {\hat{n}^{d}}_{{A S}}^{+\epsilon}\end{eq} &
+    \begin{lay}right diffusional mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:162"}{ 141 }\hypertarget{"e:141"}{  } &
+    \begin{eq}{\hat{q}^{-\epsilon}}_{{A S}} := Root\left( {\hat{q}^{-\epsilon}}_{{A S}}  - {\hat{q}^{+\epsilon}}_{{A S}}, {\hat{q}^{-\epsilon}}_{{A S}} \right)\end{eq} &
+    \begin{lay}left diffusional mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:163"}{ 142 }\hypertarget{"e:142"}{  } &
+    \begin{eq}{\hat{q}^{+\epsilon}}_{{A S}} := Root\left( {\hat{q}^{-\epsilon}}_{{A S}}  - {\hat{q}^{+\epsilon}}_{{A S}}, {\hat{q}^{+\epsilon}}_{{A S}} \right)\end{eq} &
+    \begin{lay}right diffusional mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:164"}{ 143 }\hypertarget{"e:143"}{  } &
+    \begin{eq}{T^{-\epsilon}}_{N} := {T}_{N}^{-\epsilon}\end{eq} &
+    \begin{lay}temparture left\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:165"}{ 144 }\hypertarget{"e:144"}{  } &
+    \begin{eq}{T^{+\epsilon}}_{N} := {T}_{N}^{+\epsilon}\end{eq} &
+    \begin{lay}right temperature\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:164"}{ 145 }\hypertarget{"e:145"}{  } &
+    \begin{eq}{T^{-\epsilon}}_{N} := Root\left( {T^{-\epsilon}}_{N}  - {T^{+\epsilon}}_{N}, {T^{-\epsilon}}_{N} \right)\end{eq} &
+    \begin{lay}temparture left\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:165"}{ 146 }\hypertarget{"e:146"}{  } &
+    \begin{eq}{T^{+\epsilon}}_{N} := Root\left( {T^{-\epsilon}}_{N}  - {T^{+\epsilon}}_{N}, {T^{+\epsilon}}_{N} \right)\end{eq} &
+    \begin{lay}right temperature\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:166"}{ 147 }\hypertarget{"e:147"}{  } &
+    \begin{eq}{p^{-\epsilon}}_{N} := {p}_{N}^{-\epsilon}\end{eq} &
+    \begin{lay}left pressure\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:167"}{ 148 }\hypertarget{"e:148"}{  } &
+    \begin{eq}{p^{+\epsilon}}_{N} := {p}_{N}^{+\epsilon}\end{eq} &
+    \begin{lay}right pressure\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:167"}{ 150 }\hypertarget{"e:150"}{  } &
+    \begin{eq}{p^{+\epsilon}}_{N} := Root\left( {p^{-\epsilon}}_{N}  - {p^{+\epsilon}}_{N}, {p^{+\epsilon}}_{N} \right)\end{eq} &
+    \begin{lay}right pressure\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:166"}{ 151 }\hypertarget{"e:151"}{  } &
+    \begin{eq}{p^{-\epsilon}}_{N} := Root\left( {p^{-\epsilon}}_{N}  - {p^{+\epsilon}}_{N}, {p^{-\epsilon}}_{N} \right)\end{eq} &
+    \begin{lay}left pressure\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:168"}{ 152 }\hypertarget{"e:152"}{  } &
+    \begin{eq}{{\hat{n}^{c}}^{-\epsilon}}_{{A S}} := {\hat{n}^{c}}_{{A S}}^{-\epsilon}\end{eq} &
+    \begin{lay}left convective mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:169"}{ 153 }\hypertarget{"e:153"}{  } &
+    \begin{eq}{{\hat{n}^{c}}^{+\epsilon}}_{{A S}} := {\hat{n}^{c}}_{{A S}}^{+\epsilon}\end{eq} &
+    \begin{lay}right convective mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:168"}{ 154 }\hypertarget{"e:154"}{  } &
+    \begin{eq}{{\hat{n}^{c}}^{-\epsilon}}_{{A S}} := Root\left( {{\hat{n}^{c}}^{-\epsilon}}_{{A S}}  - {{\hat{n}^{c}}^{+\epsilon}}_{{A S}}, {{\hat{n}^{c}}^{-\epsilon}}_{{A S}} \right)\end{eq} &
+    \begin{lay}left convective mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:169"}{ 155 }\hypertarget{"e:155"}{  } &
+    \begin{eq}{{\hat{n}^{c}}^{+\epsilon}}_{{A S}} := Root\left( {{\hat{n}^{c}}^{-\epsilon}}_{{A S}}  - {{\hat{n}^{c}}^{+\epsilon}}_{{A S}}, {{\hat{n}^{c}}^{+\epsilon}}_{{A S}} \right)\end{eq} &
+    \begin{lay}right convective mass flow\end{lay} &
+    \begin{lay}gas >>> liquid\end{lay} \\
+\hyperlink{"v:176"}{ 162 }\hypertarget{"e:162"}{  } &
+    \begin{eq}{fq_A_x}_{A} := {A_{y,z}}_{N} \, . \, {k^{q}_{x}}_{N} \, . \, {F}_{N, A} \stackrel{N}{\,\star\,} {T}_{N}\end{eq} &
+    \begin{lay}conductive heat transfer in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:177"}{ 163 }\hypertarget{"e:163"}{  } &
+    \begin{eq}{fq_x}_{N} := {F}_{N, A} \stackrel{A}{\,\star\,} {fq_A_x}_{A}\end{eq} &
+    \begin{lay}net convective heat transfer in x-direction\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
+\hyperlink{"v:133"}{ 164 }\hypertarget{"e:164"}{  } &
+    \begin{eq}{\dot{H}}_{N} := {\hat{H}^{c}}_{N}  + {\hat{H}^{d}}_{N}  + {fq_x}_{N}  + {\hat{w}}_{N}\end{eq} &
+    \begin{lay}differential enthalpy balance\end{lay} &
+    \begin{lay}macroscopic\end{lay} \\
 \hline
 \end{longtable}
