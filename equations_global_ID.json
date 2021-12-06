@@ -515,12 +515,6 @@
     "network": "macroscopic",
     "rhs": " V_1  O_5  I_2 O_5  V_135"
   },
-  "116": {
-    "variable_ID": 133,
-    "lhs": " V_133",
-    "network": "macroscopic",
-    "rhs": " V_127 O_0 V_131 O_0 V_136"
-  },
   "118": {
     "variable_ID": 137,
     "lhs": " V_137",
@@ -724,18 +718,6 @@
     "lhs": " V_169",
     "network": "gas >>> liquid",
     "rhs": " F_18 D_0 V_168 O_1 V_169 D_7 V_169 D_1"
-  },
-  "160": {
-    "variable_ID": 174,
-    "lhs": " V_174",
-    "network": "macroscopic",
-    "rhs": " V_30 O_4 V_65 O_4 V_1  O_5  I_1 O_5  V_23"
-  },
-  "161": {
-    "variable_ID": 175,
-    "lhs": " V_175",
-    "network": "macroscopic",
-    "rhs": " V_1  O_5  I_2 O_5  V_174"
   },
   "162": {
     "variable_ID": 176,

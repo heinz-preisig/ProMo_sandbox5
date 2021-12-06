@@ -515,12 +515,6 @@
     "network": "macroscopic",
     "rhs": "np.dot(F, fw_A)"
   },
-  "116": {
-    "variable_ID": 133,
-    "lhs": "dHdt",
-    "network": "macroscopic",
-    "rhs": "np.add(np.add(fHc, fHd), fw)"
-  },
   "118": {
     "variable_ID": 137,
     "lhs": "no",
@@ -724,18 +718,6 @@
     "lhs": "fnc_AS_right",
     "network": "gas >>> liquid",
     "rhs": "Root(np.subtract(fnc_AS_left, fnc_AS_right), fnc_AS_right)"
-  },
-  "160": {
-    "variable_ID": 174,
-    "lhs": "fq_A",
-    "network": "macroscopic",
-    "rhs": "np.dot(np.transpose(np.multiply(np.multiply(A, kq), F)), T)"
-  },
-  "161": {
-    "variable_ID": 175,
-    "lhs": "fq",
-    "network": "macroscopic",
-    "rhs": "np.dot(F, fq_A)"
   },
   "162": {
     "variable_ID": 176,

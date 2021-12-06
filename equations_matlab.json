@@ -515,12 +515,6 @@
     "network": "macroscopic",
     "rhs": "F * fw_A"
   },
-  "116": {
-    "variable_ID": 133,
-    "lhs": "dHdt",
-    "network": "macroscopic",
-    "rhs": "fHc + fHd + fw"
-  },
   "118": {
     "variable_ID": 137,
     "lhs": "no",
@@ -631,7 +625,7 @@
   },
   "139": {
     "variable_ID": 162,
-    "lhs": "\\hat",
+    "lhs": "fnd_AS_left",
     "network": "gas >>> liquid",
     "rhs": "left(fnd_AS)"
   },
@@ -643,15 +637,15 @@
   },
   "141": {
     "variable_ID": 162,
-    "lhs": "\\hat",
+    "lhs": "fnd_AS_left",
     "network": "gas >>> liquid",
-    "rhs": "Root(\\hat - fnd_AS_right,\\hat)"
+    "rhs": "Root(fnd_AS_left - fnd_AS_right,fnd_AS_left)"
   },
   "142": {
     "variable_ID": 163,
     "lhs": "fnd_AS_right",
     "network": "gas >>> liquid",
-    "rhs": "Root(\\hat - fnd_AS_right,fnd_AS_right)"
+    "rhs": "Root(fnd_AS_left - fnd_AS_right,fnd_AS_right)"
   },
   "143": {
     "variable_ID": 164,
@@ -724,18 +718,6 @@
     "lhs": "fnc_AS_right",
     "network": "gas >>> liquid",
     "rhs": "Root(fnc_AS_left - fnc_AS_right,fnc_AS_right)"
-  },
-  "160": {
-    "variable_ID": 174,
-    "lhs": "fq_A",
-    "network": "macroscopic",
-    "rhs": "( A .* kq .* F )'  * T"
-  },
-  "161": {
-    "variable_ID": 175,
-    "lhs": "fq",
-    "network": "macroscopic",
-    "rhs": "F * fq_A"
   },
   "162": {
     "variable_ID": 176,

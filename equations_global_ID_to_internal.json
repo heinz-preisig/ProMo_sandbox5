@@ -429,11 +429,6 @@
     "network": "macroscopic",
     "rhs": " F | A | fw_A"
   },
-  "116": {
-    "lhs": "dHdt",
-    "network": "macroscopic",
-    "rhs": " fHc + fHd + fw"
-  },
   "118": {
     "lhs": "no",
     "network": "macroscopic",
@@ -603,16 +598,6 @@
     "lhs": "fnc_AS_right",
     "network": "gas >>> liquid",
     "rhs": " Root ( fnc_AS_left - fnc_AS_right , fnc_AS_right )"
-  },
-  "160": {
-    "lhs": "fq_A",
-    "network": "macroscopic",
-    "rhs": " A . kq . F | N | T"
-  },
-  "161": {
-    "lhs": "fq",
-    "network": "macroscopic",
-    "rhs": " F | A | fq_A"
   },
   "162": {
     "lhs": "fq_A_x",
