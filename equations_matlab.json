@@ -1,740 +1,416 @@
 {
   "1": {
-    "variable_ID": 4,
-    "lhs": "one",
-    "network": "root",
-    "rhs": "Instantiate(value, value)"
-  },
-  "2": {
-    "variable_ID": 5,
+    "variable_ID": 2,
     "lhs": "zero",
     "network": "root",
     "rhs": "Instantiate(value, value)"
   },
+  "2": {
+    "variable_ID": 3,
+    "lhs": "one",
+    "network": "root",
+    "rhs": "Instantiate(value, value)"
+  },
   "3": {
-    "variable_ID": 6,
+    "variable_ID": 4,
     "lhs": "onehalf",
     "network": "root",
     "rhs": "Instantiate(value, value)"
   },
-  "6": {
-    "variable_ID": 10,
-    "lhs": "F_NS_AS",
-    "network": "physical",
-    "rhs": "khatriRao(F, [N, A], P_NS_AS, [N_x_S, A_x_S])"
+  "4": {
+    "variable_ID": 7,
+    "lhs": "to",
+    "network": "root",
+    "rhs": "Instantiate(t, value)"
   },
-  "7": {
-    "variable_ID": 22,
+  "5": {
+    "variable_ID": 8,
+    "lhs": "te",
+    "network": "root",
+    "rhs": "Instantiate(t, value)"
+  },
+  "6": {
+    "variable_ID": 15,
     "lhs": "p",
     "network": "physical",
-    "rhs": "ParDiff(U,V)"
+    "rhs": "- ParDiff(U,V)"
   },
-  "8": {
-    "variable_ID": 23,
+  "7": {
+    "variable_ID": 16,
     "lhs": "T",
     "network": "physical",
     "rhs": "ParDiff(U,S)"
   },
   "9": {
-    "variable_ID": 24,
-    "lhs": "chem_pot",
-    "network": "physical",
-    "rhs": "ParDiff(U,n)"
-  },
-  "11": {
-    "variable_ID": 27,
-    "lhs": "B",
-    "network": "physical",
-    "rhs": "Instantiate(S, value)"
-  },
-  "13": {
-    "variable_ID": 29,
+    "variable_ID": 18,
     "lhs": "H",
     "network": "physical",
-    "rhs": "U + p .* V"
+    "rhs": "U - p .* V"
   },
-  "14": {
-    "variable_ID": 30,
+  "10": {
+    "variable_ID": 19,
     "lhs": "A",
     "network": "physical",
     "rhs": "U - T .* S"
   },
-  "15": {
-    "variable_ID": 31,
+  "11": {
+    "variable_ID": 20,
     "lhs": "G",
     "network": "physical",
     "rhs": "U + p .* V - T .* S"
   },
-  "20": {
-    "variable_ID": 36,
+  "12": {
+    "variable_ID": 21,
     "lhs": "v_x",
     "network": "physical",
     "rhs": "ParDiff(r_x,t)"
   },
-  "21": {
-    "variable_ID": 37,
+  "13": {
+    "variable_ID": 22,
     "lhs": "v_y",
     "network": "physical",
     "rhs": "ParDiff(r_y,t)"
   },
-  "22": {
-    "variable_ID": 38,
+  "14": {
+    "variable_ID": 24,
     "lhs": "v_z",
     "network": "physical",
     "rhs": "ParDiff(r_z,t)"
   },
-  "23": {
-    "variable_ID": 39,
+  "15": {
+    "variable_ID": 25,
     "lhs": "v",
     "network": "physical",
     "rhs": "Stack(v_x,v_y,v_z)"
   },
-  "24": {
-    "variable_ID": 41,
+  "16": {
+    "variable_ID": 27,
+    "lhs": "Boltzmann",
+    "network": "physical",
+    "rhs": "Instantiate(S, value)"
+  },
+  "17": {
+    "variable_ID": 28,
+    "lhs": "GasConstant",
+    "network": "physical",
+    "rhs": "Avogadro .* Boltzmann"
+  },
+  "18": {
+    "variable_ID": 30,
     "lhs": "Cp",
     "network": "material",
     "rhs": "ParDiff(H,T)"
   },
-  "25": {
-    "variable_ID": 42,
+  "19": {
+    "variable_ID": 31,
     "lhs": "Cv",
     "network": "material",
     "rhs": "ParDiff(U,T)"
   },
-  "26": {
-    "variable_ID": 43,
-    "lhs": "cp",
-    "network": "material",
-    "rhs": "blockReduce(Cp .* inv(Mm), N, N_x_S, n)"
-  },
-  "27": {
-    "variable_ID": 44,
-    "lhs": "cv",
-    "network": "material",
-    "rhs": "blockReduce(Cv .* inv(Mm), N, N_x_S, n)"
-  },
-  "28": {
-    "variable_ID": 45,
+  "22": {
+    "variable_ID": 34,
     "lhs": "kq_x",
     "network": "material",
     "rhs": "inv(V) .* ParDiff(U,T) .* v_x"
   },
-  "29": {
-    "variable_ID": 46,
+  "23": {
+    "variable_ID": 35,
     "lhs": "kq_y",
     "network": "material",
     "rhs": "inv(V) .* ParDiff(U,T) .* v_y"
   },
-  "30": {
-    "variable_ID": 47,
+  "24": {
+    "variable_ID": 36,
     "lhs": "kq_z",
     "network": "material",
     "rhs": "inv(V) .* ParDiff(U,T) .* v_z"
   },
-  "31": {
-    "variable_ID": 48,
+  "25": {
+    "variable_ID": 37,
     "lhs": "kq",
     "network": "material",
     "rhs": "Stack(kq_x,kq_y,kq_z)"
   },
   "32": {
+    "variable_ID": 45,
+    "lhs": "chem_pot",
+    "network": "physical",
+    "rhs": "ParDiff(U,n)"
+  },
+  "33": {
+    "variable_ID": 46,
+    "lhs": "C_p",
+    "network": "material",
+    "rhs": "ParDiff(H,T)"
+  },
+  "34": {
+    "variable_ID": 47,
+    "lhs": "C_v",
+    "network": "material",
+    "rhs": "ParDiff(U,T)"
+  },
+  "35": {
+    "variable_ID": 48,
+    "lhs": "cp",
+    "network": "material",
+    "rhs": "blockReduce(Cp .* inv(Mm), N, N_x_S, n)"
+  },
+  "36": {
     "variable_ID": 49,
+    "lhs": "cv",
+    "network": "material",
+    "rhs": "blockReduce(Cv .* inv(Mm), N, N_x_S, n)"
+  },
+  "37": {
+    "variable_ID": 50,
     "lhs": "kc_x",
     "network": "material",
     "rhs": "(blockReduce(Mm, S, N_x_S, inv(chem_pot))) .* inv(V) .* ParDiff(U,p) .* v_x"
   },
-  "33": {
-    "variable_ID": 50,
+  "38": {
+    "variable_ID": 51,
     "lhs": "kc_y",
     "network": "material",
     "rhs": "(blockReduce(Mm, S, N_x_S, inv(chem_pot))) .* inv(V) .* ParDiff(U,p) .* v_y"
   },
-  "34": {
-    "variable_ID": 51,
+  "39": {
+    "variable_ID": 52,
     "lhs": "kc_z",
     "network": "material",
     "rhs": "(blockReduce(Mm, S, N_x_S, inv(chem_pot))) .* inv(V) .* ParDiff(U,p) .* v_z"
   },
-  "35": {
-    "variable_ID": 52,
+  "40": {
+    "variable_ID": 53,
     "lhs": "kc",
     "network": "material",
     "rhs": "Stack(kc_x,kc_y,kc_z)"
   },
-  "36": {
-    "variable_ID": 53,
+  "41": {
+    "variable_ID": 54,
     "lhs": "kd_x",
     "network": "material",
     "rhs": "inv(chem_pot) .* (khatriRao(v_x, [N], (khatriRao(inv(V), [N], ParDiff(U,chem_pot), [N_x_S])), [N_x_S]))"
   },
-  "37": {
-    "variable_ID": 54,
+  "42": {
+    "variable_ID": 55,
     "lhs": "kd_y",
     "network": "material",
     "rhs": "inv(chem_pot) .* (khatriRao(v_y, [N], (khatriRao(inv(V), [N], ParDiff(U,chem_pot), [N_x_S])), [N_x_S]))"
   },
-  "38": {
-    "variable_ID": 55,
+  "43": {
+    "variable_ID": 56,
     "lhs": "kd_z",
     "network": "material",
     "rhs": "inv(chem_pot) .* (khatriRao(v_z, [N], (khatriRao(inv(V), [N], ParDiff(U,chem_pot), [N_x_S])), [N_x_S]))"
   },
-  "39": {
-    "variable_ID": 56,
+  "44": {
+    "variable_ID": 57,
     "lhs": "kd",
     "network": "material",
     "rhs": "Stack(kd_x,kd_y,kd_z)"
   },
-  "41": {
+  "45": {
     "variable_ID": 58,
-    "lhs": "to",
-    "network": "root",
-    "rhs": "Instantiate(t, t)"
-  },
-  "42": {
-    "variable_ID": 59,
-    "lhs": "te",
-    "network": "root",
-    "rhs": "Instantiate(t, t)"
-  },
-  "43": {
-    "variable_ID": 60,
     "lhs": "h",
     "network": "material",
     "rhs": "khatriRao(H, [N], inv(n), [N_x_S])"
   },
-  "44": {
-    "variable_ID": 61,
-    "lhs": "Mm",
-    "network": "material >>> macroscopic",
-    "rhs": "Mm"
-  },
-  "45": {
-    "variable_ID": 62,
-    "lhs": "kq_x",
-    "network": "material >>> macroscopic",
-    "rhs": "kq_x"
-  },
   "46": {
-    "variable_ID": 63,
-    "lhs": "kq_y",
-    "network": "material >>> macroscopic",
-    "rhs": "kq_y"
-  },
-  "47": {
-    "variable_ID": 64,
-    "lhs": "kq_z",
-    "network": "material >>> macroscopic",
-    "rhs": "kq_z"
-  },
-  "48": {
     "variable_ID": 65,
-    "lhs": "kq",
-    "network": "material >>> macroscopic",
-    "rhs": "kq"
-  },
-  "49": {
-    "variable_ID": 66,
-    "lhs": "kc_x",
-    "network": "material >>> macroscopic",
-    "rhs": "kc_x"
-  },
-  "50": {
-    "variable_ID": 67,
-    "lhs": "kc_y",
-    "network": "material >>> macroscopic",
-    "rhs": "kc_y"
-  },
-  "51": {
-    "variable_ID": 68,
-    "lhs": "kc_z",
-    "network": "material >>> macroscopic",
-    "rhs": "kc_z"
-  },
-  "52": {
-    "variable_ID": 69,
-    "lhs": "kc",
-    "network": "material >>> macroscopic",
-    "rhs": "kc"
-  },
-  "53": {
-    "variable_ID": 70,
-    "lhs": "kd_x",
-    "network": "material >>> macroscopic",
-    "rhs": "kd_x"
-  },
-  "56": {
-    "variable_ID": 73,
-    "lhs": "kd_y",
-    "network": "material >>> macroscopic",
-    "rhs": "kd_y"
-  },
-  "57": {
-    "variable_ID": 74,
-    "lhs": "kd_z",
-    "network": "material >>> macroscopic",
-    "rhs": "kd_z"
-  },
-  "58": {
-    "variable_ID": 75,
-    "lhs": "kd",
-    "network": "material >>> macroscopic",
-    "rhs": "kd"
-  },
-  "59": {
-    "variable_ID": 76,
-    "lhs": "cp",
-    "network": "material >>> macroscopic",
-    "rhs": "cp"
-  },
-  "60": {
-    "variable_ID": 77,
-    "lhs": "cv",
-    "network": "material >>> macroscopic",
-    "rhs": "cv"
-  },
-  "61": {
-    "variable_ID": 78,
     "lhs": "d",
     "network": "macroscopic",
     "rhs": "sign(( F )'  * p)"
   },
-  "62": {
-    "variable_ID": 79,
-    "lhs": "c",
-    "network": "macroscopic",
-    "rhs": "khatriRao(inv(V), [N], n, [N_x_S])"
-  },
-  "63": {
-    "variable_ID": 80,
-    "lhs": "Ayz",
-    "network": "macroscopic",
-    "rhs": "r_y .* r_z"
-  },
-  "64": {
-    "variable_ID": 81,
+  "47": {
+    "variable_ID": 69,
     "lhs": "m",
     "network": "macroscopic",
     "rhs": "blockReduce(Mm, S, N_x_S, n)"
   },
-  "65": {
-    "variable_ID": 82,
+  "49": {
+    "variable_ID": 71,
     "lhs": "density",
-    "network": "macroscopic",
-    "rhs": "inv(V) .* m"
+    "network": "material",
+    "rhs": "m .* inv(V)"
   },
-  "66": {
-    "variable_ID": 83,
-    "lhs": "fV",
+  "51": {
+    "variable_ID": 73,
+    "lhs": "F_NS_AS",
     "network": "macroscopic",
-    "rhs": "( inv(density) .* kc_x .* Ayz .* F )'  * p"
+    "rhs": "khatriRao(F, [N, A], P_NS_AS, [N_x_S, A_x_S])"
   },
-  "67": {
-    "variable_ID": 84,
-    "lhs": "c_AS",
-    "network": "macroscopic",
-    "rhs": "( (onehalf .* (F_NS_AS - khatriRao(d, [A], abs(F_NS_AS), [N_x_S, A_x_S]))) )'  * c"
-  },
-  "68": {
-    "variable_ID": 85,
-    "lhs": "fnc_AS",
-    "network": "macroscopic",
-    "rhs": "khatriRao(fV, [A], c_AS, [A_x_S])"
-  },
-  "69": {
-    "variable_ID": 86,
-    "lhs": "fnc",
-    "network": "macroscopic",
-    "rhs": "F_NS_AS * fnc_AS"
-  },
-  "74": {
-    "variable_ID": 91,
+  "55": {
+    "variable_ID": 77,
     "lhs": "T_NK",
     "network": "macroscopic",
     "rhs": "( P_N_NK )'  * T"
   },
-  "75": {
-    "variable_ID": 92,
-    "lhs": "one_NK",
-    "network": "macroscopic",
-    "rhs": "inv(T_NK) .* T_NK"
-  },
-  "77": {
-    "variable_ID": 94,
-    "lhs": "T_NK",
-    "network": "macroscopic >>> reactions",
-    "rhs": "T_NK"
-  },
-  "78": {
-    "variable_ID": 96,
-    "lhs": "c_KS",
-    "network": "macroscopic",
-    "rhs": "( ( c )'  * P_NS_KS )' "
-  },
-  "79": {
-    "variable_ID": 97,
-    "lhs": "c_KS",
-    "network": "macroscopic >>> reactions",
-    "rhs": "c_KS"
-  },
-  "82": {
-    "variable_ID": 102,
-    "lhs": "R",
-    "network": "physical",
-    "rhs": "Av .* B"
-  },
-  "83": {
-    "variable_ID": 103,
-    "lhs": "P_N_NK",
-    "network": "macroscopic >>> reactions",
-    "rhs": "P_N_NK"
-  },
-  "84": {
-    "variable_ID": 104,
+  "64": {
+    "variable_ID": 87,
     "lhs": "Ea",
     "network": "reactions",
-    "rhs": "Instantiate(( P_N_NK )'  * R .* T_NK, value)"
+    "rhs": "Instantiate(( P_N_NK )'  * GasConstant .* T_NK, value)"
   },
-  "85": {
-    "variable_ID": 106,
+  "65": {
+    "variable_ID": 89,
     "lhs": "K_NK",
     "network": "reactions",
-    "rhs": "khatriRao(Ko, [K], exp(- Ea .* inv(( ( R )'  * P_N_NK )'  .* T_NK)), [N_x_K])"
+    "rhs": "khatriRao(Ko, [K], exp(- Ea .* inv(( ( GasConstant )'  * P_N_NK )'  .* T_NK)), [N_x_K])"
   },
-  "86": {
-    "variable_ID": 107,
-    "lhs": "K_NK",
-    "network": "reactions >>> macroscopic",
-    "rhs": "K_NK"
-  },
-  "87": {
-    "variable_ID": 108,
-    "lhs": "co_KS",
-    "network": "reactions",
-    "rhs": "Instantiate(c_KS, value)"
-  },
-  "88": {
-    "variable_ID": 109,
-    "lhs": "phi_KS",
-    "network": "reactions",
-    "rhs": "Product( c_KS .* inv(co_KS) \\, N )"
-  },
-  "89": {
-    "variable_ID": 110,
-    "lhs": "phi_KS",
-    "network": "reactions >>> macroscopic",
-    "rhs": "phi_KS"
-  },
-  "90": {
-    "variable_ID": 111,
-    "lhs": "N",
-    "network": "reactions >>> macroscopic",
-    "rhs": "N"
-  },
-  "91": {
-    "variable_ID": 112,
-    "lhs": "xi",
-    "network": "macroscopic",
-    "rhs": "K_NK .* P_NK_KS * phi_KS"
-  },
-  "92": {
-    "variable_ID": 113,
+  "69": {
+    "variable_ID": 93,
     "lhs": "N_NS_NK",
     "network": "macroscopic",
     "rhs": "( P_S_NS )'  * (( ( (P_K_NK .* ( T_NK )'  .* ( inv(T_NK) )' ) )'  * ( N )'  )' )"
   },
-  "93": {
-    "variable_ID": 114,
-    "lhs": "pn",
+  "71": {
+    "variable_ID": 95,
+    "lhs": "Ayz",
     "network": "macroscopic",
-    "rhs": "khatriRao(V, [N], (N_NS_NK * xi), [N_x_S])"
+    "rhs": "r_y .* r_z"
   },
-  "94": {
-    "variable_ID": 115,
-    "lhs": "fm_A",
+  "72": {
+    "variable_ID": 96,
+    "lhs": "Axz",
     "network": "macroscopic",
-    "rhs": "blockReduce(Mm, S, A_x_S, fnc_AS)"
+    "rhs": "r_x .* r_z"
   },
-  "98": {
-    "variable_ID": 119,
-    "lhs": "h",
-    "network": "material >>> macroscopic",
-    "rhs": "h"
-  },
-  "104": {
-    "variable_ID": 125,
-    "lhs": "fHc_A",
+  "73": {
+    "variable_ID": 97,
+    "lhs": "Axy",
     "network": "macroscopic",
-    "rhs": "blockReduce((( F_NS_AS )'  * h), S, A_x_S, fnc_AS)"
+    "rhs": "r_x .* r_y"
   },
-  "106": {
-    "variable_ID": 127,
-    "lhs": "fHc",
+  "74": {
+    "variable_ID": 98,
+    "lhs": "fV",
     "network": "macroscopic",
-    "rhs": "F * fHc_A"
+    "rhs": "( inv(density) .* kc_x .* Ayz .* D )'  * p"
   },
-  "107": {
-    "variable_ID": 128,
+  "80": {
+    "variable_ID": 104,
     "lhs": "fnd_AS",
     "network": "macroscopic",
-    "rhs": "( khatriRao(Ayz, [N], - kd_x, [N_x_S]) .* F_NS_AS )'  * chem_pot"
+    "rhs": "( khatriRao(Ayz, [N], - kd_x, [N_x_S]) .* D_NS_AS )'  * chem_pot"
   },
-  "108": {
-    "variable_ID": 129,
+  "81": {
+    "variable_ID": 105,
     "lhs": "fnd",
     "network": "macroscopic",
     "rhs": "F_NS_AS * fnd_AS"
   },
-  "109": {
-    "variable_ID": 130,
+  "82": {
+    "variable_ID": 106,
     "lhs": "fHd_A",
     "network": "macroscopic",
     "rhs": "blockReduce((( F_NS_AS )'  * h), S, A_x_S, fnd_AS)"
   },
-  "110": {
-    "variable_ID": 131,
+  "83": {
+    "variable_ID": 107,
     "lhs": "fHd",
     "network": "macroscopic",
     "rhs": "F * fHd_A"
   },
-  "111": {
-    "variable_ID": 132,
+  "84": {
+    "variable_ID": 108,
+    "lhs": "c",
+    "network": "macroscopic",
+    "rhs": "khatriRao(inv(V), [N], n, [N_x_S])"
+  },
+  "85": {
+    "variable_ID": 109,
+    "lhs": "c_AS",
+    "network": "macroscopic",
+    "rhs": "( (onehalf .* (F_NS_AS - khatriRao(d, [A], abs(F_NS_AS), [N_x_S, A_x_S]))) )'  * c"
+  },
+  "86": {
+    "variable_ID": 110,
+    "lhs": "fnc_AS",
+    "network": "macroscopic",
+    "rhs": "khatriRao(fV, [A], c_AS, [A_x_S])"
+  },
+  "87": {
+    "variable_ID": 111,
+    "lhs": "fnc",
+    "network": "macroscopic",
+    "rhs": "F_NS_AS * fnc_AS"
+  },
+  "90": {
+    "variable_ID": 114,
+    "lhs": "c_KS",
+    "network": "reactions",
+    "rhs": "( ( c )'  * P_NS_KS )' "
+  },
+  "91": {
+    "variable_ID": 115,
+    "lhs": "co_KS",
+    "network": "reactions",
+    "rhs": "Instantiate(c_KS, value)"
+  },
+  "92": {
+    "variable_ID": 116,
+    "lhs": "phi_KS",
+    "network": "reactions",
+    "rhs": "Product( c_KS .* inv(co_KS) \\, N )"
+  },
+  "93": {
+    "variable_ID": 117,
+    "lhs": "xi",
+    "network": "macroscopic",
+    "rhs": "K_NK .* P_NK_KS * phi_KS"
+  },
+  "94": {
+    "variable_ID": 118,
+    "lhs": "pn",
+    "network": "macroscopic",
+    "rhs": "khatriRao(V, [N], (N_NS_NK * xi), [N_x_S])"
+  },
+  "95": {
+    "variable_ID": 119,
     "lhs": "dndt",
     "network": "macroscopic",
     "rhs": "fnc + fnd + pn"
   },
-  "114": {
-    "variable_ID": 135,
+  "96": {
+    "variable_ID": 120,
+    "lhs": "fHc_A",
+    "network": "macroscopic",
+    "rhs": "blockReduce((( F_NS_AS )'  * h), S, A_x_S, fnc_AS)"
+  },
+  "97": {
+    "variable_ID": 121,
+    "lhs": "fHc",
+    "network": "macroscopic",
+    "rhs": "F * fHc_A"
+  },
+  "98": {
+    "variable_ID": 122,
     "lhs": "fw_A",
     "network": "macroscopic",
     "rhs": "Instantiate(fHc_A, value)"
   },
-  "115": {
-    "variable_ID": 136,
+  "99": {
+    "variable_ID": 123,
     "lhs": "fw",
     "network": "macroscopic",
     "rhs": "F * fw_A"
   },
-  "118": {
-    "variable_ID": 137,
-    "lhs": "no",
-    "network": "macroscopic",
-    "rhs": "Instantiate(n, value)"
-  },
-  "119": {
-    "variable_ID": 18,
-    "lhs": "n",
-    "network": "macroscopic",
-    "rhs": "Integral(dndt,t,to,te) + no"
-  },
-  "120": {
-    "variable_ID": 138,
-    "lhs": "Ho",
-    "network": "macroscopic",
-    "rhs": "Instantiate(H, value)"
-  },
-  "122": {
-    "variable_ID": 29,
-    "lhs": "H",
-    "network": "macroscopic",
-    "rhs": "Integral(dHdt,t,to,te) + Ho"
-  },
-  "123": {
-    "variable_ID": 142,
-    "lhs": "xo",
-    "network": "control",
-    "rhs": "Instantiate(x, value)"
-  },
-  "125": {
-    "variable_ID": 148,
-    "lhs": "s_T",
-    "network": "macroscopic >>> control",
-    "rhs": "( F_N_A )'  * (T .* inv(T_n))"
-  },
-  "126": {
-    "variable_ID": 149,
-    "lhs": "s_p",
-    "network": "macroscopic >>> control",
-    "rhs": "( F_N_A )'  * (p .* inv(p_n))"
-  },
-  "127": {
-    "variable_ID": 152,
-    "lhs": "s_c",
-    "network": "macroscopic >>> control",
-    "rhs": "F_A_NS * (c .* inv(c_n))"
-  },
-  "128": {
-    "variable_ID": 153,
-    "lhs": "u",
-    "network": "control",
-    "rhs": "Stack(s_T,s_p,s_c)"
-  },
-  "130": {
-    "variable_ID": 155,
-    "lhs": "dxdt",
-    "network": "control",
-    "rhs": "( A )'  * x + ( B )'  * u"
-  },
-  "131": {
-    "variable_ID": 141,
-    "lhs": "x",
-    "network": "control",
-    "rhs": "Integral(I_N_D * dxdt,t,to,te)"
-  },
-  "132": {
-    "variable_ID": 159,
-    "lhs": "X",
-    "network": "macroscopic",
-    "rhs": "MixedStack(n,H)"
-  },
-  "133": {
-    "variable_ID": 43,
-    "lhs": "cp",
-    "network": "material",
-    "rhs": "Instantiate(cp, value)"
-  },
-  "134": {
-    "variable_ID": 44,
-    "lhs": "cv",
-    "network": "material",
-    "rhs": "Instantiate(cv, value)"
-  },
-  "135": {
-    "variable_ID": 160,
-    "lhs": "chem_pot_left",
-    "network": "gas >>> liquid",
-    "rhs": "left(chem_pot)"
-  },
-  "136": {
-    "variable_ID": 161,
-    "lhs": "chem_pot_right",
-    "network": "gas >>> liquid",
-    "rhs": "right(chem_pot)"
-  },
-  "137": {
-    "variable_ID": 160,
-    "lhs": "chem_pot_left",
-    "network": "gas >>> liquid",
-    "rhs": "Root(chem_pot_left - chem_pot_right,chem_pot_left)"
-  },
-  "138": {
-    "variable_ID": 161,
-    "lhs": "chem_pot_right",
-    "network": "gas >>> liquid",
-    "rhs": "Root(chem_pot_right - chem_pot_left,chem_pot_right)"
-  },
-  "139": {
-    "variable_ID": 162,
-    "lhs": "fnd_AS_left",
-    "network": "gas >>> liquid",
-    "rhs": "left(fnd_AS)"
-  },
-  "140": {
-    "variable_ID": 163,
-    "lhs": "fnd_AS_right",
-    "network": "gas >>> liquid",
-    "rhs": "right(fnd_AS)"
-  },
-  "141": {
-    "variable_ID": 162,
-    "lhs": "fnd_AS_left",
-    "network": "gas >>> liquid",
-    "rhs": "Root(fnd_AS_left - fnd_AS_right,fnd_AS_left)"
-  },
-  "142": {
-    "variable_ID": 163,
-    "lhs": "fnd_AS_right",
-    "network": "gas >>> liquid",
-    "rhs": "Root(fnd_AS_left - fnd_AS_right,fnd_AS_right)"
-  },
-  "143": {
-    "variable_ID": 164,
-    "lhs": "T_left",
-    "network": "gas >>> liquid",
-    "rhs": "left(T)"
-  },
-  "144": {
-    "variable_ID": 165,
-    "lhs": "T_right",
-    "network": "gas >>> liquid",
-    "rhs": "right(T)"
-  },
-  "145": {
-    "variable_ID": 164,
-    "lhs": "T_left",
-    "network": "gas >>> liquid",
-    "rhs": "Root(T_left - T_right,T_left)"
-  },
-  "146": {
-    "variable_ID": 165,
-    "lhs": "T_right",
-    "network": "gas >>> liquid",
-    "rhs": "Root(T_left - T_right,T_right)"
-  },
-  "147": {
-    "variable_ID": 166,
-    "lhs": "p_left",
-    "network": "gas >>> liquid",
-    "rhs": "left(p)"
-  },
-  "148": {
-    "variable_ID": 167,
-    "lhs": "p_right",
-    "network": "gas >>> liquid",
-    "rhs": "right(p)"
-  },
-  "150": {
-    "variable_ID": 167,
-    "lhs": "p_right",
-    "network": "gas >>> liquid",
-    "rhs": "Root(p_left - p_right,p_right)"
-  },
-  "151": {
-    "variable_ID": 166,
-    "lhs": "p_left",
-    "network": "gas >>> liquid",
-    "rhs": "Root(p_left - p_right,p_left)"
-  },
-  "152": {
-    "variable_ID": 168,
-    "lhs": "fnc_AS_left",
-    "network": "gas >>> liquid",
-    "rhs": "left(fnc_AS)"
-  },
-  "153": {
-    "variable_ID": 169,
-    "lhs": "fnc_AS_right",
-    "network": "gas >>> liquid",
-    "rhs": "right(fnc_AS)"
-  },
-  "154": {
-    "variable_ID": 168,
-    "lhs": "fnc_AS_left",
-    "network": "gas >>> liquid",
-    "rhs": "Root(fnc_AS_left - fnc_AS_right,fnc_AS_left)"
-  },
-  "155": {
-    "variable_ID": 169,
-    "lhs": "fnc_AS_right",
-    "network": "gas >>> liquid",
-    "rhs": "Root(fnc_AS_left - fnc_AS_right,fnc_AS_right)"
-  },
-  "162": {
-    "variable_ID": 176,
+  "100": {
+    "variable_ID": 124,
     "lhs": "fq_A_x",
     "network": "macroscopic",
-    "rhs": "( Ayz .* kq_x .* F )'  * T"
+    "rhs": "( Ayz .* kq_x .* D )'  * T"
   },
-  "163": {
-    "variable_ID": 177,
-    "lhs": "fq_x",
+  "101": {
+    "variable_ID": 125,
+    "lhs": "fq",
     "network": "macroscopic",
     "rhs": "F * fq_A_x"
   },
-  "164": {
-    "variable_ID": 133,
+  "102": {
+    "variable_ID": 126,
     "lhs": "dHdt",
     "network": "macroscopic",
-    "rhs": "fHc + fHd + fq_x + fw"
+    "rhs": "fHc + fHd + fq + fw"
   }
 }

@@ -54,11 +54,13 @@
     "fluid": {
       "behaviour": {
         "arc": [
-          "transport"
+          "transport",
+          "geometry"
         ],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -122,11 +124,13 @@
     "gas": {
       "behaviour": {
         "arc": [
-          "transport"
+          "transport",
+          "geometry"
         ],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -188,11 +192,13 @@
     "liquid": {
       "behaviour": {
         "arc": [
-          "transport"
+          "transport",
+          "geometry"
         ],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -254,11 +260,13 @@
     "macroscopic": {
       "behaviour": {
         "arc": [
-          "transport"
+          "transport",
+          "geometry"
         ],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -323,7 +331,8 @@
         "arc": [],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -331,7 +340,8 @@
           "constant",
           "effort",
           "seconaryState",
-          "diffState"
+          "diffState",
+          "property"
         ]
       },
       "children": [],
@@ -364,9 +374,7 @@
             "infinity"
           ],
           "dynamic": [],
-          "event": [
-            "lumped"
-          ]
+          "event": []
         },
         "token": {
           "energy": [],
@@ -382,7 +390,8 @@
         "arc": [],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -426,9 +435,7 @@
             "infinity"
           ],
           "dynamic": [],
-          "event": [
-            "lumped"
-          ]
+          "event": []
         },
         "token": {
           "energy": [],
@@ -444,7 +451,8 @@
         "arc": [],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -485,9 +493,7 @@
             "infinity"
           ],
           "dynamic": [],
-          "event": [
-            "lumped"
-          ]
+          "event": []
         },
         "token": {
           "energy": [],
@@ -531,11 +537,13 @@
     "solid": {
       "behaviour": {
         "arc": [
-          "transport"
+          "transport",
+          "geometry"
         ],
         "graph": [
           "network",
-          "projection"
+          "projection",
+          "differenceOperator"
         ],
         "node": [
           "frame",
@@ -596,7 +604,7 @@
   },
   "rules": {
     "network_enable_adding_indices": {
-      "control": false,
+      "control": true,
       "fluid": false,
       "gas": false,
       "liquid": false,
@@ -622,7 +630,9 @@
     "variable_classes_being_state_variables": [],
     "variable_classes_having_port_variables": [
       "constant",
+      "differenceOperator",
       "frame",
+      "geometry",
       "localIndex",
       "network",
       "projection",
