@@ -137,30 +137,6 @@
     "network": "physical",
     "rhs": "ParDiff(U, n)"
   },
-  "33": {
-    "variable_ID": 46,
-    "lhs": "C_p",
-    "network": "material",
-    "rhs": "ParDiff(H, T)"
-  },
-  "34": {
-    "variable_ID": 47,
-    "lhs": "C_v",
-    "network": "material",
-    "rhs": "ParDiff(U, T)"
-  },
-  "35": {
-    "variable_ID": 48,
-    "lhs": "cp",
-    "network": "material",
-    "rhs": "blockReduce(ganger(Cp, np.reciprocal(Mm)), N, N_x_S, n)"
-  },
-  "36": {
-    "variable_ID": 49,
-    "lhs": "cv",
-    "network": "material",
-    "rhs": "blockReduce(ganger(Cv, np.reciprocal(Mm)), N, N_x_S, n)"
-  },
   "37": {
     "variable_ID": 50,
     "lhs": "kc_x",
@@ -412,5 +388,95 @@
     "lhs": "dHdt",
     "network": "macroscopic",
     "rhs": "np.add(np.add(np.add(fHc, fHd), fq), fw)"
+  },
+  "103": {
+    "variable_ID": 138,
+    "lhs": "xo",
+    "network": "control",
+    "rhs": "np.ones(np.shape(x)), value"
+  },
+  "104": {
+    "variable_ID": 140,
+    "lhs": "e",
+    "network": "control",
+    "rhs": "np.subtract(m, setpoint)"
+  },
+  "106": {
+    "variable_ID": 144,
+    "lhs": "dxdt",
+    "network": "control",
+    "rhs": "np.add(np.dot(np.transpose(Ax), x), np.dot(np.transpose(Bx), e))"
+  },
+  "112": {
+    "variable_ID": 137,
+    "lhs": "x",
+    "network": "control",
+    "rhs": "integral(np.dot(I_N_D, dxdt),t,to,te)"
+  },
+  "113": {
+    "variable_ID": 16,
+    "lhs": "T",
+    "network": "physical",
+    "rhs": "np.ones(np.shape(T)), value"
+  },
+  "114": {
+    "variable_ID": 45,
+    "lhs": "chem_pot",
+    "network": "physical",
+    "rhs": "np.ones(np.shape(chem_pot)), value"
+  },
+  "115": {
+    "variable_ID": 15,
+    "lhs": "p",
+    "network": "physical",
+    "rhs": "np.ones(np.shape(p)), value"
+  },
+  "116": {
+    "variable_ID": 42,
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": "np.add(integral(dndt,t,to,te), no)"
+  },
+  "117": {
+    "variable_ID": 145,
+    "lhs": "T_ref",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(T)), value"
+  },
+  "120": {
+    "variable_ID": 148,
+    "lhs": "cp",
+    "network": "material",
+    "rhs": "ganger(Cp, np.reciprocal(m))"
+  },
+  "121": {
+    "variable_ID": 149,
+    "lhs": "cv",
+    "network": "material",
+    "rhs": "ganger(Cv, np.reciprocal(m))"
+  },
+  "122": {
+    "variable_ID": 18,
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": "ganger(m, integral(cp,T,T_ref,T))"
+  },
+  "123": {
+    "variable_ID": 18,
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": "np.add(integral(dHdt,t,to,te), Ho)"
+  },
+  "124": {
+    "variable_ID": 150,
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(n)), value"
+  },
+  "125": {
+    "variable_ID": 151,
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(H)), value"
   }
 }

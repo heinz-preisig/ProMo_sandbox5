@@ -114,26 +114,6 @@
     "network": "physical",
     "rhs": " ParDiff ( U , n )"
   },
-  "33": {
-    "lhs": "C_p",
-    "network": "material",
-    "rhs": " ParDiff ( H , T )"
-  },
-  "34": {
-    "lhs": "C_v",
-    "network": "material",
-    "rhs": " ParDiff ( U , T )"
-  },
-  "35": {
-    "lhs": "cp",
-    "network": "material",
-    "rhs": " Cp . inv ( Mm ) | N in N & S | n"
-  },
-  "36": {
-    "lhs": "cv",
-    "network": "material",
-    "rhs": " Cv . inv ( Mm ) | N in N & S | n"
-  },
   "37": {
     "lhs": "kc_x",
     "network": "material",
@@ -343,5 +323,80 @@
     "lhs": "dHdt",
     "network": "macroscopic",
     "rhs": " fHc + fHd + fq + fw"
+  },
+  "103": {
+    "lhs": "xo",
+    "network": "control",
+    "rhs": " Instantiate ( x , value )"
+  },
+  "104": {
+    "lhs": "e",
+    "network": "control",
+    "rhs": " mc - setpoint"
+  },
+  "106": {
+    "lhs": "dxdt",
+    "network": "control",
+    "rhs": " Ax | N | x + Bx | A | e"
+  },
+  "112": {
+    "lhs": "x",
+    "network": "control",
+    "rhs": " Integral ( I_N_D | D | dxdt :: t in [ to , te ] )"
+  },
+  "113": {
+    "lhs": "T",
+    "network": "physical",
+    "rhs": " Instantiate ( T , value )"
+  },
+  "114": {
+    "lhs": "chem_pot",
+    "network": "physical",
+    "rhs": " Instantiate ( chem_pot , value )"
+  },
+  "115": {
+    "lhs": "p",
+    "network": "physical",
+    "rhs": " Instantiate ( p , value )"
+  },
+  "116": {
+    "lhs": "n",
+    "network": "macroscopic",
+    "rhs": " Integral ( dndt :: t in [ to , te ] ) + no"
+  },
+  "117": {
+    "lhs": "T_ref",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( T , value )"
+  },
+  "120": {
+    "lhs": "cp",
+    "network": "material",
+    "rhs": " Cp . inv ( m )"
+  },
+  "121": {
+    "lhs": "cv",
+    "network": "material",
+    "rhs": " Cv . inv ( m )"
+  },
+  "122": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " m . Integral ( cp :: T in [ T_ref , T ] )"
+  },
+  "123": {
+    "lhs": "H",
+    "network": "macroscopic",
+    "rhs": " Integral ( dHdt :: t in [ to , te ] ) + Ho"
+  },
+  "124": {
+    "lhs": "no",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( n , value )"
+  },
+  "125": {
+    "lhs": "Ho",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( H , value )"
   }
 }
