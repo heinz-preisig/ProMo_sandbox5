@@ -478,5 +478,11 @@
     "lhs": "Ho",
     "network": "macroscopic",
     "rhs": "Instantiate(H, value)"
+  },
+  "126": {
+    "variable_ID": 152,
+    "lhs": "intensities",
+    "network": "macroscopic",
+    "rhs": "MixedStack(p,T,chem_pot,c)"
   }
 }

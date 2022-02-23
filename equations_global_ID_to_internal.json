@@ -398,5 +398,10 @@
     "lhs": "Ho",
     "network": "macroscopic",
     "rhs": " Instantiate ( H , value )"
+  },
+  "126": {
+    "lhs": "intensities",
+    "network": "macroscopic",
+    "rhs": " MixedStack ( p , T , chem_pot , c )"
   }
 }

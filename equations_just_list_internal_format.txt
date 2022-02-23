@@ -78,3 +78,4 @@
 123 :: H =  Integral ( dHdt :: t in [ to , te ] ) + Ho
 124 :: no =  Instantiate ( n , value )
 125 :: Ho =  Instantiate ( H , value )
+126 :: intensities =  MixedStack ( p , T , chem_pot , c )

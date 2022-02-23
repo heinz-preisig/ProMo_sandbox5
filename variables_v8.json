@@ -1260,6 +1260,18 @@
       "tokens": "[]",
       "type": "constant",
       "units": "[-2, 2, 0, 1, 0, 0, 0, 0]"
+    },
+    "152": {
+      "aliases": "{'global_ID': ' V_152', 'python': 'intensities', 'cpp': 'intensities', 'matlab': 'intensities', 'latex': 'intensities', 'internal_code': 'intensities'}",
+      "doc": "collected intensities",
+      "equations": "{126: {'rhs': ' F_19 D_0 V_15 D_7 V_16 D_7 V_45 D_7 V_108 D_1', 'type': 'generic', 'doc': 'collected intensities', 'network': 'macroscopic', 'incidence_list': ['108', '15', '16', '45']}}",
+      "index_structures": "[]",
+      "label": "intensities",
+      "network": "macroscopic",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "secondaryState",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
   "indices": {
@@ -1569,7 +1581,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 151,
-    "equation": 125
+    "variable": 152,
+    "equation": 126
   }
 }
