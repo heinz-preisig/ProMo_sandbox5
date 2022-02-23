@@ -408,5 +408,15 @@
     "lhs": "c",
     "network": "macroscopic",
     "rhs": " Instantiate ( c , value )"
+  },
+  "128": {
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( dHdt , zero )"
+  },
+  "129": {
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": " Instantiate ( dndt , zero )"
   }
 }

@@ -490,5 +490,17 @@
     "lhs": " V_108",
     "network": "macroscopic",
     "rhs": " O_11 D_0 V_108 D_7 V_1 D_1"
+  },
+  "128": {
+    "variable_ID": 126,
+    "lhs": " V_126",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_126 D_7 V_2 D_1"
+  },
+  "129": {
+    "variable_ID": 119,
+    "lhs": " V_119",
+    "network": "macroscopic",
+    "rhs": " O_11 D_0 V_119 D_7 V_2 D_1"
   }
 }

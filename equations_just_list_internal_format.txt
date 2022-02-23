@@ -80,3 +80,5 @@
 125 :: Ho =  Instantiate ( H , value )
 126 :: intensities =  MixedStack ( p , T , chem_pot , c )
 127 :: c =  Instantiate ( c , value )
+128 :: dHdt =  Instantiate ( dHdt , zero )
+129 :: dndt =  Instantiate ( dndt , zero )

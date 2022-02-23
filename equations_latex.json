@@ -490,5 +490,17 @@
     "lhs": "{c}{_{{N S}}}",
     "network": "macroscopic",
     "rhs": "\\text{Instantiate}({c}{_{{N S}}}, {\\#}{_{}})"
+  },
+  "128": {
+    "variable_ID": 126,
+    "lhs": "{\\dot{H}}{_{N}}",
+    "network": "macroscopic",
+    "rhs": "\\text{Instantiate}({\\dot{H}}{_{N}}, {0}{_{}})"
+  },
+  "129": {
+    "variable_ID": 119,
+    "lhs": "{\\dot{n}}{_{{N S}}}",
+    "network": "macroscopic",
+    "rhs": "\\text{Instantiate}({\\dot{n}}{_{{N S}}}, {0}{_{}})"
   }
 }

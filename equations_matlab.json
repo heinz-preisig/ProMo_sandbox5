@@ -490,5 +490,17 @@
     "lhs": "c",
     "network": "macroscopic",
     "rhs": "Instantiate(c, value)"
+  },
+  "128": {
+    "variable_ID": 126,
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": "Instantiate(dHdt, zero)"
+  },
+  "129": {
+    "variable_ID": 119,
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": "Instantiate(dndt, zero)"
   }
 }

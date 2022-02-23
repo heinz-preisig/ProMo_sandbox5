@@ -490,5 +490,17 @@
     "lhs": "c",
     "network": "macroscopic",
     "rhs": "np.ones(np.shape(c)), value"
+  },
+  "128": {
+    "variable_ID": 126,
+    "lhs": "dHdt",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(dHdt)), zero"
+  },
+  "129": {
+    "variable_ID": 119,
+    "lhs": "dndt",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(dndt)), zero"
   }
 }
