@@ -484,5 +484,11 @@
     "lhs": "{intensities}{_{}}",
     "network": "macroscopic",
     "rhs": "\\text{MixedStack}\\left( {p}{_{N}},{T}{_{N}},{\\mu}{_{{N S}}},{c}{_{{N S}}} \\right)"
+  },
+  "127": {
+    "variable_ID": 108,
+    "lhs": "{c}{_{{N S}}}",
+    "network": "macroscopic",
+    "rhs": "\\text{Instantiate}({c}{_{{N S}}}, {\\#}{_{}})"
   }
 }

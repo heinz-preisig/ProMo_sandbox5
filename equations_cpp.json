@@ -484,5 +484,11 @@
     "lhs": "intensities",
     "network": "macroscopic",
     "rhs": "MixedStack(p,T,chem_pot,c)"
+  },
+  "127": {
+    "variable_ID": 108,
+    "lhs": "c",
+    "network": "macroscopic",
+    "rhs": "np.ones(np.shape(c)), value"
   }
 }
