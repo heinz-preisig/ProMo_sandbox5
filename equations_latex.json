@@ -502,5 +502,89 @@
     "lhs": "{\\dot{n}}{_{{N S}}}",
     "network": "macroscopic",
     "rhs": "\\text{Instantiate}({\\dot{n}}{_{{N S}}}, {0}{_{}})"
+  },
+  "130": {
+    "variable_ID": 153,
+    "lhs": "{phi}{_{}}",
+    "network": "macroscopic",
+    "rhs": "\\text{MixedStack}\\left( {n}{_{{N S}}},{H}{_{N}} \\right)"
+  },
+  "131": {
+    "variable_ID": 34,
+    "lhs": "{k^q_x}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^q_x}{_{N}}, {\\#}{_{}})"
+  },
+  "132": {
+    "variable_ID": 35,
+    "lhs": "{k^q_y}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^q_y}{_{N}}, {\\#}{_{}})"
+  },
+  "133": {
+    "variable_ID": 36,
+    "lhs": "{k^q_z}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^q_z}{_{N}}, {\\#}{_{}})"
+  },
+  "134": {
+    "variable_ID": 50,
+    "lhs": "{k^c_x}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^c_x}{_{N}}, {\\#}{_{}})"
+  },
+  "135": {
+    "variable_ID": 51,
+    "lhs": "{k^c_y}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^c_y}{_{N}}, {\\#}{_{}})"
+  },
+  "136": {
+    "variable_ID": 52,
+    "lhs": "{k^c_z}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^c_z}{_{N}} \\, . \\, {\\#}{_{}}, -)"
+  },
+  "137": {
+    "variable_ID": 54,
+    "lhs": "{k^d_x}{_{{N S}}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^d_x}{_{{N S}}}, {\\#}{_{}})"
+  },
+  "138": {
+    "variable_ID": 55,
+    "lhs": "{k^d_y}{_{{N S}}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({k^d_y}{_{{N S}}}, {\\#}{_{}})"
+  },
+  "139": {
+    "variable_ID": 58,
+    "lhs": "{h}{_{{N S}}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({h}{_{{N S}}}, {\\#}{_{}})"
+  },
+  "140": {
+    "variable_ID": 148,
+    "lhs": "{cp}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({cp}{_{N}}, {\\#}{_{}})"
+  },
+  "141": {
+    "variable_ID": 149,
+    "lhs": "{cv}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({cv}{_{N}}, {\\#}{_{}})"
+  },
+  "142": {
+    "variable_ID": 29,
+    "lhs": "{\\lambda}{_{S}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({\\lambda}{_{S}}, {\\#}{_{}})"
+  },
+  "143": {
+    "variable_ID": 154,
+    "lhs": "{\\theta}{_{}}",
+    "network": "material",
+    "rhs": "\\text{MixedStack}\\left( {k^q}{_{N}},{k^c}{_{N}},{k^d}{_{{N S}}},{h}{_{{N S}}},{cp}{_{N}},{cv}{_{N}},{\\lambda}{_{S}},{\\rho}{_{N}} \\right)"
   }
 }

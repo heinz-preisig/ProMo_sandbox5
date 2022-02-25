@@ -418,5 +418,75 @@
     "lhs": "dndt",
     "network": "macroscopic",
     "rhs": " Instantiate ( dndt , zero )"
+  },
+  "130": {
+    "lhs": "phi",
+    "network": "macroscopic",
+    "rhs": " MixedStack ( n , H )"
+  },
+  "131": {
+    "lhs": "kq_x",
+    "network": "material",
+    "rhs": " Instantiate ( kq_x , value )"
+  },
+  "132": {
+    "lhs": "kq_y",
+    "network": "material",
+    "rhs": " Instantiate ( kq_y , value )"
+  },
+  "133": {
+    "lhs": "kq_z",
+    "network": "material",
+    "rhs": " Instantiate ( kq_z , value )"
+  },
+  "134": {
+    "lhs": "kc_x",
+    "network": "material",
+    "rhs": " Instantiate ( kc_x , value )"
+  },
+  "135": {
+    "lhs": "kc_y",
+    "network": "material",
+    "rhs": " Instantiate ( kc_y , value )"
+  },
+  "136": {
+    "lhs": "kc_z",
+    "network": "material",
+    "rhs": " Instantiate ( kc_z . value  )"
+  },
+  "137": {
+    "lhs": "kd_x",
+    "network": "material",
+    "rhs": " Instantiate ( kd_x , value )"
+  },
+  "138": {
+    "lhs": "kd_y",
+    "network": "material",
+    "rhs": " Instantiate ( kd_y , value )"
+  },
+  "139": {
+    "lhs": "h",
+    "network": "material",
+    "rhs": " Instantiate ( h , value )"
+  },
+  "140": {
+    "lhs": "cp",
+    "network": "material",
+    "rhs": " Instantiate ( cp , value )"
+  },
+  "141": {
+    "lhs": "cv",
+    "network": "material",
+    "rhs": " Instantiate ( cv , value )"
+  },
+  "142": {
+    "lhs": "Mm",
+    "network": "material",
+    "rhs": " Instantiate ( Mm , value )"
+  },
+  "143": {
+    "lhs": "data",
+    "network": "material",
+    "rhs": " MixedStack ( kq , kc , kd , h , cp , cv , Mm , density )"
   }
 }

@@ -502,5 +502,89 @@
     "lhs": " V_119",
     "network": "macroscopic",
     "rhs": " O_11 D_0 V_119 D_7 V_2 D_1"
+  },
+  "130": {
+    "variable_ID": 153,
+    "lhs": " V_153",
+    "network": "macroscopic",
+    "rhs": " F_19 D_0 V_42 D_7 V_18 D_1"
+  },
+  "131": {
+    "variable_ID": 34,
+    "lhs": " V_34",
+    "network": "material",
+    "rhs": " O_11 D_0 V_34 D_7 V_1 D_1"
+  },
+  "132": {
+    "variable_ID": 35,
+    "lhs": " V_35",
+    "network": "material",
+    "rhs": " O_11 D_0 V_35 D_7 V_1 D_1"
+  },
+  "133": {
+    "variable_ID": 36,
+    "lhs": " V_36",
+    "network": "material",
+    "rhs": " O_11 D_0 V_36 D_7 V_1 D_1"
+  },
+  "134": {
+    "variable_ID": 50,
+    "lhs": " V_50",
+    "network": "material",
+    "rhs": " O_11 D_0 V_50 D_7 V_1 D_1"
+  },
+  "135": {
+    "variable_ID": 51,
+    "lhs": " V_51",
+    "network": "material",
+    "rhs": " O_11 D_0 V_51 D_7 V_1 D_1"
+  },
+  "136": {
+    "variable_ID": 52,
+    "lhs": " V_52",
+    "network": "material",
+    "rhs": " O_11 D_0 V_52 O_4 V_1 D_7- D_1"
+  },
+  "137": {
+    "variable_ID": 54,
+    "lhs": " V_54",
+    "network": "material",
+    "rhs": " O_11 D_0 V_54 D_7 V_1 D_1"
+  },
+  "138": {
+    "variable_ID": 55,
+    "lhs": " V_55",
+    "network": "material",
+    "rhs": " O_11 D_0 V_55 D_7 V_1 D_1"
+  },
+  "139": {
+    "variable_ID": 58,
+    "lhs": " V_58",
+    "network": "material",
+    "rhs": " O_11 D_0 V_58 D_7 V_1 D_1"
+  },
+  "140": {
+    "variable_ID": 148,
+    "lhs": " V_148",
+    "network": "material",
+    "rhs": " O_11 D_0 V_148 D_7 V_1 D_1"
+  },
+  "141": {
+    "variable_ID": 149,
+    "lhs": " V_149",
+    "network": "material",
+    "rhs": " O_11 D_0 V_149 D_7 V_1 D_1"
+  },
+  "142": {
+    "variable_ID": 29,
+    "lhs": " V_29",
+    "network": "material",
+    "rhs": " O_11 D_0 V_29 D_7 V_1 D_1"
+  },
+  "143": {
+    "variable_ID": 154,
+    "lhs": " V_154",
+    "network": "material",
+    "rhs": " F_19 D_0 V_37 D_7 V_53 D_7 V_57 D_7 V_58 D_7 V_148 D_7 V_149 D_7 V_29 D_7 V_71 D_1"
   }
 }

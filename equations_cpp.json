@@ -502,5 +502,89 @@
     "lhs": "dndt",
     "network": "macroscopic",
     "rhs": "np.ones(np.shape(dndt)), zero"
+  },
+  "130": {
+    "variable_ID": 153,
+    "lhs": "phi",
+    "network": "macroscopic",
+    "rhs": "MixedStack(n,H)"
+  },
+  "131": {
+    "variable_ID": 34,
+    "lhs": "kq_x",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kq_x)), value"
+  },
+  "132": {
+    "variable_ID": 35,
+    "lhs": "kq_y",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kq_y)), value"
+  },
+  "133": {
+    "variable_ID": 36,
+    "lhs": "kq_z",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kq_z)), value"
+  },
+  "134": {
+    "variable_ID": 50,
+    "lhs": "kc_x",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kc_x)), value"
+  },
+  "135": {
+    "variable_ID": 51,
+    "lhs": "kc_y",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kc_y)), value"
+  },
+  "136": {
+    "variable_ID": 52,
+    "lhs": "kc_z",
+    "network": "material",
+    "rhs": "np.ones(np.shape(ganger(kc_z, value))), -"
+  },
+  "137": {
+    "variable_ID": 54,
+    "lhs": "kd_x",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kd_x)), value"
+  },
+  "138": {
+    "variable_ID": 55,
+    "lhs": "kd_y",
+    "network": "material",
+    "rhs": "np.ones(np.shape(kd_y)), value"
+  },
+  "139": {
+    "variable_ID": 58,
+    "lhs": "h",
+    "network": "material",
+    "rhs": "np.ones(np.shape(h)), value"
+  },
+  "140": {
+    "variable_ID": 148,
+    "lhs": "cp",
+    "network": "material",
+    "rhs": "np.ones(np.shape(cp)), value"
+  },
+  "141": {
+    "variable_ID": 149,
+    "lhs": "cv",
+    "network": "material",
+    "rhs": "np.ones(np.shape(cv)), value"
+  },
+  "142": {
+    "variable_ID": 29,
+    "lhs": "Mm",
+    "network": "material",
+    "rhs": "np.ones(np.shape(Mm)), value"
+  },
+  "143": {
+    "variable_ID": 154,
+    "lhs": "data",
+    "network": "material",
+    "rhs": "MixedStack(kq,kc,kd,h,cp,cv,Mm,density)"
   }
 }
