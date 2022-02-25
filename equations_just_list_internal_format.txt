@@ -96,3 +96,10 @@
 141 :: cv =  Instantiate ( cv , value )
 142 :: Mm =  Instantiate ( Mm , value )
 143 :: data =  MixedStack ( kq , kc , kd , h , cp , cv , Mm , density )
+144 :: Cx =  Instantiate ( Cx , value )
+145 :: Dx =  Instantiate ( Dx , value )
+146 :: setpoint =  Instantiate ( setpoint , value )
+147 :: D_A =  Instantiate ( D_A , value )
+148 :: Ax =  Instantiate ( Ax , value )
+149 :: Bx =  Instantiate ( Bx , value )
+150 :: y =  Cx | N | x + D_A . e

@@ -488,5 +488,40 @@
     "lhs": "data",
     "network": "material",
     "rhs": " MixedStack ( kq , kc , kd , h , cp , cv , Mm , density )"
+  },
+  "144": {
+    "lhs": "Cx",
+    "network": "control",
+    "rhs": " Instantiate ( Cx , value )"
+  },
+  "145": {
+    "lhs": "Dx",
+    "network": "control",
+    "rhs": " Instantiate ( Dx , value )"
+  },
+  "146": {
+    "lhs": "setpoint",
+    "network": "control",
+    "rhs": " Instantiate ( setpoint , value )"
+  },
+  "147": {
+    "lhs": "D_A",
+    "network": "control",
+    "rhs": " Instantiate ( D_A , value )"
+  },
+  "148": {
+    "lhs": "Ax",
+    "network": "control",
+    "rhs": " Instantiate ( Ax , value )"
+  },
+  "149": {
+    "lhs": "Bx",
+    "network": "control",
+    "rhs": " Instantiate ( Bx , value )"
+  },
+  "150": {
+    "lhs": "y",
+    "network": "control",
+    "rhs": " Cx | N | x + D_A . e"
   }
 }

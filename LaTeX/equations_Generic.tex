@@ -404,5 +404,33 @@ no & equation &documentation &layer \\\hline\hline
     \begin{eq}{\theta}{_{}} := \text{MixedStack}\left( {k^q}{_{N}},{k^c}{_{N}},{k^d}{_{{N S}}},{h}{_{{N S}}},{cp}{_{N}},{cv}{_{N}},{\lambda}{_{S}},{\rho}{_{N}} \right)\end{eq} &
     \begin{lay}available data set\end{lay} &
     \begin{lay}material\end{lay} \\
+\hyperlink{"v:133"}{ 144 }\hypertarget{"e:144"}{  } &
+    \begin{eq}{C}{_{N, A}} := \text{Instantiate}({C}{_{N, A}}, {\#}{_{}})\end{eq} &
+    \begin{lay}measurement matrix\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:134"}{ 145 }\hypertarget{"e:145"}{  } &
+    \begin{eq}{D}{_{N, D}} := \text{Instantiate}({D}{_{N, D}}, {\#}{_{}})\end{eq} &
+    \begin{lay}event matrix (dimension issue)\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:135"}{ 146 }\hypertarget{"e:146"}{  } &
+    \begin{eq}{y^o}{_{A}} := \text{Instantiate}({y^o}{_{A}}, {\#}{_{}})\end{eq} &
+    \begin{lay}set point\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:136"}{ 147 }\hypertarget{"e:147"}{  } &
+    \begin{eq}{D}{_{A}} := \text{Instantiate}({D}{_{A}}, {\#}{_{}})\end{eq} &
+    \begin{lay}event diagonal matrix (no dimension problem)\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:142"}{ 148 }\hypertarget{"e:148"}{  } &
+    \begin{eq}{A}{_{N, D}} := \text{Instantiate}({A}{_{N, D}}, {\#}{_{}})\end{eq} &
+    \begin{lay}dynamic control matrix\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:143"}{ 149 }\hypertarget{"e:149"}{  } &
+    \begin{eq}{B}{_{A, D}} := \text{Instantiate}({B}{_{A, D}}, {\#}{_{}})\end{eq} &
+    \begin{lay}input matrix\end{lay} &
+    \begin{lay}control\end{lay} \\
+\hyperlink{"v:155"}{ 150 }\hypertarget{"e:150"}{  } &
+    \begin{eq}{y}{_{A}} := {C}{_{N, A}} \stackrel{N}{\,\star\,} {x}{_{N}}  + {D}{_{A}} \, . \, {e}{_{A}}\end{eq} &
+    \begin{lay}controller output\end{lay} &
+    \begin{lay}control\end{lay} \\
 \hline
 \end{longtable}

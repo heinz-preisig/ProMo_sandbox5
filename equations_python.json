@@ -586,5 +586,47 @@
     "lhs": "data",
     "network": "material",
     "rhs": "MixedStack(kq,kc,kd,h,cp,cv,Mm,density)"
+  },
+  "144": {
+    "variable_ID": 133,
+    "lhs": "Cx",
+    "network": "control",
+    "rhs": "np.ones(np.shape(Cx)), value"
+  },
+  "145": {
+    "variable_ID": 134,
+    "lhs": "Dx",
+    "network": "control",
+    "rhs": "np.ones(np.shape(Dx)), value"
+  },
+  "146": {
+    "variable_ID": 135,
+    "lhs": "setpoint",
+    "network": "control",
+    "rhs": "np.ones(np.shape(setpoint)), value"
+  },
+  "147": {
+    "variable_ID": 136,
+    "lhs": "D_A",
+    "network": "control",
+    "rhs": "np.ones(np.shape(D_A)), value"
+  },
+  "148": {
+    "variable_ID": 142,
+    "lhs": "Ax",
+    "network": "control",
+    "rhs": "np.ones(np.shape(Ax)), value"
+  },
+  "149": {
+    "variable_ID": 143,
+    "lhs": "Bx",
+    "network": "control",
+    "rhs": "np.ones(np.shape(Bx)), value"
+  },
+  "150": {
+    "variable_ID": 155,
+    "lhs": "y",
+    "network": "control",
+    "rhs": "np.add(np.dot(np.transpose(Cx), x), np.multiply(D_A, e))"
   }
 }

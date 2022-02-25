@@ -586,5 +586,47 @@
     "lhs": "{\\theta}{_{}}",
     "network": "material",
     "rhs": "\\text{MixedStack}\\left( {k^q}{_{N}},{k^c}{_{N}},{k^d}{_{{N S}}},{h}{_{{N S}}},{cp}{_{N}},{cv}{_{N}},{\\lambda}{_{S}},{\\rho}{_{N}} \\right)"
+  },
+  "144": {
+    "variable_ID": 133,
+    "lhs": "{C}{_{N, A}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({C}{_{N, A}}, {\\#}{_{}})"
+  },
+  "145": {
+    "variable_ID": 134,
+    "lhs": "{D}{_{N, D}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({D}{_{N, D}}, {\\#}{_{}})"
+  },
+  "146": {
+    "variable_ID": 135,
+    "lhs": "{y^o}{_{A}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({y^o}{_{A}}, {\\#}{_{}})"
+  },
+  "147": {
+    "variable_ID": 136,
+    "lhs": "{D}{_{A}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({D}{_{A}}, {\\#}{_{}})"
+  },
+  "148": {
+    "variable_ID": 142,
+    "lhs": "{A}{_{N, D}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({A}{_{N, D}}, {\\#}{_{}})"
+  },
+  "149": {
+    "variable_ID": 143,
+    "lhs": "{B}{_{A, D}}",
+    "network": "control",
+    "rhs": "\\text{Instantiate}({B}{_{A, D}}, {\\#}{_{}})"
+  },
+  "150": {
+    "variable_ID": 155,
+    "lhs": "{y}{_{A}}",
+    "network": "control",
+    "rhs": "{C}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {x}{_{N}}  + {D}{_{A}} \\, . \\, {e}{_{A}}"
   }
 }

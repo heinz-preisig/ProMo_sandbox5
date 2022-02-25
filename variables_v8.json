@@ -1072,7 +1072,7 @@
     "133": {
       "aliases": "{'global_ID': ' V_133', 'python': 'Cx', 'cpp': 'Cx', 'matlab': 'Cx', 'latex': 'C', 'internal_code': 'Cx'}",
       "doc": "measurement matrix",
-      "equations": "{}",
+      "equations": "{144: {'rhs': ' O_11 D_0 V_133 D_7 V_1 D_1', 'type': 'generic', 'doc': 'measurement matrix', 'network': 'control', 'incidence_list': ['1', '133']}}",
       "index_structures": "[1, 2]",
       "label": "Cx",
       "network": "control",
@@ -1084,7 +1084,7 @@
     "134": {
       "aliases": "{'global_ID': ' V_134', 'python': 'Dx', 'cpp': 'Dx', 'matlab': 'Dx', 'latex': 'D', 'internal_code': 'Dx'}",
       "doc": "event matrix (dimension issue)",
-      "equations": "{}",
+      "equations": "{145: {'rhs': ' O_11 D_0 V_134 D_7 V_1 D_1', 'type': 'generic', 'doc': 'event matrix (dimension issue)', 'network': 'control', 'incidence_list': ['1', '134']}}",
       "index_structures": "[1, 9]",
       "label": "Dx",
       "network": "control",
@@ -1096,7 +1096,7 @@
     "135": {
       "aliases": "{'global_ID': ' V_135', 'python': 'setpoint', 'cpp': 'setpoint', 'matlab': 'setpoint', 'latex': 'y^o', 'internal_code': 'setpoint'}",
       "doc": "set point",
-      "equations": "{}",
+      "equations": "{146: {'rhs': ' O_11 D_0 V_135 D_7 V_1 D_1', 'type': 'generic', 'doc': 'set point', 'network': 'control', 'incidence_list': ['1', '135']}}",
       "index_structures": "[2]",
       "label": "setpoint",
       "network": "control",
@@ -1108,7 +1108,7 @@
     "136": {
       "aliases": "{'global_ID': ' V_136', 'python': 'D_A', 'cpp': 'D_A', 'matlab': 'D_A', 'latex': 'D', 'internal_code': 'D_A'}",
       "doc": "event diagonal matrix (no dimension problem)",
-      "equations": "{}",
+      "equations": "{147: {'rhs': ' O_11 D_0 V_136 D_7 V_1 D_1', 'type': 'generic', 'doc': 'event diagonal matrix (no dimension problem)', 'network': 'control', 'incidence_list': ['1', '136']}}",
       "index_structures": "[2]",
       "label": "D_A",
       "network": "control",
@@ -1168,7 +1168,7 @@
     "142": {
       "aliases": "{'global_ID': ' V_142', 'python': 'Ax', 'cpp': 'Ax', 'matlab': 'Ax', 'latex': 'A', 'internal_code': 'Ax'}",
       "doc": "dynamic control matrix",
-      "equations": "{}",
+      "equations": "{148: {'rhs': ' O_11 D_0 V_142 D_7 V_1 D_1', 'type': 'generic', 'doc': 'dynamic control matrix', 'network': 'control', 'incidence_list': ['1', '142']}}",
       "index_structures": "[1, 9]",
       "label": "Ax",
       "network": "control",
@@ -1180,7 +1180,7 @@
     "143": {
       "aliases": "{'global_ID': ' V_143', 'python': 'Bx', 'cpp': 'Bx', 'matlab': 'Bx', 'latex': 'B', 'internal_code': 'Bx'}",
       "doc": "input matrix",
-      "equations": "{}",
+      "equations": "{149: {'rhs': ' O_11 D_0 V_143 D_7 V_1 D_1', 'type': 'generic', 'doc': 'input matrix', 'network': 'control', 'incidence_list': ['1', '143']}}",
       "index_structures": "[2, 9]",
       "label": "Bx",
       "network": "control",
@@ -1295,6 +1295,18 @@
       "port_variable": "False",
       "tokens": "[]",
       "type": "property",
+      "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
+    },
+    "155": {
+      "aliases": "{'global_ID': ' V_155', 'python': 'y', 'cpp': 'y', 'matlab': 'y', 'latex': 'y', 'internal_code': 'y'}",
+      "doc": "controller output",
+      "equations": "{150: {'rhs': ' V_133  O_5  I_1 O_5  V_137 O_0 V_136 O_4 V_140', 'type': 'generic', 'doc': 'controller output', 'network': 'control', 'incidence_list': ['133', '136', '137', '140']}}",
+      "index_structures": "[2]",
+      "label": "y",
+      "network": "control",
+      "port_variable": "False",
+      "tokens": "[]",
+      "type": "algebraic",
       "units": "[0, 0, 0, 0, 0, 0, 0, 0]"
     }
   },
@@ -1605,7 +1617,7 @@
     }
   },
   "Ontology_global_IDs": {
-    "variable": 154,
-    "equation": 143
+    "variable": 157,
+    "equation": 152
   }
 }
