@@ -523,5 +523,15 @@
     "lhs": "y",
     "network": "control",
     "rhs": " Cx | N | x + D_A . e"
+  },
+  "153": {
+    "lhs": "y",
+    "network": "control",
+    "rhs": " D_A . e"
+  },
+  "154": {
+    "lhs": "density",
+    "network": "material",
+    "rhs": " Instantiate ( density , value )"
   }
 }

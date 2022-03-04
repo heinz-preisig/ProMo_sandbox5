@@ -628,5 +628,17 @@
     "lhs": "{y}{_{A}}",
     "network": "control",
     "rhs": "{C}{_{N, A}} \\stackrel{N}{\\,\\star\\,} {x}{_{N}}  + {D}{_{A}} \\, . \\, {e}{_{A}}"
+  },
+  "153": {
+    "variable_ID": 155,
+    "lhs": "{y}{_{A}}",
+    "network": "control",
+    "rhs": "{D}{_{A}} \\, . \\, {e}{_{A}}"
+  },
+  "154": {
+    "variable_ID": 71,
+    "lhs": "{\\rho}{_{N}}",
+    "network": "material",
+    "rhs": "\\text{Instantiate}({\\rho}{_{N}}, {\\#}{_{}})"
   }
 }

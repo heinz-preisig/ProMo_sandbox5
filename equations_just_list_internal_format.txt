@@ -103,3 +103,5 @@
 148 :: Ax =  Instantiate ( Ax , value )
 149 :: Bx =  Instantiate ( Bx , value )
 150 :: y =  Cx | N | x + D_A . e
+153 :: y =  D_A . e
+154 :: density =  Instantiate ( density , value )

@@ -517,7 +517,11 @@
         "root": {
           "constant|AE": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 237,
                 212,
@@ -549,7 +553,11 @@
           },
           "constant|infinity": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 143,
                 89,
@@ -581,7 +589,11 @@
           },
           "dynamic|ODE": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 116,
                 95,
@@ -613,7 +625,11 @@
           },
           "dynamic|lumped": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 239,
                 41,
@@ -645,7 +661,11 @@
           },
           "event|AE": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 85,
                 87,
@@ -677,7 +697,11 @@
           },
           "event|lumped": {
             "enabled": {
-              "action": [],
+              "action": [
+                "edit_assignment",
+                "instantiate",
+                "make interface"
+              ],
               "colour": [
                 117,
                 80,
@@ -1704,12 +1728,6 @@
               "position_y": 0,
               "width": 15
             }
-          },
-          "information|link|unidirectional": {
-            "-": {
-              "height": 15,
-              "width": 15
-            }
           }
         },
         "root": {
@@ -2019,12 +2037,6 @@
               "position_y": 0,
               "width": 10
             }
-          },
-          "information|link|unidirectional": {
-            "-": {
-              "height": 10,
-              "width": 10
-            }
           }
         }
       },
@@ -2285,13 +2297,6 @@
               "position_y": 0,
               "width": 15
             }
-          },
-          "dynamic|ODE": {
-            "-": {
-              "height": 15,
-              "position_x": -12,
-              "width": 15
-            }
           }
         },
         "network": {
@@ -2309,13 +2314,6 @@
               "movable": false,
               "position_x": -12,
               "position_y": 0,
-              "width": 22
-            }
-          },
-          "dynamic|ODE": {
-            "-": {
-              "height": 22,
-              "position_x": -10,
               "width": 22
             }
           }
@@ -2752,6 +2750,14 @@
         255
       ]
     },
+    "control >>> control": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "control >>> gas": {
       "colour": [
         200,
@@ -2808,6 +2814,22 @@
         100
       ]
     },
+    "gas >>> gas": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "gas >>> liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "gas >>> material": {
       "colour": [
         255,
@@ -2817,6 +2839,14 @@
       ]
     },
     "gas >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "gas >>> solid": {
       "colour": [
         255,
         255,
@@ -2840,6 +2870,14 @@
         100
       ]
     },
+    "liquid >>> liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "liquid >>> material": {
       "colour": [
         255,
@@ -2849,6 +2887,14 @@
       ]
     },
     "liquid >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "liquid >>> solid": {
       "colour": [
         255,
         255,
@@ -2881,6 +2927,14 @@
       ]
     },
     "material >>> liquid": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "material >>> material": {
       "colour": [
         255,
         255,
@@ -2944,6 +2998,14 @@
         100
       ]
     },
+    "reactions >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
     "reactions >>> solid": {
       "colour": [
         255,
@@ -2977,6 +3039,14 @@
       ]
     },
     "solid >>> reactions": {
+      "colour": [
+        255,
+        255,
+        255,
+        100
+      ]
+    },
+    "solid >>> solid": {
       "colour": [
         255,
         255,

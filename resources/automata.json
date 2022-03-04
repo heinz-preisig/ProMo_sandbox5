@@ -2264,6 +2264,140 @@
           },
           "cursor": "-"
         },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_viewed', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('sibling', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        }
+      },
+      "instantiate": {
+        "('ancestor', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('connector', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('knot', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_composite', 'root', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_interface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_intraface', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'name', '-')": {
+          "left": {
+            "state": "-",
+            "output": "-"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
+        "('node_simple', 'root', 'enabled')": {
+          "left": {
+            "state": "-",
+            "output": "instantiate"
+          },
+          "right": {
+            "state": "-",
+            "output": "-"
+          },
+          "cursor": "-"
+        },
         "('node_viewed', 'root', '-')": {
           "left": {
             "state": "-",

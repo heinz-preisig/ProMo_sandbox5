@@ -628,5 +628,17 @@
     "lhs": " V_155",
     "network": "control",
     "rhs": " V_133  O_5  I_1 O_5  V_137 O_0 V_136 O_4 V_140"
+  },
+  "153": {
+    "variable_ID": 155,
+    "lhs": " V_155",
+    "network": "control",
+    "rhs": " V_136 O_4 V_140"
+  },
+  "154": {
+    "variable_ID": 71,
+    "lhs": " V_71",
+    "network": "material",
+    "rhs": " O_11 D_0 V_71 D_7 V_1 D_1"
   }
 }

@@ -628,5 +628,17 @@
     "lhs": "y",
     "network": "control",
     "rhs": "np.add(np.dot(np.transpose(Cx), x), np.multiply(D_A, e))"
+  },
+  "153": {
+    "variable_ID": 155,
+    "lhs": "y",
+    "network": "control",
+    "rhs": "np.multiply(D_A, e)"
+  },
+  "154": {
+    "variable_ID": 71,
+    "lhs": "density",
+    "network": "material",
+    "rhs": "np.ones(np.shape(density)), value"
   }
 }
