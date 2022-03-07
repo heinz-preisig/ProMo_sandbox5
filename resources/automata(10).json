@@ -2454,11 +2454,7 @@
     },
     "equation_topology": {
       "reset": {
-        "state": "roam",
-        "output": "-"
-      },
-      "Key_I": {
-        "state": "instantiate",
+        "state": "-",
         "output": "-"
       }
     }
