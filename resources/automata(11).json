@@ -359,13 +359,13 @@
         "('arc_edge', 'head', '-')": {
           "left": {
             "state": "-",
-            "output": "insert knot"
+            "output": "-"
           },
           "right": {
             "state": "re-connect_arc",
             "output": "re-direct arc"
           },
-          "cursor": "TC_L_insknot-R_recon"
+          "cursor": "TC_L_blank-R_recon"
         },
         "('arc_edge', 'root', 'enabled')": {
           "left": {
@@ -381,13 +381,13 @@
         "('arc_edge', 'tail', '-')": {
           "left": {
             "state": "-",
-            "output": "insert knot"
+            "output": "-"
           },
           "right": {
             "state": "re-connect_arc",
             "output": "re-direct arc"
           },
-          "cursor": "TC_L_insknot-R_recon"
+          "cursor": "TC_L_blank-R_recon"
         },
         "('connector', 'name', '-')": {
           "left": {
