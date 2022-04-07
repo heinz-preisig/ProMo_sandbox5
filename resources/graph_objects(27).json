@@ -486,12 +486,12 @@
                 255,
                 100
               ],
-              "height": 15,
+              "height": 40,
               "layer": "named_network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 15
+              "width": 40
             }
           }
         },
@@ -505,12 +505,12 @@
                 255,
                 100
               ],
-              "height": 30,
+              "height": 55,
               "layer": "network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 30
+              "width": 55
             }
           }
         },
@@ -672,12 +672,12 @@
                 83,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -687,12 +687,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           },
           "event|lumped": {
@@ -708,12 +708,12 @@
                 123,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -723,12 +723,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           }
         }
@@ -1257,12 +1257,12 @@
                 255,
                 100
               ],
-              "height": 15,
+              "height": 40,
               "layer": "named_network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 15
+              "width": 40
             }
           }
         },
@@ -1276,12 +1276,12 @@
                 255,
                 100
               ],
-              "height": 30,
+              "height": 55,
               "layer": "network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 30
+              "width": 55
             }
           }
         },
@@ -1483,12 +1483,12 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "enabled": {
               "action": [],
@@ -1498,12 +1498,12 @@
                 83,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1513,12 +1513,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           },
           "event|lumped": {
@@ -1530,12 +1530,12 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "enabled": {
               "action": [],
@@ -1545,12 +1545,12 @@
                 123,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -1560,12 +1560,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           }
         }
@@ -2290,18 +2290,17 @@
                 255,
                 100
               ],
-              "height": 15,
+              "height": 40,
               "layer": "named_network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 15
+              "width": 40
             }
           },
-          "event|lumped": {
+          "dynamic|lumped": {
             "-": {
               "height": 40,
-              "position_x": -10,
               "width": 40
             }
           }
@@ -2316,19 +2315,19 @@
                 255,
                 100
               ],
-              "height": 30,
+              "height": 55,
               "layer": "network",
               "movable": false,
-              "position_x": -15,
+              "position_x": 0,
               "position_y": 0,
-              "width": 30
+              "width": 55
             }
           },
-          "event|lumped": {
+          "dynamic|lumped": {
             "-": {
-              "height": 30,
-              "position_x": -15,
-              "width": 30
+              "height": 50,
+              "movable": true,
+              "width": 50
             }
           }
         },
@@ -2554,12 +2553,12 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2575,12 +2574,12 @@
                 83,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -2590,12 +2589,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           },
           "event|lumped": {
@@ -2607,12 +2606,12 @@
                 182,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "enabled": {
               "action": [
@@ -2628,12 +2627,12 @@
                 123,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             },
             "selected": {
               "action": [],
@@ -2643,12 +2642,12 @@
                 79,
                 255
               ],
-              "height": 10,
+              "height": 5,
               "layer": "node",
               "movable": false,
               "position_x": 0,
               "position_y": 0,
-              "width": 32
+              "width": 28
             }
           }
         }
